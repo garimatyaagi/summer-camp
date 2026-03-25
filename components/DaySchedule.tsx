@@ -1,0 +1,61 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { fadeUpStagger, staggerContainer, sectionFade } from "@/lib/animations";
+import { ColorfulDivider, DoodleSun, DoodleStar } from "./Doodles";
+
+const schedule = [
+  { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F4A940" },
+  { time: "9:15", title: "Make", description: "The big hands-on session. Clay, paint, circuits, cooking \u2014 whatever the week\u2019s theme calls for.", color: "#E94560" },
+  { time: "10:15", title: "Snack break", description: "Fruit, juice, and ten minutes to just be a kid.", color: "#2D6A4F" },
+  { time: "10:30", title: "Move", description: "Obstacle courses, yoga, relay races, dance. Bodies need to move before brains can focus.", color: "#4A90D9" },
+  { time: "11:30", title: "Express", description: "Show-and-tell, storytelling, improv, mini-presentations. The quietest kid often surprises everyone here.", color: "#F4A940" },
+  { time: "12:15", title: "Wind-down + pick-up", description: "Reflection circle. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about their day.", color: "#E94560" },
+];
+
+export default function DaySchedule() {
+  return (
+    <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+      <div className="pointer-events-none">
+        <DoodleSun className="absolute top-12 right-10 w-14 opacity-35 hidden md:block" />
+        <DoodleStar className="absolute bottom-20 left-8 w-8 opacity-25 hidden md:block" color="#E94560" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-[1400px]">
+        <ColorfulDivider className="mb-10" />
+
+        <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="mb-12 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-navy md:text-[48px] lg:text-[56px]">
+          A morning at{" "}
+          <span className="relative inline-block">
+            camp
+            <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
+              <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F4A940" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+            </svg>
+          </span>.
+        </motion.h2>
+
+        <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }} className="max-w-[720px]">
+          {schedule.map((item, i) => (
+            <motion.div key={item.time} variants={fadeUpStagger} custom={i}
+              className="grid grid-cols-[56px_1fr] gap-4 py-6 md:grid-cols-[80px_1fr] md:gap-6 md:py-7"
+              style={{ borderTop: `2px solid ${item.color}15` }}>
+              <div className="flex flex-col items-center gap-1">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full text-[11px] font-bold text-white"
+                  style={{ backgroundColor: item.color }}>
+                  {item.time.replace(':00', '').replace(':15', '').replace(':30', '')}
+                </span>
+                <span className="text-[12px] font-semibold tabular-nums" style={{ color: item.color }}>{item.time}</span>
+              </div>
+              <div>
+                <h3 className="text-[17px] font-bold text-navy md:text-[18px]">{item.title}</h3>
+                <p className="mt-1.5 text-[15px] leading-[1.8] text-text-secondary max-w-[460px]">{item.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
