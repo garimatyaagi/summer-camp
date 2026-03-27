@@ -29,7 +29,7 @@ export default function FinalCTA() {
           something.
         </h2>
 
-        <p className="mt-7 text-[16px] leading-[1.85] text-white/75 md:text-[18px] max-w-[500px]">
+        <p className="mt-7 text-[16px] leading-[1.85] text-white md:text-[18px] max-w-[500px]">
           Seven skills. A real portfolio. And an exhibition they&apos;ll talk about for years.
           HSR Layout, Bangalore. Ages 5&ndash;8. April 14 &ndash; May 30, 2026.
         </p>
@@ -44,7 +44,7 @@ export default function FinalCTA() {
             <span>&#x1F4AC;</span> WhatsApp us
           </a>
         </div>
-        <p className="mt-4 text-[13px] text-white/60">
+        <p className="mt-4 text-[13px] text-white/90">
           Questions? Call or WhatsApp: +91 98765 43210
         </p>
       </motion.div>

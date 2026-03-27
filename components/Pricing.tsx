@@ -22,7 +22,7 @@ export default function Pricing() {
                 </svg>
               </span>.
             </h2>
-            <p className="mt-5 max-w-[360px] text-[16px] leading-[1.85] text-white/75">
+            <p className="mt-5 max-w-[360px] text-[16px] leading-[1.85] text-white">
               No hidden fees. No confusing tiers. One price that includes everything.
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ export default function Pricing() {
                 Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
               </a>
             </div>
-            <p className="mt-4 text-center text-[13px] text-white/60">
+            <p className="mt-4 text-center text-[13px] text-white/90">
               Extended Play (12:30&ndash;2:30 PM): &#8377;1,500/week.
               Full season includes the Week 7 Exhibition &mdash; printed catalog, framed artwork, gallery opening.
             </p>

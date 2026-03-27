@@ -72,7 +72,7 @@ export default function Hero() {
           className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-white/15 border border-white/20 px-5 py-2.5 max-w-fit">
           <span className="text-[15px]" role="img" aria-label="bird">&#x1F426;</span>
           <span className="text-[13px] font-semibold text-white">Early bird: &#8377;3,800/week</span>
-          <span className="text-[12px] text-white/70">for the first 25 families</span>
+          <span className="text-[12px] text-white/90">for the first 25 families</span>
         </motion.div>
 
         <motion.div variants={heroCta} initial="hidden" animate="visible"
