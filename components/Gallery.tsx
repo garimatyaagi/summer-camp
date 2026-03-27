@@ -16,12 +16,12 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#8AACC9]">
+    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#FEF5DC]">
       <div className="pointer-events-none">
-        <DoodleHeart className="absolute bottom-32 right-10 w-20 opacity-45 hidden md:block" />
-        <DoodleStar className="absolute top-12 right-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />
-        <DoodleSun className="absolute bottom-16 left-6 w-16 opacity-30 hidden md:block" color="#F0C75E" />
-        <DoodlePaintBlob className="absolute top-20 left-10 w-20 opacity-20 hidden lg:block" color="#3A8C6E" />
+        <DoodleHeart className="absolute bottom-32 right-10 w-20 opacity-35 hidden md:block" color="#2B5797" />
+        <DoodleStar className="absolute top-12 right-8 w-14 opacity-40 hidden md:block" color="#E05A3A" />
+        <DoodleSun className="absolute bottom-16 left-6 w-16 opacity-25 hidden md:block" color="#3A8C6E" />
+        <DoodlePaintBlob className="absolute top-20 left-10 w-20 opacity-20 hidden lg:block" color="#2B5797" />
       </div>
       <div className="mx-auto max-w-[1400px]">
         <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />

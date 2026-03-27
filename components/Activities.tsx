@@ -38,7 +38,7 @@ const weeks = [
 
 export default function Activities() {
   return (
-    <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+    <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-white">
       <div className="pointer-events-none">
         <DoodleStar className="absolute top-16 right-10 w-20 opacity-55 hidden md:block" color="#F0C75E" />
         <DoodlePaintBlob className="absolute bottom-20 left-6 w-32 opacity-35 hidden lg:block" color="#9BB8D7" />

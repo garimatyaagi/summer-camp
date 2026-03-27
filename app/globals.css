@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  /* The Summer Club palette — Sky White (#9BB8D7) base */
+  /* The Summer Club — colorful summer palette */
   --color-cream: #9BB8D7;
-  --color-section-alt: #8AACC9;
+  --color-section-sunny: #FEF5DC;
+  --color-section-sage: #E0F2E9;
+  --color-section-coral: #FDEAE5;
+  --color-section-sky: #D6E5F2;
+  --color-section-white: #FFFFFF;
   --color-card: #FFFFFF;
   --color-navy: #2B5797;
   --color-coral: #E05A3A;
@@ -12,8 +16,8 @@
   --color-sky: #9BB8D7;
   --color-sunny: #F0C75E;
   --color-text: #1A2537;
-  --color-text-secondary: #2B3D52;
-  --color-muted: #3D5570;
+  --color-text-secondary: #3A4D62;
+  --color-muted: #5A6E82;
   --color-sand: #E8EDF3;
   --color-white: #FFFFFF;
   --color-border: #D4DCE6;

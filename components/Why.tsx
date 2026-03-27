@@ -15,16 +15,15 @@ const lines = [
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#8AACC9]">
-      {/* Doodle decorations — prominent */}
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FEF5DC]">
+      {/* Doodle decorations — contrasting on sunshine bg */}
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-10 right-8 w-20 opacity-70 md:w-28 md:right-16" color="#F0C75E" />
-        <DoodleHeart className="absolute bottom-16 right-12 w-16 opacity-55 hidden md:block" />
-        <DoodleCircle className="absolute top-[40%] left-4 w-20 opacity-40 hidden md:block" color="#9BB8D7" />
-        <DoodleZigzag className="absolute bottom-10 left-8 w-32 opacity-45 hidden lg:block" color="#3A8C6E" />
-        {/* New large doodles */}
-        <DoodleStar className="absolute top-[15%] left-[10%] w-10 opacity-50 hidden md:block" color="#E05A3A" />
-        <DoodleCircle className="absolute bottom-[20%] right-[25%] w-24 opacity-20 hidden lg:block" color="#F0C75E" />
+        <DoodleStar className="absolute top-10 right-8 w-20 opacity-50 md:w-28 md:right-16" color="#E05A3A" />
+        <DoodleHeart className="absolute bottom-16 right-12 w-16 opacity-45 hidden md:block" color="#2B5797" />
+        <DoodleCircle className="absolute top-[40%] left-4 w-20 opacity-35 hidden md:block" color="#3A8C6E" />
+        <DoodleZigzag className="absolute bottom-10 left-8 w-32 opacity-35 hidden lg:block" color="#2B5797" />
+        <DoodleStar className="absolute top-[15%] left-[10%] w-10 opacity-40 hidden md:block" color="#3A8C6E" />
+        <DoodleCircle className="absolute bottom-[20%] right-[25%] w-24 opacity-15 hidden lg:block" color="#E05A3A" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px]">

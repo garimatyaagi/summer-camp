@@ -33,7 +33,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
+    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#D6E5F2]">
       <div className="pointer-events-none">
         <DoodleCircle className="absolute top-12 right-10 w-20 opacity-15 hidden md:block" color="#9BB8D7" />
         <DoodleStar className="absolute bottom-16 left-8 w-10 opacity-30 hidden md:block" color="#F0C75E" />

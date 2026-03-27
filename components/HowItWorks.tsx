@@ -12,12 +12,12 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#8AACC9]">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#E0F2E9]">
       <div className="pointer-events-none">
-        <DoodleSun className="absolute top-12 right-10 w-20 opacity-35 hidden md:block" color="#F0C75E" />
+        <DoodleSun className="absolute top-12 right-10 w-20 opacity-45 hidden md:block" color="#F0C75E" />
         <DoodleStar className="absolute bottom-16 left-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />
-        <DoodleSpiral className="absolute top-20 left-6 w-12 opacity-30 hidden lg:block" color="#3A8C6E" />
-        <DoodlePaintBlob className="absolute bottom-12 right-12 w-20 opacity-20 hidden md:block" color="#9BB8D7" />
+        <DoodleSpiral className="absolute top-20 left-6 w-12 opacity-35 hidden lg:block" color="#2B5797" />
+        <DoodlePaintBlob className="absolute bottom-12 right-12 w-20 opacity-25 hidden md:block" color="#E05A3A" />
       </div>
       <div className="mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />

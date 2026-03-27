@@ -6,13 +6,13 @@ import { ColorfulDivider, DoodleStar, DoodleHeart, DoodleSun, DoodleBrush, Doodl
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#8AACC9]">
+    <section id="pricing" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FDEAE5]">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-16 right-12 w-20 opacity-55 hidden md:block" color="#F0C75E" />
-        <DoodleHeart className="absolute bottom-20 left-10 w-16 opacity-45 hidden md:block" />
-        <DoodleSun className="absolute top-10 left-8 w-16 opacity-30 hidden lg:block" color="#F0C75E" />
-        <DoodleBrush className="absolute bottom-16 right-8 w-16 opacity-25 hidden md:block" color="#E05A3A" />
-        <DoodleZigzag className="absolute top-[50%] right-6 w-20 opacity-35 hidden lg:block" color="#9BB8D7" />
+        <DoodleStar className="absolute top-16 right-12 w-20 opacity-45 hidden md:block" color="#2B5797" />
+        <DoodleHeart className="absolute bottom-20 left-10 w-16 opacity-35 hidden md:block" color="#3A8C6E" />
+        <DoodleSun className="absolute top-10 left-8 w-16 opacity-35 hidden lg:block" color="#F0C75E" />
+        <DoodleBrush className="absolute bottom-16 right-8 w-16 opacity-30 hidden md:block" color="#2B5797" />
+        <DoodleZigzag className="absolute top-[50%] right-6 w-20 opacity-30 hidden lg:block" color="#3A8C6E" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />

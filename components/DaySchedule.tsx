@@ -15,7 +15,7 @@ const schedule = [
 
 export default function DaySchedule() {
   return (
-    <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+    <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-white">
       <div className="pointer-events-none">
         <DoodleSun className="absolute top-12 right-10 w-28 opacity-50 hidden md:block" />
         <DoodleStar className="absolute bottom-20 left-8 w-16 opacity-40 hidden md:block" color="#E05A3A" />
