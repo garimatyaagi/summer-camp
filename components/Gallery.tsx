@@ -21,7 +21,7 @@ export default function Gallery() {
         <DoodleHeart className="w-10" />
       </div>
       <div className="mx-auto max-w-[1400px]">
-        <SquigglyLine className="w-24 h-2 mb-12" color="#DDD6CA" />
+        <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
 
         <motion.h2
           variants={sectionFade} initial="hidden" whileInView="visible"

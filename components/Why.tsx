@@ -15,13 +15,13 @@ const lines = [
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FFF9EE]">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#EFF3F8]">
       {/* Doodle decorations */}
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-10 right-8 w-10 opacity-50 md:w-14 md:right-16" color="#F4A940" />
+        <DoodleStar className="absolute top-10 right-8 w-10 opacity-50 md:w-14 md:right-16" color="#F0C75E" />
         <DoodleHeart className="absolute bottom-16 right-12 w-8 opacity-40 hidden md:block" />
-        <DoodleCircle className="absolute top-[40%] left-4 w-10 opacity-25 hidden md:block" color="#4A90D9" />
-        <DoodleZigzag className="absolute bottom-10 left-8 w-16 opacity-30 hidden lg:block" color="#2D6A4F" />
+        <DoodleCircle className="absolute top-[40%] left-4 w-10 opacity-25 hidden md:block" color="#9BB8D7" />
+        <DoodleZigzag className="absolute bottom-10 left-8 w-16 opacity-30 hidden lg:block" color="#3A8C6E" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px]">
@@ -35,7 +35,7 @@ export default function Why() {
           <span className="relative inline-block">
             This one could be different
             <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-              <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="#4A90D9" strokeWidth="3" strokeLinecap="round" fill="none" />
+              <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="#9BB8D7" strokeWidth="3" strokeLinecap="round" fill="none" />
             </svg>
           </span>.
         </motion.h2>

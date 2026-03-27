@@ -5,12 +5,12 @@ import { fadeUpStagger, staggerContainer, sectionFade } from "@/lib/animations";
 import { ColorfulDivider, DoodleSun, DoodleStar } from "./Doodles";
 
 const schedule = [
-  { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F4A940" },
-  { time: "9:15", title: "Make", description: "The big hands-on session. Clay, paint, circuits, cooking \u2014 whatever the week\u2019s theme calls for.", color: "#E94560" },
-  { time: "10:15", title: "Snack break", description: "Fruit, juice, and ten minutes to just be a kid.", color: "#2D6A4F" },
-  { time: "10:30", title: "Move", description: "Obstacle courses, yoga, relay races, dance. Bodies need to move before brains can focus.", color: "#4A90D9" },
-  { time: "11:30", title: "Express", description: "Show-and-tell, storytelling, improv, mini-presentations. The quietest kid often surprises everyone here.", color: "#F4A940" },
-  { time: "12:15", title: "Wind-down + pick-up", description: "Reflection circle. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about their day.", color: "#E94560" },
+  { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F0C75E" },
+  { time: "9:15", title: "Make", description: "The big hands-on session. Clay, paint, circuits, cooking \u2014 whatever the week\u2019s theme calls for.", color: "#E05A3A" },
+  { time: "10:15", title: "Snack break", description: "Fruit, juice, and ten minutes to just be a kid.", color: "#3A8C6E" },
+  { time: "10:30", title: "Move", description: "Obstacle courses, yoga, relay races, dance. Bodies need to move before brains can focus.", color: "#9BB8D7" },
+  { time: "11:30", title: "Express", description: "Show-and-tell, storytelling, improv, mini-presentations. The quietest kid often surprises everyone here.", color: "#F0C75E" },
+  { time: "12:15", title: "Wind-down + pick-up", description: "Reflection circle. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about their day.", color: "#E05A3A" },
 ];
 
 export default function DaySchedule() {
@@ -18,7 +18,7 @@ export default function DaySchedule() {
     <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
       <div className="pointer-events-none">
         <DoodleSun className="absolute top-12 right-10 w-14 opacity-35 hidden md:block" />
-        <DoodleStar className="absolute bottom-20 left-8 w-8 opacity-25 hidden md:block" color="#E94560" />
+        <DoodleStar className="absolute bottom-20 left-8 w-8 opacity-25 hidden md:block" color="#E05A3A" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />
@@ -30,7 +30,7 @@ export default function DaySchedule() {
           <span className="relative inline-block">
             camp
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-              <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F4A940" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F0C75E" strokeWidth="3.5" strokeLinecap="round" fill="none" />
             </svg>
           </span>.
         </motion.h2>

@@ -1,21 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #FFFCF5;
-  --color-navy: #1A1A2E;
-  --color-coral: #E94560;
-  --color-coral-dark: #D13A52;
-  --color-sage: #2D6A4F;
-  --color-sky: #4A90D9;
-  --color-sunny: #F4A940;
-  --color-text: #2E2E2E;
-  --color-text-secondary: #5A5A5A;
-  --color-muted: #8A8279;
-  --color-sand: #EDE6DA;
+  /* The Summer Club palette */
+  --color-cream: #F7F9FC;
+  --color-navy: #2B5797;
+  --color-coral: #E05A3A;
+  --color-coral-dark: #C94B2E;
+  --color-sage: #3A8C6E;
+  --color-sky: #9BB8D7;
+  --color-sunny: #F0C75E;
+  --color-text: #1E2D3D;
+  --color-text-secondary: #4A5B6E;
+  --color-muted: #7A8B9C;
+  --color-sand: #E8EDF3;
   --color-white: #FFFFFF;
-  --color-border: #DDD6CA;
+  --color-border: #D4DCE6;
 
-  --font-display: "DM Serif Display", serif;
+  --font-display: "Nunito", sans-serif;
   --font-body: "DM Sans", sans-serif;
 }
 
@@ -35,7 +36,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(233, 69, 96, 0.18);
+  background-color: rgba(224, 90, 58, 0.18);
   color: var(--color-navy);
 }
 
@@ -73,11 +74,11 @@ body::before {
 .form-input {
   width: 100%;
   padding: 11px 14px;
-  border: 1.5px solid #E2D8CE;
+  border: 1.5px solid #D4DCE6;
   border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.92rem;
-  color: #2C2C3E;
+  color: #1E2D3D;
   background: var(--color-cream);
   transition: border-color 0.18s, box-shadow 0.18s;
   outline: none;
@@ -87,7 +88,7 @@ body::before {
 }
 .form-input:focus {
   border-color: var(--color-coral);
-  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+  box-shadow: 0 0 0 3px rgba(224, 90, 58, 0.1);
   background: #fff;
 }
 .form-select {
@@ -104,20 +105,20 @@ body::before {
   cursor: pointer;
   padding: 10px 14px;
   border-radius: 10px;
-  border: 1.5px solid #E2D8CE;
+  border: 1.5px solid #D4DCE6;
   background: var(--color-cream);
   transition: border-color 0.15s, background 0.15s;
   font-size: 0.88rem;
-  color: #2C2C3E;
+  color: #1E2D3D;
 }
 .radio-opt.selected {
   border-color: var(--color-coral);
-  background: rgba(233, 69, 96, 0.05);
-  color: #1A1A2E;
+  background: rgba(224, 90, 58, 0.05);
+  color: #2B5797;
   font-weight: 500;
 }
 .plan-opt {
-  border: 2px solid #E2D8CE;
+  border: 2px solid #D4DCE6;
   border-radius: 12px;
   padding: 16px 14px;
   cursor: pointer;
@@ -132,16 +133,16 @@ body::before {
 }
 .plan-opt.selected {
   border-color: var(--color-coral);
-  background: rgba(233, 69, 96, 0.05);
+  background: rgba(224, 90, 58, 0.05);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.15);
+  box-shadow: 0 4px 12px rgba(224, 90, 58, 0.15);
 }
 .plan-badge {
   position: absolute;
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #1A1A2E;
+  background: #2B5797;
   color: var(--color-cream);
   font-size: 0.65rem;
   font-weight: 700;
@@ -154,7 +155,7 @@ body::before {
 .week-opt {
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1.5px solid #E2D8CE;
+  border: 1.5px solid #D4DCE6;
   background: var(--color-cream);
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
@@ -164,7 +165,7 @@ body::before {
 }
 .week-opt.selected {
   border-color: var(--color-coral);
-  background: rgba(233, 69, 96, 0.05);
+  background: rgba(224, 90, 58, 0.05);
 }
 
 /* FAQ accordion */

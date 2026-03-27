@@ -6,9 +6,9 @@ import { ColorfulDivider, DoodleStar, DoodleHeart } from "./Doodles";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FFF9EE]">
+    <section id="pricing" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#EFF3F8]">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-16 right-12 w-10 opacity-40 hidden md:block" color="#F4A940" />
+        <DoodleStar className="absolute top-16 right-12 w-10 opacity-40 hidden md:block" color="#F0C75E" />
         <DoodleHeart className="absolute bottom-20 left-10 w-8 opacity-30 hidden md:block" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
@@ -21,7 +21,7 @@ export default function Pricing() {
               <span className="relative inline-block">
                 pricing
                 <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-                  <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#2D6A4F" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+                  <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#3A8C6E" strokeWidth="3.5" strokeLinecap="round" fill="none" />
                 </svg>
               </span>.
             </h2>
@@ -31,7 +31,7 @@ export default function Pricing() {
           </motion.div>
 
           <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
-            <div className="rounded-2xl border-2 border-coral/15 bg-white p-7 md:p-9 shadow-[0_4px_24px_rgba(233,69,96,0.06)]">
+            <div className="rounded-2xl border-2 border-coral/15 bg-white p-7 md:p-9 shadow-[0_4px_24px_rgba(224,90,58,0.06)]">
               {/* Early bird badge */}
               <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-navy px-4 py-1.5">
                 <span className="text-[14px]" role="img" aria-label="bird">&#x1F426;</span>
@@ -71,7 +71,7 @@ export default function Pricing() {
               <div className="my-6 h-px bg-border" />
               <p className="text-[14px] text-text-secondary">Sibling discount: 15% off child #2+</p>
               <a href="/register"
-                className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral py-4 text-[14px] font-bold text-white shadow-[0_4px_16px_rgba(233,69,96,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.01]">
+                className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral py-4 text-[14px] font-bold text-white shadow-[0_4px_16px_rgba(224,90,58,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.01]">
                 Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
               </a>
             </div>

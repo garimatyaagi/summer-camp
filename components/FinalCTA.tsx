@@ -10,14 +10,14 @@ export default function FinalCTA() {
       {/* Heavy doodle decorations */}
       <div className="pointer-events-none">
         <DoodleSun className="absolute top-8 right-[8%] w-20 md:w-28 opacity-60" />
-        <DoodleStar className="absolute top-[15%] right-[25%] w-10 opacity-50" color="#E94560" />
-        <DoodleStar className="absolute top-[60%] right-[5%] w-8 opacity-40" color="#2D6A4F" />
+        <DoodleStar className="absolute top-[15%] right-[25%] w-10 opacity-50" color="#E05A3A" />
+        <DoodleStar className="absolute top-[60%] right-[5%] w-8 opacity-40" color="#3A8C6E" />
         <DoodleHeart className="absolute bottom-[20%] right-[15%] w-12 opacity-45" />
-        <DoodleCircle className="absolute top-[40%] right-[10%] w-14 opacity-30 hidden md:block" color="#F4A940" />
-        <DoodlePaintBlob className="absolute bottom-[10%] right-[30%] w-20 opacity-20 hidden lg:block" color="#4A90D9" />
+        <DoodleCircle className="absolute top-[40%] right-[10%] w-14 opacity-30 hidden md:block" color="#F0C75E" />
+        <DoodlePaintBlob className="absolute bottom-[10%] right-[30%] w-20 opacity-20 hidden lg:block" color="#9BB8D7" />
         <DoodleSpiral className="absolute bottom-[30%] left-[3%] w-12 opacity-25 hidden md:block" />
-        <DoodleZigzag className="absolute top-[70%] left-[8%] w-16 opacity-25 hidden lg:block" color="#F4A940" />
-        <DoodleStar className="absolute bottom-[15%] left-[12%] w-6 opacity-35 hidden md:block" color="#4A90D9" />
+        <DoodleZigzag className="absolute top-[70%] left-[8%] w-16 opacity-25 hidden lg:block" color="#F0C75E" />
+        <DoodleStar className="absolute bottom-[15%] left-[12%] w-6 opacity-35 hidden md:block" color="#9BB8D7" />
       </div>
 
       <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
@@ -30,8 +30,8 @@ export default function FinalCTA() {
           <span className="relative inline-block">
             make
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-4 md:h-5" preserveAspectRatio="none">
-              <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E94560" strokeWidth="4" strokeLinecap="round" fill="none" />
-              <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F4A940" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
+              <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="4" strokeLinecap="round" fill="none" />
+              <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
             </svg>
           </span>{" "}
           something.
@@ -44,7 +44,7 @@ export default function FinalCTA() {
 
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a href="/register"
-            className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-bold text-white shadow-[0_4px_20px_rgba(233,69,96,0.3)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03]">
+            className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-bold text-white shadow-[0_4px_20px_rgba(224,90,58,0.3)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03]">
             Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
           <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"

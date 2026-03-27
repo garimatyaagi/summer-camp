@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, DM_Sans } from "next/font/google";
+import { Nunito, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const dmSerifDisplay = DM_Serif_Display({
-  weight: "400",
+const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
+  weight: ["400", "600", "700", "800", "900"],
 });
 
 const dmSans = DM_Sans({
@@ -16,11 +16,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tinkerhood — Screen-Free Summer Camp for Kids | Bangalore",
+  title: "The Summer Club — Screen-Free Summer Camp for Kids | Bangalore",
   description:
     "A hands-on summer camp for kids aged 5–8 in HSR Layout, Bangalore. Weekly themes, daily take-homes, no screens. April–May 2026.",
   openGraph: {
-    title: "Tinkerhood — Screen-Free Summer Camp for Kids",
+    title: "The Summer Club — Screen-Free Summer Camp for Kids",
     description:
       "Clay, paint, robots, and zero screens. Summer camp in HSR Layout, Bangalore.",
     images: ["/og-image.jpg"],
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSerifDisplay.variable} ${dmSans.variable}`}
+      className={`${nunito.variable} ${dmSans.variable}`}
     >
       <body className="font-body antialiased">{children}</body>
     </html>

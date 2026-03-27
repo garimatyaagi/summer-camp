@@ -35,7 +35,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="px-6 py-[80px] md:py-[140px] lg:px-12">
       <div className="mx-auto max-w-[1400px]">
-        <SquigglyLine className="w-24 h-2 mb-12" color="#DDD6CA" />
+        <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
 
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
           <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"

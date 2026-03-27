@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className="relative px-6 py-14 lg:px-12 lg:py-16 bg-navy">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-8 right-12 w-8 opacity-15" color="#F4A940" />
-        <DoodleHeart className="absolute bottom-12 left-10 w-6 opacity-10" color="#E94560" />
+        <DoodleStar className="absolute top-8 right-12 w-8 opacity-15" color="#F0C75E" />
+        <DoodleHeart className="absolute bottom-12 left-10 w-6 opacity-10" color="#E05A3A" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="grid gap-10 md:grid-cols-[1.5fr_auto_auto] md:gap-16">
           <div>
-            <p className="font-display text-[24px] text-cream">Tinkerhood</p>
+            <p className="font-display text-[24px] text-cream">The Summer Club</p>
             <p className="mt-3 text-[15px] leading-[1.8] text-cream/50 max-w-[300px]">
               A screen-free summer camp where kids build things with their hands. HSR Layout, Bangalore.
             </p>
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col gap-3 border-t border-cream/10 pt-7 md:flex-row md:items-center md:justify-between">
-          <p className="text-[13px] text-cream/30">&copy; 2026 Tinkerhood. Made with clay, paint, and zero screens.</p>
+          <p className="text-[13px] text-cream/30">&copy; 2026 The Summer Club. Made with clay, paint, and zero screens.</p>
           <p className="text-[13px] text-cream/30">HSR Layout, Bangalore</p>
         </div>
       </div>

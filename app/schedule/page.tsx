@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Schedule — Tinkerhood Summer Camp",
-  description: "Day-by-day schedule for Tinkerhood summer camp. 7 weeks of making, moving, and expressing. HSR Layout, Bangalore.",
+  title: "Schedule — The Summer Club Summer Camp",
+  description: "Day-by-day schedule for The Summer Club summer camp. 7 weeks of making, moving, and expressing. HSR Layout, Bangalore.",
 };
 
 const timeline = [
   { time: "9:00", emoji: "\uD83C\uDF05", label: "Welcome Circle", desc: "A name game, a question, or a short song. Everyone gets seen before the day begins.", dur: "15 min", color: "#F5A623" },
-  { time: "9:15", emoji: "\uD83C\uDFA8", label: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking — whatever the week's theme calls for. This is the heart of the day.", dur: "60 min", color: "#E94560" },
+  { time: "9:15", emoji: "\uD83C\uDFA8", label: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking — whatever the week's theme calls for. This is the heart of the day.", dur: "60 min", color: "#E05A3A" },
   { time: "10:15", emoji: "\uD83C\uDF4A", label: "Snack Break", desc: "Fruit and juice. Ten minutes to breathe, chat, and just be a kid.", dur: "15 min", color: "#4AAD8C" },
   { time: "10:30", emoji: "\u26A1", label: "Move", desc: "Obstacle courses, relay races, yoga, freeze dance, or themed outdoor games. Bodies need to move before brains can focus.", dur: "60 min", color: "#4A8FCC" },
   { time: "11:30", emoji: "\uD83C\uDFA4", label: "Express", desc: "Show-and-tell, storytelling, improv games, mini-presentations. The quietest child often surprises everyone here.", dur: "40 min", color: "#9B6DB5" },
@@ -85,7 +85,7 @@ const weeks = [
   {
     num: 7, theme: "Grand Finale", emoji: "\u2B50", dates: "May 26–30", color: "#3A7CBD",
     days: [
-      { day: "MON", date: "May 26", make: "Start memory scrapbook — one page per week", move: "Best-of relay: favourite activities from each week", express: "My favourite day at Tinkerhood was…" },
+      { day: "MON", date: "May 26", make: "Start memory scrapbook — one page per week", move: "Best-of relay: favourite activities from each week", express: "My favourite day at The Summer Club was…" },
       { day: "TUE", date: "May 27", make: "Collaborative camp mural", move: "Camp Olympics: multi-sport mini tournament", express: "Write a message on a friend's scrapbook" },
       { day: "WED", date: "May 28", make: "Decorate camp t-shirt with fabric markers", move: "T-shirt parade + group photo shoot", express: "Talent showcase rehearsal" },
       { day: "THU", date: "May 29", make: "Finish scrapbook + assemble yearbook pages", move: "Final Camp Olympics — medals ceremony", express: "Full talent showcase run-through" },
@@ -99,14 +99,14 @@ export default function SchedulePage() {
   return (
     <div className="min-h-screen bg-cream">
       <header className="bg-navy px-6 py-5 flex items-center justify-between">
-        <Link href="/" className="font-display text-[1.35rem] text-cream">Tinkerhood</Link>
+        <Link href="/" className="font-display text-[1.35rem] text-cream">The Summer Club</Link>
         <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Programme &middot; April–May 2026</span>
       </header>
 
       <div className="max-w-[900px] mx-auto px-6 py-12 pb-20">
         {/* Daily Schedule Timeline */}
         <div className="mb-6">
-          <h2 className="font-display text-[1.7rem] text-navy leading-[1.15]">A morning at Tinkerhood</h2>
+          <h2 className="font-display text-[1.7rem] text-navy leading-[1.15]">A morning at The Summer Club</h2>
           <p className="mt-1.5 text-muted text-[0.88rem]">Mon–Fri &middot; 9:00 AM – 12:30 PM &middot; Every day follows this rhythm, with content changing by week theme.</p>
         </div>
 
@@ -120,18 +120,18 @@ export default function SchedulePage() {
               <div className="flex flex-col items-center">
                 <span className="w-[38px] h-[38px] rounded-full flex items-center justify-center text-[1.1rem] shadow-[0_2px_8px_rgba(0,0,0,0.12)] z-[1] flex-shrink-0"
                   style={{ background: item.color }}>{item.emoji}</span>
-                {i < timeline.length - 1 && <span className="flex-1 w-0.5 bg-[#E2D8CE] mt-1" />}
+                {i < timeline.length - 1 && <span className="flex-1 w-0.5 bg-[#D4DCE6] mt-1" />}
               </div>
               <div className="pt-1 pb-8">
                 <span className="font-bold text-[1rem] text-navy block mb-1">{item.label}</span>
                 <span className="text-[0.85rem] text-[#5a5a72] leading-[1.55] block">{item.desc}</span>
-                <span className="inline-block text-[0.7rem] font-semibold tracking-[0.06em] uppercase px-2 py-0.5 rounded-full bg-[#F5EDE0] text-muted mt-1.5">{item.dur}</span>
+                <span className="inline-block text-[0.7rem] font-semibold tracking-[0.06em] uppercase px-2 py-0.5 rounded-full bg-[#E8EDF3] text-muted mt-1.5">{item.dur}</span>
               </div>
             </div>
           ))}
         </div>
 
-        <hr className="border-[#E2D8CE] my-12" />
+        <hr className="border-[#D4DCE6] my-12" />
 
         {/* Weekly Calendar */}
         <div className="mb-7">
@@ -141,7 +141,7 @@ export default function SchedulePage() {
 
         <div className="flex flex-col gap-4">
           {weeks.map((week) => (
-            <div key={week.num} className="rounded-2xl overflow-hidden border border-[#E2D8CE] bg-white shadow-[0_2px_8px_rgba(26,26,46,0.05)]">
+            <div key={week.num} className="rounded-2xl overflow-hidden border border-[#D4DCE6] bg-white shadow-[0_2px_8px_rgba(43,87,151,0.05)]">
               {/* Header */}
               <div className="px-5 py-4 flex items-center justify-between flex-wrap gap-2" style={{ background: week.color }}>
                 <div className="flex items-center gap-3">
@@ -157,37 +157,37 @@ export default function SchedulePage() {
               </div>
 
               {/* Column headers */}
-              <div className="hidden sm:grid grid-cols-[90px_1fr_1fr_1fr] bg-[#F5EDE0] border-t border-[#E2D8CE]">
+              <div className="hidden sm:grid grid-cols-[90px_1fr_1fr_1fr] bg-[#E8EDF3] border-t border-[#D4DCE6]">
                 {["Day", "Make", "Move", "Express"].map((h) => (
-                  <span key={h} className="px-3.5 py-1.5 text-[0.65rem] font-bold tracking-[0.08em] uppercase text-muted border-r border-[#E2D8CE] last:border-r-0">{h}</span>
+                  <span key={h} className="px-3.5 py-1.5 text-[0.65rem] font-bold tracking-[0.08em] uppercase text-muted border-r border-[#D4DCE6] last:border-r-0">{h}</span>
                 ))}
               </div>
 
               {/* Day rows */}
               {week.days.map((d) => (
-                <div key={d.day} className={`grid grid-cols-1 sm:grid-cols-[90px_1fr_1fr_1fr] border-t border-[#E2D8CE] ${d.friday ? "bg-coral/[0.02]" : "hover:bg-cream"}`}>
-                  <div className="px-3.5 py-3 border-r border-[#E2D8CE] flex sm:flex-col items-center sm:items-start gap-2 sm:gap-0.5">
+                <div key={d.day} className={`grid grid-cols-1 sm:grid-cols-[90px_1fr_1fr_1fr] border-t border-[#D4DCE6] ${d.friday ? "bg-coral/[0.02]" : "hover:bg-cream"}`}>
+                  <div className="px-3.5 py-3 border-r border-[#D4DCE6] flex sm:flex-col items-center sm:items-start gap-2 sm:gap-0.5">
                     <span className={`text-[0.78rem] font-bold tracking-[0.03em] ${d.friday ? "text-coral" : "text-navy"}`}>{d.day}</span>
                     <span className="text-[0.7rem] text-muted">{d.date}</span>
                     {d.friday && <span className="text-[0.62rem] font-bold tracking-[0.06em] uppercase bg-coral/10 text-coral px-1.5 py-0.5 rounded">Showcase</span>}
                   </div>
-                  <div className="px-3.5 py-3 border-r border-[#E2D8CE]">
+                  <div className="px-3.5 py-3 border-r border-[#D4DCE6]">
                     <span className="text-[0.65rem] font-bold tracking-[0.08em] uppercase text-coral block sm:hidden mb-0.5">Make</span>
-                    <span className="text-[0.8rem] text-[#2C2C3E] leading-[1.35]">{d.make}</span>
+                    <span className="text-[0.8rem] text-[#1E2D3D] leading-[1.35]">{d.make}</span>
                   </div>
-                  <div className="px-3.5 py-3 border-r border-[#E2D8CE]">
+                  <div className="px-3.5 py-3 border-r border-[#D4DCE6]">
                     <span className="text-[0.65rem] font-bold tracking-[0.08em] uppercase text-[#4A8FCC] block sm:hidden mb-0.5">Move</span>
-                    <span className="text-[0.8rem] text-[#2C2C3E] leading-[1.35]">{d.move}</span>
+                    <span className="text-[0.8rem] text-[#1E2D3D] leading-[1.35]">{d.move}</span>
                   </div>
                   <div className="px-3.5 py-3">
                     <span className="text-[0.65rem] font-bold tracking-[0.08em] uppercase text-[#4AAD8C] block sm:hidden mb-0.5">Express</span>
-                    <span className="text-[0.8rem] text-[#2C2C3E] leading-[1.35]">{d.friday ? `\uD83C\uDF89 ${d.express}` : d.express}</span>
+                    <span className="text-[0.8rem] text-[#1E2D3D] leading-[1.35]">{d.friday ? `\uD83C\uDF89 ${d.express}` : d.express}</span>
                   </div>
                 </div>
               ))}
 
               {/* Take-home footer */}
-              <div className="px-5 py-2.5 bg-[#F5EDE0] border-t border-[#E2D8CE] text-[0.78rem] text-[#2C2C3E] flex items-center gap-2">
+              <div className="px-5 py-2.5 bg-[#E8EDF3] border-t border-[#D4DCE6] text-[0.78rem] text-[#1E2D3D] flex items-center gap-2">
                 <span>\uD83C\uDF92</span>
                 <span><strong className="text-navy font-semibold">Take home every day:</strong> {week.takeHome}</span>
               </div>
@@ -198,11 +198,11 @@ export default function SchedulePage() {
         {/* CTA */}
         <div className="mt-12 text-center">
           <Link href="/register"
-            className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-full font-semibold text-[0.95rem] shadow-[0_4px_16px_rgba(233,69,96,0.25)] hover:bg-[#D13A52] hover:scale-[1.02] transition-all duration-300">
+            className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-full font-semibold text-[0.95rem] shadow-[0_4px_16px_rgba(224,90,58,0.25)] hover:bg-[#C94B2E] hover:scale-[1.02] transition-all duration-300">
             Reserve a spot &rarr;
           </Link>
           <p className="mt-3 text-[0.82rem] text-muted">
-            <Link href="/" className="text-coral font-medium hover:underline underline-offset-4">&larr; Back to Tinkerhood</Link>
+            <Link href="/" className="text-coral font-medium hover:underline underline-offset-4">&larr; Back to The Summer Club</Link>
           </p>
         </div>
       </div>

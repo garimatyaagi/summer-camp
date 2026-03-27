@@ -5,14 +5,14 @@ import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 import { ColorfulDivider, DoodleArrow } from "./Doodles";
 
 const steps = [
-  { number: "01", title: "Pick your weeks", description: "Enrol for 1 week, 4 weeks, or the full 7-week season. Start any Monday.", color: "#E94560", bg: "#FFF0F3" },
-  { number: "02", title: "Drop off at 9, pick up at 12:30", description: "HSR Layout. Gated campus. We handle everything in between. You get your morning back.", color: "#4A90D9", bg: "#EEF4FF" },
-  { number: "03", title: "They come home with something they made", description: "Every single day. Clay, paint, robots, recipe books. Fridge-door worthy, every time.", color: "#2D6A4F", bg: "#EDF7F0" },
+  { number: "01", title: "Pick your weeks", description: "Enrol for 1 week, 4 weeks, or the full 7-week season. Start any Monday.", color: "#E05A3A", bg: "#FDEEEA" },
+  { number: "02", title: "Drop off at 9, pick up at 12:30", description: "HSR Layout. Gated campus. We handle everything in between. You get your morning back.", color: "#9BB8D7", bg: "#EBF0F7" },
+  { number: "03", title: "They come home with something they made", description: "Every single day. Clay, paint, robots, recipe books. Fridge-door worthy, every time.", color: "#3A8C6E", bg: "#EBF5F0" },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FFF9EE]">
+    <section className="px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#EFF3F8]">
       <div className="mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />
 

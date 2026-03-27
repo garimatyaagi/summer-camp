@@ -6,31 +6,31 @@ import { fadeUp, sectionFade } from "@/lib/animations";
 import { ColorfulDivider, DoodleStar, DoodlePaintBlob, DoodleHeart } from "./Doodles";
 
 const weeks = [
-  { week: 1, theme: "Little Artists", emoji: "\uD83C\uDFA8", color: "#E94560", bg: "#FFF0F3",
+  { week: 1, theme: "Little Artists", emoji: "\uD83C\uDFA8", color: "#E05A3A", bg: "#FDEEEA",
     description: "Clay animals, nature collages, canvas painting, tie-dye. Your child comes home with an art portfolio and paint on their clothes.",
     takeHome: "Clay animal + art portfolio",
     image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600" },
-  { week: 2, theme: "Tiny Scientists", emoji: "\uD83E\uDDEA", color: "#4A90D9", bg: "#EEF4FF",
+  { week: 2, theme: "Tiny Scientists", emoji: "\uD83E\uDDEA", color: "#9BB8D7", bg: "#EBF0F7",
     description: "Volcanoes, magnets, seed balls, states-of-matter relay races. Science through their hands, not a textbook.",
     takeHome: "Seed ball kit + experiment journal",
     image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600" },
-  { week: 3, theme: "Mini Chefs", emoji: "\uD83C\uDF73", color: "#F4A940", bg: "#FFF8ED",
+  { week: 3, theme: "Mini Chefs", emoji: "\uD83C\uDF73", color: "#F0C75E", bg: "#FDF6E8",
     description: "No-fire cooking: energy balls, fruit art, lemonade stands. They\u2019ll design a menu, run a restaurant, and feed you their creation.",
     takeHome: "Recipe booklet + chef hat",
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600" },
-  { week: 4, theme: "Jungle Explorers", emoji: "\uD83C\uDF3F", color: "#2D6A4F", bg: "#EDF7F0",
+  { week: 4, theme: "Jungle Explorers", emoji: "\uD83C\uDF3F", color: "#3A8C6E", bg: "#EBF5F0",
     description: "Bug hotels, leaf printing, nature journals, outdoor scavenger hunts. The backyard becomes a wilderness.",
     takeHome: "Nature journal + bug hotel",
     image: "https://images.unsplash.com/photo-1500995617113-cf789362a3e1?w=600" },
-  { week: 5, theme: "Robot Friends", emoji: "\uD83E\uDD16", color: "#4A90D9", bg: "#EEF4FF",
+  { week: 5, theme: "Robot Friends", emoji: "\uD83E\uDD16", color: "#9BB8D7", bg: "#EBF0F7",
     description: "Cardboard robots, \u201Cprogram your friend\u201D coding games, logic puzzles. AI and coding \u2014 without a single screen.",
     takeHome: "Cardboard robot + coding card set",
     image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600" },
-  { week: 6, theme: "Market Day", emoji: "\uD83D\uDCB0", color: "#F4A940", bg: "#FFF8ED",
+  { week: 6, theme: "Market Day", emoji: "\uD83D\uDCB0", color: "#F0C75E", bg: "#FDF6E8",
     description: "Kids make products (tie-dye bags, painted pots, bookmarks), then sell them to parents in a Friday market.",
     takeHome: "Their products + play money earned",
     image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600" },
-  { week: 7, theme: "Grand Finale", emoji: "\u2B50", color: "#E94560", bg: "#FFF0F3",
+  { week: 7, theme: "Grand Finale", emoji: "\u2B50", color: "#E05A3A", bg: "#FDEEEA",
     description: "Memory scrapbook, camp mural, Camp Olympics, talent showcase. The best week \u2014 because now they know each other.",
     takeHome: "Scrapbook + certificate + camp t-shirt",
     image: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600" },
@@ -40,8 +40,8 @@ export default function Activities() {
   return (
     <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-16 right-10 w-10 opacity-40 hidden md:block" color="#F4A940" />
-        <DoodlePaintBlob className="absolute bottom-20 left-6 w-16 opacity-20 hidden lg:block" color="#4A90D9" />
+        <DoodleStar className="absolute top-16 right-10 w-10 opacity-40 hidden md:block" color="#F0C75E" />
+        <DoodlePaintBlob className="absolute bottom-20 left-6 w-16 opacity-20 hidden lg:block" color="#9BB8D7" />
         <DoodleHeart className="absolute top-[50%] right-6 w-8 opacity-30 hidden md:block" />
       </div>
 
@@ -56,7 +56,7 @@ export default function Activities() {
             <span className="relative inline-block">
               Seven worlds
               <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-                <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F4A940" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+                <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F0C75E" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               </svg>
             </span>.
           </h2>
