@@ -187,3 +187,58 @@ body::before {
   overflow: hidden;
   z-index: 0;
 }
+
+/* Doodle animations — gentle, continuous, never distracting */
+@keyframes doodle-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+@keyframes doodle-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.06); opacity: 0.85; }
+}
+@keyframes doodle-spin {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(8deg); }
+}
+@keyframes doodle-spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.doodle-float {
+  animation: doodle-float 6s ease-in-out infinite;
+}
+.doodle-pulse {
+  animation: doodle-pulse 5s ease-in-out infinite;
+}
+.doodle-spin {
+  animation: doodle-spin 7s ease-in-out infinite;
+}
+.doodle-spin-slow {
+  animation: doodle-spin-slow 30s linear infinite;
+}
+
+/* Stagger the animations so they don't all sync */
+.pointer-events-none > :nth-child(2) .doodle-float,
+.pointer-events-none > :nth-child(2) .doodle-pulse,
+.pointer-events-none > :nth-child(2) .doodle-spin { animation-delay: -1.5s; }
+.pointer-events-none > :nth-child(3) .doodle-float,
+.pointer-events-none > :nth-child(3) .doodle-pulse,
+.pointer-events-none > :nth-child(3) .doodle-spin { animation-delay: -3s; }
+.pointer-events-none > :nth-child(4) .doodle-float,
+.pointer-events-none > :nth-child(4) .doodle-pulse,
+.pointer-events-none > :nth-child(4) .doodle-spin { animation-delay: -4.5s; }
+.pointer-events-none > :nth-child(5) .doodle-float,
+.pointer-events-none > :nth-child(5) .doodle-pulse,
+.pointer-events-none > :nth-child(5) .doodle-spin { animation-delay: -2s; }
+.pointer-events-none > :nth-child(6) .doodle-float,
+.pointer-events-none > :nth-child(6) .doodle-pulse,
+.pointer-events-none > :nth-child(6) .doodle-spin { animation-delay: -5s; }
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .doodle-float, .doodle-pulse, .doodle-spin, .doodle-spin-slow {
+    animation: none;
+  }
+}
