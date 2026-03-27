@@ -37,21 +37,24 @@ export default function FinalCTA() {
           something.
         </h2>
 
-        <p className="mt-7 text-[16px] leading-[1.85] text-text-secondary md:text-[18px] max-w-[420px]">
-          Camp runs April 14 &ndash; May 30, 2026.<br />
-          HSR Layout, Bangalore. Ages 5&ndash;8.
+        <p className="mt-7 text-[16px] leading-[1.85] text-text-secondary md:text-[18px] max-w-[460px]">
+          Camp runs April 14 &ndash; May 30, 2026. HSR Layout, Bangalore. Ages 5&ndash;8.
+          Early bird pricing for the first 25 families.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center gap-4">
-          <a href="https://forms.google.com/REPLACE_ME" target="_blank" rel="noopener noreferrer"
+          <a href="/register"
             className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-bold text-white shadow-[0_4px_20px_rgba(233,69,96,0.3)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03]">
             Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
-          <a href="https://wa.me/91XXXXXXXXXX"
-            className="text-[15px] font-semibold text-coral hover:underline underline-offset-4">
-            WhatsApp us
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[15px] font-semibold text-coral hover:underline underline-offset-4">
+            <span>&#x1F4AC;</span> WhatsApp us
           </a>
         </div>
+        <p className="mt-4 text-[13px] text-muted">
+          Questions? Call or WhatsApp: +91 98765 43210
+        </p>
       </motion.div>
     </section>
   );

@@ -69,6 +69,104 @@ body::before {
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* Registration form styles */
+.form-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #E2D8CE;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: #2C2C3E;
+  background: var(--color-cream);
+  transition: border-color 0.18s, box-shadow 0.18s;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  line-height: 1.5;
+}
+.form-input:focus {
+  border-color: var(--color-coral);
+  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+  background: #fff;
+}
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a7a96' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  cursor: pointer;
+}
+.radio-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #E2D8CE;
+  background: var(--color-cream);
+  transition: border-color 0.15s, background 0.15s;
+  font-size: 0.88rem;
+  color: #2C2C3E;
+}
+.radio-opt.selected {
+  border-color: var(--color-coral);
+  background: rgba(233, 69, 96, 0.05);
+  color: #1A1A2E;
+  font-weight: 500;
+}
+.plan-opt {
+  border: 2px solid #E2D8CE;
+  border-radius: 12px;
+  padding: 16px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+  background: var(--color-cream);
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.plan-opt.selected {
+  border-color: var(--color-coral);
+  background: rgba(233, 69, 96, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.15);
+}
+.plan-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1A1A2E;
+  color: var(--color-cream);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.week-opt {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #E2D8CE;
+  background: var(--color-cream);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.week-opt.selected {
+  border-color: var(--color-coral);
+  background: rgba(233, 69, 96, 0.05);
+}
+
 /* FAQ accordion */
 .faq-answer {
   display: grid;

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Programme", href: "#activities" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Schedule", href: "#schedule" },
+  { label: "Schedule", href: "/schedule" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -40,8 +40,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="https://forms.google.com/REPLACE_ME"
-            target="_blank" rel="noopener noreferrer"
+            href="/register"
             className="group flex items-center gap-2 rounded-full bg-coral px-6 py-2.5 text-[13px] font-semibold text-white transition-all duration-300 hover:bg-coral-dark hover:scale-[1.02]"
           >
             Reserve a spot
@@ -79,7 +78,7 @@ export default function Nav() {
                 {link.label}
               </motion.a>
             ))}
-            <motion.a href="https://forms.google.com/REPLACE_ME" target="_blank" rel="noopener noreferrer"
+            <motion.a href="/register"
               onClick={() => setMobileOpen(false)}
               initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.35 }}

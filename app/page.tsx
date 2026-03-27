@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import TrustStrip from "@/components/TrustStrip";
 import Why from "@/components/Why";
 import Activities from "@/components/Activities";
 import HowItWorks from "@/components/HowItWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <TrustStrip />
         <Why />
         <Activities />
         <HowItWorks />

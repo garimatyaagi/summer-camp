@@ -86,9 +86,17 @@ export default function Hero() {
           Seven weeks of clay, paint, robots, cooking, and coming home buzzing.
         </motion.p>
 
+        {/* Early bird banner */}
+        <motion.div variants={heroCta} initial="hidden" animate="visible"
+          className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-navy/[0.06] border border-navy/10 px-5 py-2.5 max-w-fit">
+          <span className="text-[15px]" role="img" aria-label="bird">&#x1F426;</span>
+          <span className="text-[13px] font-semibold text-navy">Early bird: &#8377;3,800/week</span>
+          <span className="text-[12px] text-text-secondary">for the first 25 families</span>
+        </motion.div>
+
         <motion.div variants={heroCta} initial="hidden" animate="visible"
           className="mt-10 flex flex-wrap items-center gap-4 md:mt-12">
-          <a href="https://forms.google.com/REPLACE_ME" target="_blank" rel="noopener noreferrer"
+          <a href="/register"
             className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-semibold tracking-[0.02em] text-white shadow-[0_4px_20px_rgba(233,69,96,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03] hover:shadow-[0_6px_25px_rgba(233,69,96,0.35)]">
             Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
@@ -103,8 +111,8 @@ export default function Hero() {
           {[
             { label: "Ages 5\u20138", color: "#E94560" },
             { label: "Mon\u2013Fri, 9\u201312:30", color: "#4A90D9" },
-            { label: "\u20B94,500/week", color: "#2D6A4F" },
-            { label: "April\u2013May 2026", color: "#F4A940" },
+            { label: "From \u20B93,800/week", color: "#2D6A4F" },
+            { label: "April 14 \u2013 May 30, 2026", color: "#F4A940" },
           ].map((item) => (
             <span key={item.label} className="flex items-center gap-2 text-[13px] font-medium text-text-secondary">
               <span className="h-2 w-2 rounded-full" style={{ backgroundColor: item.color }} />

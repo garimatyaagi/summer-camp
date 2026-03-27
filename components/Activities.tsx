@@ -90,7 +90,7 @@ export default function Activities() {
                 <h3 className="text-[18px] font-bold text-navy">
                   {week.theme} <span className="text-[17px]">{week.emoji}</span>
                 </h3>
-                <p className="mt-2 text-[13px] leading-[1.7] text-text-secondary">{week.description}</p>
+                <p className="mt-2 text-[14px] leading-[1.7] text-text-secondary">{week.description}</p>
                 <p className="mt-3 text-[11px] font-bold tracking-[0.04em] uppercase" style={{ color: week.color + "99" }}>
                   Take-home: {week.takeHome}
                 </p>

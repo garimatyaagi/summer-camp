@@ -28,7 +28,8 @@ export default function Footer() {
             <div className="flex flex-col gap-2.5">
               <a href="#activities" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Programme</a>
               <a href="#pricing" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Pricing</a>
-              <a href="#schedule" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Schedule</a>
+              <a href="/schedule" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Full Schedule</a>
+              <a href="/register" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Register</a>
               <a href="#faq" className="text-[14px] text-cream/60 hover:text-cream transition-colors">FAQ</a>
             </div>
           </div>

@@ -10,6 +10,7 @@ const lines = [
   { text: "To build a robot out of cardboard. To fail at making a volcano and try again. To stand up in front of other kids and tell a story they invented.", large: false },
   { text: "That\u2019s what this camp is. Three and a half hours every morning, five days a week, for as many weeks as you\u2019d like. They show up. They make things. They come home buzzing.", large: false },
   { text: "No screens. No homework. No sitting still.", large: true },
+  { text: "Every single day, they bring home something they made. Clay animals Monday. Volcanoes Tuesday. A cardboard robot by Friday. Your fridge door won\u2019t have enough magnets.", large: false },
 ];
 
 export default function Why() {

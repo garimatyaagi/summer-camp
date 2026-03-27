@@ -32,31 +32,45 @@ export default function Pricing() {
 
           <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
             <div className="rounded-2xl border-2 border-coral/15 bg-white p-7 md:p-9 shadow-[0_4px_24px_rgba(233,69,96,0.06)]">
-              <p className="font-display text-[44px] leading-none text-navy md:text-[52px]">&#8377;4,500</p>
-              <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">per week</p>
+              {/* Early bird badge */}
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-navy px-4 py-1.5">
+                <span className="text-[14px]" role="img" aria-label="bird">&#x1F426;</span>
+                <span className="text-[12px] font-bold tracking-[0.04em] uppercase text-cream">Early bird &mdash; first 25 families</span>
+              </div>
+              <div className="flex items-baseline gap-3">
+                <p className="font-display text-[44px] leading-none text-navy md:text-[52px]">&#8377;3,800</p>
+                <p className="text-[16px] text-muted line-through">&#8377;4,500</p>
+              </div>
+              <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">per week &middot; early bird price</p>
               <p className="mt-5 text-[15px] leading-[1.8] text-text-secondary">
                 5 days &times; 3.5 hours of curated camp. Snacks, materials, and take-home kit included.
               </p>
               <div className="my-6 h-px bg-border" />
               <div className="space-y-4">
                 <div className="flex items-baseline justify-between">
-                  <span className="text-[15px] font-medium text-navy">4-week bundle</span>
+                  <div>
+                    <span className="text-[15px] font-medium text-navy block">4-week bundle</span>
+                    <span className="text-[12px] text-muted">Most popular</span>
+                  </div>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-[17px] font-bold text-navy">&#8377;15,000</span>
-                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;3K</span>
+                    <span className="text-[17px] font-bold text-navy">&#8377;13,000</span>
+                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;2,200</span>
                   </div>
                 </div>
                 <div className="flex items-baseline justify-between">
-                  <span className="text-[15px] font-medium text-navy">Full season (7 weeks)</span>
+                  <div>
+                    <span className="text-[15px] font-medium text-navy block">Full season (7 weeks)</span>
+                    <span className="text-[12px] text-muted">Best value</span>
+                  </div>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-[17px] font-bold text-navy">&#8377;24,500</span>
-                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;7K</span>
+                    <span className="text-[17px] font-bold text-navy">&#8377;21,000</span>
+                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;5,600</span>
                   </div>
                 </div>
               </div>
               <div className="my-6 h-px bg-border" />
               <p className="text-[14px] text-text-secondary">Sibling discount: 15% off child #2+</p>
-              <a href="https://forms.google.com/REPLACE_ME" target="_blank" rel="noopener noreferrer"
+              <a href="/register"
                 className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral py-4 text-[14px] font-bold text-white shadow-[0_4px_16px_rgba(233,69,96,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.01]">
                 Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
               </a>
