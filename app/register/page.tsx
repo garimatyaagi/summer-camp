@@ -64,7 +64,7 @@ export default function RegisterPage() {
       <div className="min-h-screen bg-cream">
         <header className="bg-navy px-6 py-5 flex items-center justify-between">
           <Link href="/" className="font-display text-[1.35rem] text-cream">The Summer Club</Link>
-          <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">HSR Layout &middot; April–May 2026</span>
+          <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Bangalore &middot; April–May 2026</span>
         </header>
         <div className="max-w-[680px] mx-auto px-6 py-20 text-center">
           <div className="w-[72px] h-[72px] bg-[#3DAA6B] rounded-full flex items-center justify-center mx-auto mb-5 text-[2rem]">
@@ -90,7 +90,7 @@ export default function RegisterPage() {
       {/* Header */}
       <header className="bg-navy px-6 py-5 flex items-center justify-between">
         <Link href="/" className="font-display text-[1.35rem] text-cream">The Summer Club</Link>
-        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">HSR Layout &middot; April–May 2026</span>
+        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Bangalore &middot; April–May 2026</span>
       </header>
 
       {/* Hero strip */}
@@ -103,7 +103,7 @@ export default function RegisterPage() {
           </h1>
           <p className="mt-3 text-white/85 text-[1rem]">Takes about 3 minutes. We&apos;ll follow up over WhatsApp.</p>
           <div className="flex flex-wrap justify-center gap-2 mt-5">
-            {["Ages 5–8", "Mon–Fri \u00b7 9–12:30", "April 14 – May 30", "Gated campus \u00b7 HSR Layout"].map((t) => (
+            {["Ages 5–8", "Mon–Fri \u00b7 9–12:30", "April 14 – May 30", "Bangalore"].map((t) => (
               <span key={t} className="bg-white/15 text-white text-[0.82rem] font-medium px-3.5 py-1 rounded-full border border-white/25">{t}</span>
             ))}
           </div>

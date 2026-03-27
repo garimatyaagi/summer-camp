@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 const faqs = [
-  { q: "What ages is this for?", a: "5 to 8 years old. We run two groups \u2014 Explorers (5\u20136) and Makers (7\u20138) \u2014 so activities match their level. Both groups follow the same weekly theme but with different complexity." },
+  { q: "What ages is this for?", a: "5 to 8 years old. One group, one programme. Activities are designed so younger and older kids can both participate and be challenged." },
   { q: "Is it the full 7 weeks or can we join partway?", a: "It\u2019s a complete 7-week programme. Each week builds on the last, and Week 7 is the exhibition where they present everything. The full journey is what makes it work." },
-  { q: "Where is it?", a: "HSR Layout, Bangalore. Gated campus with AC indoor space and an outdoor play area. We\u2019ll share the exact address once you register." },
+  { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue and directions when we confirm your spot over WhatsApp." },
   { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide everything else \u2014 snacks, materials, all of it." },
   { q: "What if my child misses a day?", a: "Life happens. Missed days can\u2019t be refunded, but we\u2019ll send home the take-home so they don\u2019t miss the making." },
   { q: "What about safety?", a: "First-aid trained staff at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. You\u2019ll have both founders\u2019 phone numbers." },

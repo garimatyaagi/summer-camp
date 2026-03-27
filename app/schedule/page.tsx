@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Schedule — The Summer Club Summer Camp",
-  description: "Day-by-day schedule for The Summer Club summer camp. 7 weeks of making, moving, and expressing. HSR Layout, Bangalore.",
+  description: "Day-by-day schedule for The Summer Club summer camp. 7 weeks of making, moving, and expressing. Bangalore.",
 };
 
 const timeline = [

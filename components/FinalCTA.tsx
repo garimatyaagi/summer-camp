@@ -30,7 +30,7 @@ export default function FinalCTA() {
 
         <p className="mt-7 text-[16px] leading-[1.85] text-white md:text-[18px] max-w-[500px]">
           One programme. Seven weeks. They walk out with a painting, a robot, a recipe book, a business they ran &mdash; and the confidence to present it all.
-          Ages 5&ndash;8. HSR Layout, Bangalore.
+          Ages 5&ndash;8. Bangalore. April&ndash;May 2026.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center gap-4">
