@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, sectionFade } from "@/lib/animations";
-import { ColorfulDivider, DoodleStar, DoodlePaintBlob, DoodleHeart } from "./Doodles";
+import { DoodleStar } from "./Doodles";
 
 const weeks = [
   { week: 1, theme: "Little Artists", emoji: "\uD83C\uDFA8", color: "#E05A3A", bg: "#FDEEEA",
@@ -38,32 +38,26 @@ const weeks = [
 
 export default function Activities() {
   return (
-    <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-white">
+    <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-16 right-10 w-20 opacity-55 hidden md:block" color="#F0C75E" />
-        <DoodlePaintBlob className="absolute bottom-20 left-6 w-32 opacity-35 hidden lg:block" color="#9BB8D7" />
-        <DoodleHeart className="absolute top-[50%] right-6 w-16 opacity-45 hidden md:block" />
-        <DoodleStar className="absolute top-10 left-8 w-12 opacity-40 hidden md:block" color="#E05A3A" />
-        <DoodleStar className="absolute bottom-[30%] right-[20%] w-10 opacity-30 hidden lg:block" color="#3A8C6E" />
+        <DoodleStar className="absolute top-16 right-10 w-20 opacity-15 hidden md:block" color="#FFFFFF" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px]">
-        <ColorfulDivider className="mb-10" />
-
         <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           className="mb-14 grid md:grid-cols-[1fr_1fr] gap-6 md:gap-16">
-          <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-navy md:text-[48px] lg:text-[56px]">
+          <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
             Seven weeks.{" "}
             <span className="relative inline-block">
               Seven worlds
               <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-                <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="#F0C75E" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+                <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               </svg>
             </span>.
           </h2>
           <div className="flex items-end">
-            <p className="max-w-[440px] text-[16px] leading-[1.85] text-text-secondary md:text-[17px]">
+            <p className="max-w-[440px] text-[16px] leading-[1.85] text-white/75 md:text-[17px]">
               Each week has a theme. Every day inside that week, the activities
               connect &mdash; so your child builds a real understanding of
               something, not just a random collection of crafts.
@@ -76,8 +70,8 @@ export default function Activities() {
           {weeks.map((week) => (
             <motion.div key={week.week} variants={fadeUp} initial="hidden" whileInView="visible"
               viewport={{ once: true, amount: 0.15 }}
-              className="group min-w-[280px] max-w-[310px] flex-shrink-0 snap-start rounded-2xl overflow-hidden border-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              style={{ borderColor: week.color + "30", backgroundColor: week.bg }}>
+              className="group min-w-[280px] max-w-[310px] flex-shrink-0 snap-start rounded-2xl overflow-hidden shadow-[0_2px_16px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              style={{ backgroundColor: week.bg }}>
               <div className="grain relative aspect-[5/4] overflow-hidden">
                 <Image src={week.image} alt={week.theme} fill
                   className="warm-image object-cover transition-all duration-700 group-hover:scale-[1.04]" sizes="310px" />

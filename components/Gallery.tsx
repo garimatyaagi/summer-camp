@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, sectionFade } from "@/lib/animations";
-import { SquigglyLine, DoodleHeart, DoodleStar, DoodleSun, DoodlePaintBlob } from "./Doodles";
+import { DoodleCircle } from "./Doodles";
 
 const images = [
   { src: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600", alt: "Colorful craft materials", tall: true },
@@ -16,20 +16,15 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#FEF5DC]">
+    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
       <div className="pointer-events-none">
-        <DoodleHeart className="absolute bottom-32 right-10 w-20 opacity-35 hidden md:block" color="#2B5797" />
-        <DoodleStar className="absolute top-12 right-8 w-14 opacity-40 hidden md:block" color="#E05A3A" />
-        <DoodleSun className="absolute bottom-16 left-6 w-16 opacity-25 hidden md:block" color="#3A8C6E" />
-        <DoodlePaintBlob className="absolute top-20 left-10 w-20 opacity-20 hidden lg:block" color="#2B5797" />
+        <DoodleCircle className="absolute top-12 right-8 w-20 opacity-10 hidden md:block" color="#FFFFFF" />
       </div>
       <div className="mx-auto max-w-[1400px]">
-        <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
-
         <motion.h2
           variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mb-14 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-navy md:text-[48px] lg:text-[56px]"
+          className="mb-14 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]"
         >
           Made by little hands.
         </motion.h2>
@@ -49,7 +44,7 @@ export default function Gallery() {
 
         <motion.p variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mt-10 text-[14px] text-muted">
+          className="mt-10 text-[14px] text-white/60">
           Camp starts April 14. Follow along on{" "}
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
             className="text-coral font-medium hover:underline underline-offset-4">Instagram</a>

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
-import { DoodleStar, DoodleCircle, DoodleHeart, ColorfulDivider, DoodleZigzag } from "./Doodles";
+import { DoodleStar, DoodleCircle } from "./Doodles";
 
 const lines = [
   { text: "Your kid doesn\u2019t need another screen, another tuition class, or another structured programme with a 47-slide curriculum deck.", large: false },
@@ -15,29 +15,23 @@ const lines = [
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#FEF5DC]">
-      {/* Doodle decorations — contrasting on sunshine bg */}
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+      {/* Doodle decorations — white on blue */}
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-10 right-8 w-20 opacity-50 md:w-28 md:right-16" color="#E05A3A" />
-        <DoodleHeart className="absolute bottom-16 right-12 w-16 opacity-45 hidden md:block" color="#2B5797" />
-        <DoodleCircle className="absolute top-[40%] left-4 w-20 opacity-35 hidden md:block" color="#3A8C6E" />
-        <DoodleZigzag className="absolute bottom-10 left-8 w-32 opacity-35 hidden lg:block" color="#2B5797" />
-        <DoodleStar className="absolute top-[15%] left-[10%] w-10 opacity-40 hidden md:block" color="#3A8C6E" />
-        <DoodleCircle className="absolute bottom-[20%] right-[25%] w-24 opacity-15 hidden lg:block" color="#E05A3A" />
+        <DoodleStar className="absolute top-10 right-8 w-16 opacity-20 md:right-16" color="#FFFFFF" />
+        <DoodleCircle className="absolute top-[40%] left-4 w-24 opacity-15 hidden md:block" color="#FFFFFF" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px]">
-        <ColorfulDivider className="mb-10" />
-
         <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
-          className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-navy md:text-[48px] lg:text-[56px] max-w-[700px]">
+          className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px] max-w-[700px]">
           Summer breaks are long.{" "}
           <span className="relative inline-block">
             This one could be different
             <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
-              <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="#9BB8D7" strokeWidth="3" strokeLinecap="round" fill="none" />
+              <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3" strokeLinecap="round" fill="none" />
             </svg>
           </span>.
         </motion.h2>
@@ -50,8 +44,8 @@ export default function Why() {
             {lines.map((line, i) => (
               <motion.p key={i} variants={fadeUpStagger} custom={i}
                 className={line.large
-                  ? "font-display text-[22px] leading-[1.35] text-navy md:text-[26px]"
-                  : "text-[16px] leading-[1.85] text-text-secondary md:text-[17px]"}>
+                  ? "text-white font-display text-[22px] leading-[1.35] md:text-[26px]"
+                  : "text-[16px] leading-[1.85] text-white/75 md:text-[17px]"}>
                 {line.text}
               </motion.p>
             ))}

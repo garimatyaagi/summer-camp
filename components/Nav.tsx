@@ -27,15 +27,15 @@ export default function Nav() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? "bg-white/92 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]" : "bg-transparent"
+      scrolled ? "bg-white/95 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]" : "bg-transparent"
     }`}>
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <a href="#" className="font-display text-[22px] text-navy">The Summer Club</a>
+        <a href="#" className={`font-display text-[22px] transition-colors duration-300 ${scrolled ? "text-navy" : "text-white"}`}>The Summer Club</a>
 
         <div className="hidden items-center gap-9 md:flex">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}
-              className="text-[14px] font-medium text-text-secondary transition-colors duration-300 hover:text-navy">
+              className={`text-[14px] font-medium transition-colors duration-300 ${scrolled ? "text-text-secondary hover:text-navy" : "text-white/80 hover:text-white"}`}>
               {link.label}
             </a>
           ))}
@@ -53,9 +53,9 @@ export default function Nav() {
           className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
           aria-label="Toggle menu"
         >
-          <span className={`block h-[1.5px] w-5 bg-navy transition-all duration-300 ${mobileOpen ? "translate-y-[6.5px] rotate-45" : ""}`} />
-          <span className={`block h-[1.5px] w-5 bg-navy transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-          <span className={`block h-[1.5px] w-5 bg-navy transition-all duration-300 ${mobileOpen ? "-translate-y-[6.5px] -rotate-45" : ""}`} />
+          <span className={`block h-[1.5px] w-5 transition-all duration-300 ${mobileOpen ? "translate-y-[6.5px] rotate-45 bg-navy" : scrolled ? "bg-navy" : "bg-white"}`} />
+          <span className={`block h-[1.5px] w-5 transition-all duration-300 ${mobileOpen ? "opacity-0 bg-navy" : scrolled ? "bg-navy" : "bg-white"}`} />
+          <span className={`block h-[1.5px] w-5 transition-all duration-300 ${mobileOpen ? "-translate-y-[6.5px] -rotate-45 bg-navy" : scrolled ? "bg-navy" : "bg-white"}`} />
         </button>
       </div>
 

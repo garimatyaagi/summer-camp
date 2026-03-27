@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
-import { SquigglyLine, DoodleCircle, DoodleStar, DoodleSpiral, DoodlePaintBlob } from "./Doodles";
 
 const faqs = [
   { q: "What ages is this for?", a: "5 to 8 years old. We run two cohorts \u2014 Juniors (5\u20137) and Seniors (8\u201310) \u2014 so activities are age-appropriate. From Week 3, we may add a 9\u201312 track if there\u2019s demand." },
@@ -19,13 +18,13 @@ const faqs = [
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
   const [open, setOpen] = useState(false);
   return (
-    <motion.div variants={fadeUpStagger} custom={index} className="border-t border-border">
+    <motion.div variants={fadeUpStagger} custom={index} className="border-t border-[#E8EDF3]">
       <button onClick={() => setOpen(!open)} className="flex w-full items-center justify-between py-5 text-left md:py-6">
-        <span className="pr-6 text-[16px] font-semibold text-navy md:text-[17px]">{q}</span>
-        <span className={`flex-shrink-0 w-6 h-6 rounded-full border-2 border-border flex items-center justify-center text-[13px] text-muted transition-all duration-300 ${open ? "rotate-45 border-coral text-coral" : ""}`}>+</span>
+        <span className="pr-6 text-[16px] font-semibold text-[#2B5797] md:text-[17px]">{q}</span>
+        <span className={`flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#E8EDF3] flex items-center justify-center text-[13px] text-[#6B7D8F] transition-all duration-300 ${open ? "rotate-45 border-coral text-coral" : ""}`}>+</span>
       </button>
       <div className={`faq-answer ${open ? "open" : ""}`}>
-        <div><p className="pb-5 text-[15px] leading-[1.85] text-text-secondary max-w-[520px] md:pb-6">{a}</p></div>
+        <div><p className="pb-5 text-[15px] leading-[1.85] text-[#3A4D62] max-w-[520px] md:pb-6">{a}</p></div>
       </div>
     </motion.div>
   );
@@ -33,26 +32,20 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#D6E5F2]">
-      <div className="pointer-events-none">
-        <DoodleCircle className="absolute top-12 right-10 w-20 opacity-15 hidden md:block" color="#9BB8D7" />
-        <DoodleStar className="absolute bottom-16 left-8 w-10 opacity-30 hidden md:block" color="#F0C75E" />
-        <DoodleSpiral className="absolute top-20 left-6 w-12 opacity-20 hidden lg:block" color="#E05A3A" />
-        <DoodlePaintBlob className="absolute bottom-[40%] right-6 w-16 opacity-15 hidden md:block" color="#3A8C6E" />
-      </div>
+    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[1400px]">
-        <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
-
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
           <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-navy md:text-[48px] lg:text-[56px]">
+            className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
             Questions parents ask.
           </motion.h2>
-          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.05 }}>
-            {faqs.map((faq, i) => <FAQItem key={i} q={faq.q} a={faq.a} index={i} />)}
-          </motion.div>
+          <div className="bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-8">
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
+              viewport={{ once: true, amount: 0.05 }}>
+              {faqs.map((faq, i) => <FAQItem key={i} q={faq.q} a={faq.a} index={i} />)}
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,13 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* The Summer Club — colorful summer palette */
+  /* The Summer Club — clean, confident */
   --color-cream: #9BB8D7;
-  --color-section-sunny: #FEF5DC;
-  --color-section-sage: #E0F2E9;
-  --color-section-coral: #FDEAE5;
-  --color-section-sky: #D6E5F2;
-  --color-section-white: #FFFFFF;
   --color-card: #FFFFFF;
   --color-navy: #2B5797;
   --color-coral: #E05A3A;
@@ -15,12 +10,12 @@
   --color-sage: #3A8C6E;
   --color-sky: #9BB8D7;
   --color-sunny: #F0C75E;
-  --color-text: #1A2537;
-  --color-text-secondary: #3A4D62;
-  --color-muted: #5A6E82;
-  --color-sand: #E8EDF3;
+  --color-text: #FFFFFF;
+  --color-text-secondary: rgba(255,255,255,0.75);
+  --color-muted: rgba(255,255,255,0.55);
+  --color-sand: rgba(255,255,255,0.1);
   --color-white: #FFFFFF;
-  --color-border: #D4DCE6;
+  --color-border: rgba(255,255,255,0.2);
 
   --font-display: "Nunito", sans-serif;
   --font-body: "DM Sans", sans-serif;
@@ -42,8 +37,8 @@ body {
 }
 
 ::selection {
-  background-color: rgba(224, 90, 58, 0.18);
-  color: var(--color-navy);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #1A2537;
 }
 
 /* Paper texture background */

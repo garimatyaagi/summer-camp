@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DoodleStar, DoodleHeart, DoodleCircle } from "./Doodles";
 
 const trustPoints = [
   { icon: "\uD83D\uDEE1\uFE0F", text: "1:8 adult-to-child ratio" },
@@ -19,19 +18,12 @@ export default function TrustStrip() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-      className="relative px-6 py-8 md:py-10 lg:px-12 bg-navy overflow-hidden"
+      className="relative px-6 py-8 md:py-10 lg:px-12 bg-white shadow-[0_2px_20px_rgba(0,0,0,0.06)] overflow-hidden"
     >
-      {/* Subtle cream doodles on navy */}
-      <div className="pointer-events-none">
-        <DoodleStar className="absolute top-2 right-[10%] w-6 opacity-15 hidden md:block" color="#F7F9FC" />
-        <DoodleHeart className="absolute bottom-2 left-[15%] w-5 opacity-10 hidden md:block" color="#F7F9FC" />
-        <DoodleCircle className="absolute top-1 left-[5%] w-8 opacity-10 hidden lg:block" color="#F7F9FC" />
-        <DoodleStar className="absolute bottom-1 right-[30%] w-4 opacity-12 hidden lg:block" color="#F7F9FC" />
-      </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 md:gap-x-12">
           {trustPoints.map((point) => (
-            <span key={point.text} className="flex items-center gap-2 text-[13px] md:text-[14px] font-medium text-cream/80">
+            <span key={point.text} className="flex items-center gap-2 text-[13px] md:text-[14px] font-medium text-[#2B5797]">
               <span className="text-[16px]">{point.icon}</span>
               {point.text}
             </span>
