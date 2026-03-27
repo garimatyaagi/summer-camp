@@ -6,12 +6,12 @@ import { fadeUp, sectionFade } from "@/lib/animations";
 import { DoodleCircle } from "./Doodles";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600", alt: "Colorful craft materials", tall: true },
-  { src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600", alt: "Paint brushes and art", tall: false },
-  { src: "https://images.unsplash.com/photo-1500995617113-cf789362a3e1?w=600", alt: "Nature exploration", tall: false },
-  { src: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600", alt: "Colorful toys and building", tall: false },
-  { src: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600", alt: "Kids group activity", tall: false },
-  { src: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600&q=90", alt: "Art supplies close-up", tall: true },
+  { src: "/images/week1-art.jpg", alt: "Child painting at easel in the Art Studio", tall: true },
+  { src: "/images/hero-hands.jpg", alt: "Painted handprints — the joy of making", tall: false },
+  { src: "/images/week4-nature.jpg", alt: "Sketching in the Nature Atelier", tall: false },
+  { src: "/images/week5-tinker.jpg", alt: "Proudly holding a handmade robot", tall: false },
+  { src: "/images/week6-market.jpg", alt: "Kids running their market stall", tall: false },
+  { src: "/images/week7-exhibition.jpg", alt: "The Exhibition — gallery opening day", tall: true },
 ];
 
 export default function Gallery() {

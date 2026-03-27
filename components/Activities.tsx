@@ -11,7 +11,7 @@ const weeks = [
     skill: "Visual art fundamentals",
     description: "Color mixing, composition, texture. They build a 5-piece art collection.",
     takeHome: "Framed painting + art portfolio",
-    image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600",
+    image: "/images/week1-art.jpg",
     longTermSkills: ["Creative confidence", "Observation & attention to detail", "Self-expression", "Fine motor skills"],
     days: [
       { day: "Mon", activity: "Clay sculpture \u2014 sculpt a creature, learn about form & texture" },
@@ -24,7 +24,7 @@ const weeks = [
     skill: "The scientific method",
     description: "Hypothesis, experiment, observe, record. They learn to think like scientists.",
     takeHome: "Experiment journal + seed kit",
-    image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600",
+    image: "/images/week2-science.jpg",
     longTermSkills: ["Critical thinking", "Asking good questions", "Recording observations", "Cause & effect reasoning"],
     days: [
       { day: "Mon", activity: "Volcano build \u2014 chemical reactions, predict & test" },
@@ -37,7 +37,7 @@ const weeks = [
     skill: "Measurement + food presentation",
     description: "Math meets creativity. They design a menu and run a pop-up restaurant.",
     takeHome: "Recipe booklet + chef hat",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600",
+    image: "/images/week3-kitchen.jpg",
     longTermSkills: ["Following instructions precisely", "Measurement & math in context", "Presentation & plating", "Teamwork & coordination"],
     days: [
       { day: "Mon", activity: "Energy balls \u2014 measuring, mixing, following a recipe" },
@@ -50,7 +50,7 @@ const weeks = [
     skill: "Observation + documentation",
     description: "How naturalists study the world. Slow looking, sketching, documenting.",
     takeHome: "Nature journal + bug hotel",
-    image: "https://images.unsplash.com/photo-1500995617113-cf789362a3e1?w=600",
+    image: "/images/week4-nature.jpg",
     longTermSkills: ["Patience & focus", "Scientific illustration", "Environmental awareness", "Independent discovery"],
     days: [
       { day: "Mon", activity: "Bug hotel build \u2014 insect habitats, materials from nature" },
@@ -63,7 +63,7 @@ const weeks = [
     skill: "Design thinking",
     description: "Blueprint \u2192 prototype \u2192 test \u2192 iterate. They design and build a robot.",
     takeHome: "Working robot + blueprint + manual",
-    image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600",
+    image: "/images/week5-tinker.jpg",
     longTermSkills: ["Problem-solving", "Planning before building", "Learning from failure", "Technical communication"],
     days: [
       { day: "Mon", activity: "Robot blueprint \u2014 design on paper first, plan the build" },
@@ -76,7 +76,7 @@ const weeks = [
     skill: "Entrepreneurship",
     description: "Product design, pricing, pitching. They make products and sell to parents.",
     takeHome: "Products + business card + earnings",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600",
+    image: "/images/week6-market.jpg",
     longTermSkills: ["Communication & persuasion", "Basic money math", "Product thinking", "Confidence speaking to adults"],
     days: [
       { day: "Mon", activity: "Choose product + make first units (painted pots, bags, bookmarks)" },
@@ -89,7 +89,7 @@ const weeks = [
     skill: "Curation + public speaking",
     description: "They curate their best work and present it at a proper gallery exhibition.",
     takeHome: "Scrapbook + catalog + framed artwork + certificate",
-    image: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600",
+    image: "/images/week7-exhibition.jpg",
     longTermSkills: ["Self-reflection", "Public speaking", "Pride in their work", "Celebrating growth"],
     days: [
       { day: "Mon", activity: "Scrapbook start \u2014 one page per week, reflect on favourites" },
