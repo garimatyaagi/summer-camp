@@ -16,7 +16,7 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#CDDAEA]">
+    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#8AACC9]">
       <div className="pointer-events-none">
         <DoodleHeart className="absolute bottom-32 right-10 w-20 opacity-45 hidden md:block" />
         <DoodleStar className="absolute top-12 right-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />

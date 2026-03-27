@@ -15,7 +15,7 @@ const lines = [
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#CDDAEA]">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#8AACC9]">
       {/* Doodle decorations — prominent */}
       <div className="pointer-events-none">
         <DoodleStar className="absolute top-10 right-8 w-20 opacity-70 md:w-28 md:right-16" color="#F0C75E" />

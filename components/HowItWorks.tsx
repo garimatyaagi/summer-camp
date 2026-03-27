@@ -12,7 +12,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#CDDAEA]">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#8AACC9]">
       <div className="pointer-events-none">
         <DoodleSun className="absolute top-12 right-10 w-20 opacity-35 hidden md:block" color="#F0C75E" />
         <DoodleStar className="absolute bottom-16 left-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />
