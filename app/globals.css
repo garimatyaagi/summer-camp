@@ -11,8 +11,8 @@
   --color-sky: #9BB8D7;
   --color-sunny: #F0C75E;
   --color-text: #FFFFFF;
-  --color-text-secondary: rgba(255,255,255,0.75);
-  --color-muted: rgba(255,255,255,0.55);
+  --color-text-secondary: #FFFFFF;
+  --color-muted: rgba(255,255,255,0.7);
   --color-sand: rgba(255,255,255,0.1);
   --color-white: #FFFFFF;
   --color-border: rgba(255,255,255,0.2);

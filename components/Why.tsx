@@ -2,24 +2,19 @@
 
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
-import { DoodleStar, DoodleCircle } from "./Doodles";
+import { DoodleStar } from "./Doodles";
 
-const lines = [
-  { text: "Most summer camps keep kids busy. We teach them something.", large: false },
-  { text: "One real skill every week.", large: true },
-  { text: "Week 1, they learn how artists see the world. Week 2, the scientific method. Week 3, how chefs turn ingredients into something beautiful. Each week goes deep \u2014 not a random activity buffet.", large: false },
-  { text: "Every Friday, they present what they made to parents. Every week, they add to a real portfolio. And in Week 7, they exhibit the whole thing \u2014 a proper gallery opening with fairy lights, printed labels, and a catalog.", large: false },
-  { text: "They don\u2019t just come home with crafts. They come home with confidence.", large: true },
-  { text: "Art fundamentals. Scientific method. Entrepreneurship. Design thinking. Seven skills that actually stick \u2014 because they learned them with their hands, not from a screen.", large: false },
+const pillars = [
+  { emoji: "\uD83C\uDFAF", title: "One real skill every week", desc: "Not a random activity buffet. Each week goes deep into one discipline \u2014 art, science, cooking, nature, engineering, business." },
+  { emoji: "\uD83D\uDCC1", title: "A portfolio they build", desc: "Every week adds a real piece of work. By Week 7 they have paintings, journals, robots, recipes \u2014 all documented." },
+  { emoji: "\uD83C\uDFA8", title: "A proper exhibition", desc: "Week 7 ends with a gallery opening. Fairy lights, printed labels, a catalog. They present their work to parents." },
 ];
 
 export default function Why() {
   return (
     <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
-      {/* Doodle decorations — white on blue */}
       <div className="pointer-events-none">
         <DoodleStar className="absolute top-10 right-8 w-16 opacity-20 md:right-16" color="#FFFFFF" />
-        <DoodleCircle className="absolute top-[40%] left-4 w-24 opacity-15 hidden md:block" color="#FFFFFF" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px]">
@@ -36,20 +31,23 @@ export default function Why() {
           </span>.
         </motion.h2>
 
+        <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.7 }}
+          className="mt-6 text-[17px] leading-[1.8] text-white max-w-[520px]">
+          Most camps keep kids busy. We teach them something they can point to and say: I made that.
+        </motion.p>
+
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
-          className="mt-12 grid gap-0 md:grid-cols-[1fr_1fr] md:gap-20 lg:mt-16">
-          <div />
-          <div className="space-y-7">
-            {lines.map((line, i) => (
-              <motion.p key={i} variants={fadeUpStagger} custom={i}
-                className={line.large
-                  ? "text-white font-display text-[22px] leading-[1.35] md:text-[26px]"
-                  : "text-[16px] leading-[1.85] text-white/75 md:text-[17px]"}>
-                {line.text}
-              </motion.p>
-            ))}
-          </div>
+          className="mt-12 grid gap-5 md:grid-cols-3">
+          {pillars.map((p, i) => (
+            <motion.div key={i} variants={fadeUpStagger} custom={i}
+              className="bg-white rounded-2xl p-6 md:p-7 shadow-[0_2px_16px_rgba(0,0,0,0.06)]">
+              <span className="text-[28px] block mb-3">{p.emoji}</span>
+              <h3 className="text-[17px] font-bold text-[#2B5797] leading-[1.3]">{p.title}</h3>
+              <p className="mt-2 text-[14px] leading-[1.7] text-[#3A4D62]">{p.desc}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
