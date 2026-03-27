@@ -40,7 +40,7 @@ export default function Pricing() {
               </div>
               <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">per week &middot; early bird price</p>
               <p className="mt-5 text-[15px] leading-[1.8] text-[#3A4D62]">
-                5 days &times; 3.5 hours of curated camp. Snacks, materials, and take-home kit included.
+                5 days &times; 3.5 hours of focused studio time. All materials, snacks, portfolio supplies, and Friday Showcase entry for parents included.
               </p>
               <div className="my-6 h-px bg-[#E8EDF3]" />
               <div className="space-y-4">
@@ -73,7 +73,8 @@ export default function Pricing() {
               </a>
             </div>
             <p className="mt-4 text-center text-[13px] text-white/60">
-              Extended Play (12:30&ndash;2:30 PM): &#8377;1,500/week
+              Extended Play (12:30&ndash;2:30 PM): &#8377;1,500/week.
+              Full season includes the Week 7 Exhibition &mdash; printed catalog, framed artwork, gallery opening.
             </p>
           </motion.div>
         </div>

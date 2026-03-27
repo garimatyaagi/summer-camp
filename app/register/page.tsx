@@ -4,13 +4,13 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 
 const weekOptions = [
-  { value: "week1", label: "Week 1", dates: "Apr 14–18", theme: "Little Artists" },
-  { value: "week2", label: "Week 2", dates: "Apr 21–25", theme: "Tiny Scientists" },
-  { value: "week3", label: "Week 3", dates: "Apr 28–May 2", theme: "Mini Chefs" },
-  { value: "week4", label: "Week 4", dates: "May 5–9", theme: "Storytellers" },
-  { value: "week5", label: "Week 5", dates: "May 12–16", theme: "Robot Friends" },
-  { value: "week6", label: "Week 6", dates: "May 19–23", theme: "Market Day" },
-  { value: "week7", label: "Week 7", dates: "May 26–30", theme: "Grand Finale" },
+  { value: "week1", label: "Week 1", dates: "Apr 14–18", theme: "The Art Studio" },
+  { value: "week2", label: "Week 2", dates: "Apr 21–25", theme: "The Science Lab" },
+  { value: "week3", label: "Week 3", dates: "Apr 28–May 2", theme: "The Kitchen Studio" },
+  { value: "week4", label: "Week 4", dates: "May 5–9", theme: "The Nature Atelier" },
+  { value: "week5", label: "Week 5", dates: "May 12–16", theme: "The Tinker Workshop" },
+  { value: "week6", label: "Week 6", dates: "May 19–23", theme: "The Entrepreneur's Market" },
+  { value: "week7", label: "Week 7", dates: "May 26–30", theme: "The Exhibition" },
 ];
 
 export default function RegisterPage() {

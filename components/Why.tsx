@@ -5,12 +5,12 @@ import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 import { DoodleStar, DoodleCircle } from "./Doodles";
 
 const lines = [
-  { text: "Your kid doesn\u2019t need another screen, another tuition class, or another structured programme with a 47-slide curriculum deck.", large: false },
-  { text: "They need space to get their hands dirty.", large: true },
-  { text: "To build a robot out of cardboard. To fail at making a volcano and try again. To stand up in front of other kids and tell a story they invented.", large: false },
-  { text: "That\u2019s what this camp is. Three and a half hours every morning, five days a week, for as many weeks as you\u2019d like. They show up. They make things. They come home buzzing.", large: false },
-  { text: "No screens. No homework. No sitting still.", large: true },
-  { text: "Every single day, they bring home something they made. Clay animals Monday. Volcanoes Tuesday. A cardboard robot by Friday. Your fridge door won\u2019t have enough magnets.", large: false },
+  { text: "Most summer camps keep kids busy. We teach them something.", large: false },
+  { text: "One real skill every week.", large: true },
+  { text: "Week 1, they learn how artists see the world. Week 2, the scientific method. Week 3, how chefs turn ingredients into something beautiful. Each week goes deep \u2014 not a random activity buffet.", large: false },
+  { text: "Every Friday, they present what they made to parents. Every week, they add to a real portfolio. And in Week 7, they exhibit the whole thing \u2014 a proper gallery opening with fairy lights, printed labels, and a catalog.", large: false },
+  { text: "They don\u2019t just come home with crafts. They come home with confidence.", large: true },
+  { text: "Art fundamentals. Scientific method. Entrepreneurship. Design thinking. Seven skills that actually stick \u2014 because they learned them with their hands, not from a screen.", large: false },
 ];
 
 export default function Why() {
@@ -27,9 +27,9 @@ export default function Why() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px] max-w-[700px]">
-          Summer breaks are long.{" "}
+          Not just a summer camp.{" "}
           <span className="relative inline-block">
-            This one could be different
+            A maker studio
             <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
               <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3" strokeLinecap="round" fill="none" />
             </svg>

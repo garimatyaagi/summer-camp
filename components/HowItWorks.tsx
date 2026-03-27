@@ -5,9 +5,9 @@ import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 import { DoodleCircle } from "./Doodles";
 
 const steps = [
-  { number: "01", title: "Pick your weeks", description: "Enrol for 1 week, 4 weeks, or the full 7-week season. Start any Monday.", color: "#E05A3A" },
+  { number: "01", title: "Pick your studios", description: "Enrol for 1 week, 4 weeks, or all 7 studios. Start any Monday. Each week is a different skill.", color: "#E05A3A" },
   { number: "02", title: "Drop off at 9, pick up at 12:30", description: "HSR Layout. Gated campus. We handle everything in between. You get your morning back.", color: "#9BB8D7" },
-  { number: "03", title: "They come home with something they made", description: "Every single day. Clay, paint, robots, recipe books. Fridge-door worthy, every time.", color: "#3A8C6E" },
+  { number: "03", title: "They build a real portfolio", description: "Every week adds to it \u2014 art, experiments, robots, recipes. Week 7, they exhibit the whole thing at a gallery opening.", color: "#3A8C6E" },
 ];
 
 export default function HowItWorks() {

@@ -49,20 +49,22 @@ export default function Hero() {
 
         <motion.h1 variants={heroHeading} initial="hidden" animate="visible"
           className="font-display text-[44px] leading-[1.05] tracking-[-0.025em] text-white sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[112px] max-w-[1000px]">
-          Where kids build things with their{" "}
+          Seven weeks. Seven skills. One{" "}
           <span className="relative inline-block">
-            hands
+            portfolio
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3 md:h-5" preserveAspectRatio="none">
               <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
             </svg>
-          </span>.
+          </span>{" "}
+          they&apos;ll never forget.
         </motion.h1>
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
-          className="mt-8 max-w-[520px] text-[17px] leading-[1.8] text-white/80 md:text-[19px] md:mt-10">
-          A screen-free, maker-first summer camp in HSR Layout, Bangalore.
-          Seven weeks of clay, paint, robots, cooking, and coming home buzzing.
+          className="mt-8 max-w-[560px] text-[17px] leading-[1.8] text-white/80 md:text-[19px] md:mt-10">
+          A maker studio for kids aged 5&ndash;8 in HSR Layout, Bangalore.
+          Every week they learn a real skill, build something with their hands,
+          and add it to their portfolio. Week 7, they exhibit it all.
         </motion.p>
 
         {/* Early bird banner */}

@@ -26,7 +26,7 @@ export default function Gallery() {
           viewport={{ once: true, amount: 0.3 }}
           className="mb-14 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]"
         >
-          Made by little hands.
+          From their hands to the gallery wall.
         </motion.h2>
 
         <div className="columns-2 gap-4 space-y-4 md:columns-3 md:gap-5 md:space-y-5">

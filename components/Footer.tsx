@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <p className="font-display text-[24px] text-cream">The Summer Club</p>
             <p className="mt-3 text-[15px] leading-[1.8] text-cream/50 max-w-[300px]">
-              A screen-free summer camp where kids build things with their hands. HSR Layout, Bangalore.
+              A maker studio where kids learn real skills and build a portfolio. HSR Layout, Bangalore.
             </p>
           </div>
           <div>

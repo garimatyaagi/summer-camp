@@ -12,7 +12,9 @@ const faqs = [
   { q: "What if my child misses a day?", a: "Life happens. Missed days can\u2019t be refunded or transferred, but we\u2019ll send home the take-home kit so they don\u2019t miss out on the making." },
   { q: "Is there a sibling discount?", a: "Yes \u2014 15% off for the second child onwards." },
   { q: "What about safety?", a: "First-aid trained staff on-site at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. Allergy management. You\u2019ll have both founders\u2019 phone numbers." },
-  { q: "Can I visit during the camp?", a: "Absolutely. We also host a Friday Showcase every week where parents come see what the kids made. It\u2019s our favourite part of the week." },
+  { q: "Can I visit during the camp?", a: "Absolutely. We host a Friday Showcase every week where parents come see what the kids made and hear them present. It\u2019s our favourite part of the week." },
+  { q: "What\u2019s the portfolio?", a: "Every week, your child creates real work \u2014 paintings, experiment journals, robots, recipe booklets. Each piece is documented and collected into a portfolio binder. By Week 7, they have a body of work that shows real growth across seven different skills." },
+  { q: "What happens at the Exhibition?", a: "Week 7 ends with a proper gallery opening for parents. Fairy lights, printed labels, a catalog of each child\u2019s work. Every child presents their portfolio and their \u201Cbest of\u201D piece. It\u2019s the moment parents photograph and share \u2014 and the moment kids feel genuinely proud." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {

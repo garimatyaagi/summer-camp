@@ -18,9 +18,9 @@ export default function FinalCTA() {
         className="relative z-10 mx-auto max-w-[1400px]">
 
         <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.025em] text-white sm:text-[48px] md:text-[64px] lg:text-[76px] max-w-[800px]">
-          This summer, let them{" "}
+          This summer, give them something to{" "}
           <span className="relative inline-block">
-            make
+            show for it
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-4 md:h-5" preserveAspectRatio="none">
               <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="4" strokeLinecap="round" fill="none" />
               <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
@@ -29,9 +29,9 @@ export default function FinalCTA() {
           something.
         </h2>
 
-        <p className="mt-7 text-[16px] leading-[1.85] text-white/75 md:text-[18px] max-w-[460px]">
-          Camp runs April 14 &ndash; May 30, 2026. HSR Layout, Bangalore. Ages 5&ndash;8.
-          Early bird pricing for the first 25 families.
+        <p className="mt-7 text-[16px] leading-[1.85] text-white/75 md:text-[18px] max-w-[500px]">
+          Seven skills. A real portfolio. And an exhibition they&apos;ll talk about for years.
+          HSR Layout, Bangalore. Ages 5&ndash;8. April 14 &ndash; May 30, 2026.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center gap-4">
