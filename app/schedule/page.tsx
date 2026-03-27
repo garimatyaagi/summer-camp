@@ -8,90 +8,90 @@ export const metadata: Metadata = {
 
 const timeline = [
   { time: "9:00", emoji: "\uD83C\uDF05", label: "Welcome Circle", desc: "A name game, a question, or a short song. Everyone gets seen before the day begins.", dur: "15 min", color: "#F5A623" },
-  { time: "9:15", emoji: "\uD83C\uDFA8", label: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking \u2014 whatever the week\u2019s theme calls for. This is the heart of the day.", dur: "60 min", color: "#E94560" },
+  { time: "9:15", emoji: "\uD83C\uDFA8", label: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking — whatever the week's theme calls for. This is the heart of the day.", dur: "60 min", color: "#E94560" },
   { time: "10:15", emoji: "\uD83C\uDF4A", label: "Snack Break", desc: "Fruit and juice. Ten minutes to breathe, chat, and just be a kid.", dur: "15 min", color: "#4AAD8C" },
   { time: "10:30", emoji: "\u26A1", label: "Move", desc: "Obstacle courses, relay races, yoga, freeze dance, or themed outdoor games. Bodies need to move before brains can focus.", dur: "60 min", color: "#4A8FCC" },
   { time: "11:30", emoji: "\uD83C\uDFA4", label: "Express", desc: "Show-and-tell, storytelling, improv games, mini-presentations. The quietest child often surprises everyone here.", dur: "40 min", color: "#9B6DB5" },
-  { time: "12:15", emoji: "\uD83C\uDF92", label: "Wind-down & Pick-up", desc: "Reflection circle. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about what they made.", dur: "15 min", color: "#D4A843" },
+  { time: "12:15", emoji: "\uD83C\uDF92", label: "Wind-down & Pick-up", desc: "Reflection circle. Pack the take-home. Parents arrive to a child who can't stop talking about what they made.", dur: "15 min", color: "#D4A843" },
 ];
 
 const weeks = [
   {
-    num: 1, theme: "Little Artists", emoji: "\uD83C\uDFA8", dates: "Apr 14\u201318", color: "#E8744A",
+    num: 1, theme: "Little Artists", emoji: "\uD83C\uDFA8", dates: "Apr 14–18", color: "#E8744A",
     days: [
-      { day: "MON", date: "Apr 14", make: "Clay animals \u2014 sculpt your favourite creature", move: "Animal movement relay race", express: "Introduce your clay animal \u2014 give it a name + story" },
-      { day: "TUE", date: "Apr 15", make: "Nature collage \u2014 pressed leaves, seeds & paper", move: "Outdoor scavenger hunt for collage materials", express: "Name your collage & tell us one thing you found" },
-      { day: "WED", date: "Apr 16", make: "Canvas painting \u2014 free expression with acrylics", move: "Freeze dance: strike a pose like a painting", express: "Gallery walk \u2014 each child explains their canvas" },
+      { day: "MON", date: "Apr 14", make: "Clay animals — sculpt your favourite creature", move: "Animal movement relay race", express: "Introduce your clay animal — give it a name + story" },
+      { day: "TUE", date: "Apr 15", make: "Nature collage — pressed leaves, seeds & paper", move: "Outdoor scavenger hunt for collage materials", express: "Name your collage & tell us one thing you found" },
+      { day: "WED", date: "Apr 16", make: "Canvas painting — free expression with acrylics", move: "Freeze dance: strike a pose like a painting", express: "Gallery walk — each child explains their canvas" },
       { day: "THU", date: "Apr 17", make: "Tie-dye T-shirt or bandana", move: "Colour obstacle course: hop only on your colour", express: "Design a name for your tie-dye pattern" },
-      { day: "FRI", date: "Apr 18", make: "Assemble art portfolio \u2014 decorate the cover", move: "Art Olympics: sculpt + draw relay", express: "Parent showcase \u2014 mini gallery walk", friday: true },
+      { day: "FRI", date: "Apr 18", make: "Assemble art portfolio — decorate the cover", move: "Art Olympics: sculpt + draw relay", express: "Parent showcase — mini gallery walk", friday: true },
     ],
-    takeHome: "Clay animal \u00b7 Collage \u00b7 Painted canvas \u00b7 Tie-dye piece \u00b7 Art portfolio",
+    takeHome: "Clay animal · Collage · Painted canvas · Tie-dye piece · Art portfolio",
   },
   {
-    num: 2, theme: "Tiny Scientists", emoji: "\uD83E\uDDEA", dates: "Apr 21\u201325", color: "#4A8FCC",
+    num: 2, theme: "Tiny Scientists", emoji: "\uD83E\uDDEA", dates: "Apr 21–25", color: "#4A8FCC",
     days: [
-      { day: "MON", date: "Apr 21", make: "Baking soda volcano \u2014 build, decorate & erupt", move: "Lava floor game", express: "Explain the volcano reaction to the group" },
+      { day: "MON", date: "Apr 21", make: "Baking soda volcano — build, decorate & erupt", move: "Lava floor game", express: "Explain the volcano reaction to the group" },
       { day: "TUE", date: "Apr 22", make: "Magnet experiments + make a simple magnet toy", move: "Human magnet game: attract/repel in pairs", express: "Demo your magnet toy: what does it do?" },
-      { day: "WED", date: "Apr 23", make: "States of matter: make slime (liquid \u2192 solid)", move: "Solid/liquid/gas freeze dance", express: "Explain: \u201CIs slime a liquid or a solid?\u201D" },
-      { day: "THU", date: "Apr 24", make: "Seed ball kits \u2014 mix clay, soil & seeds", move: "Seed bomb target toss", express: "Plant journal: draw what you think will grow" },
-      { day: "FRI", date: "Apr 25", make: "Experiment journal \u2014 illustrate the week", move: "Science relay: 4-station experiment race", express: "Parent showcase \u2014 \u201Cmy favourite experiment\u201D", friday: true },
+      { day: "WED", date: "Apr 23", make: "States of matter: make slime (liquid → solid)", move: "Solid/liquid/gas freeze dance", express: "Explain: is slime a liquid or a solid?" },
+      { day: "THU", date: "Apr 24", make: "Seed ball kits — mix clay, soil & seeds", move: "Seed bomb target toss", express: "Plant journal: draw what you think will grow" },
+      { day: "FRI", date: "Apr 25", make: "Experiment journal — illustrate the week", move: "Science relay: 4-station experiment race", express: "Parent showcase — my favourite experiment", friday: true },
     ],
-    takeHome: "Volcano model \u00b7 Magnet toy \u00b7 Slime \u00b7 Seed ball kit \u00b7 Experiment journal",
+    takeHome: "Volcano model · Magnet toy · Slime · Seed ball kit · Experiment journal",
   },
   {
-    num: 3, theme: "Mini Chefs", emoji: "\uD83C\uDF73", dates: "Apr 28\u2013May 2", color: "#D4A843",
+    num: 3, theme: "Mini Chefs", emoji: "\uD83C\uDF73", dates: "Apr 28–May 2", color: "#D4A843",
     days: [
-      { day: "MON", date: "Apr 28", make: "No-bake energy balls \u2014 oats, honey, chocolate chips", move: "Kitchen relay: sort ingredients by colour", express: "Name your energy ball flavour + rate it" },
-      { day: "TUE", date: "Apr 29", make: "Fruit art platter \u2014 arrange fruit into scenes", move: "Fruit freeze tag", express: "Describe your fruit scene" },
-      { day: "WED", date: "Apr 30", make: "Fresh lemonade stand \u2014 squeeze, mix, taste-test", move: "Lemonade run: carry cups without spilling", express: "Design a menu + price for your lemonade" },
-      { day: "THU", date: "May 1", make: "Decorate a chef hat + write a recipe booklet", move: "MasterChef obstacle course", express: "Pitch your \u201Csignature dish\u201D" },
-      { day: "FRI", date: "May 2", make: "Mini restaurant: set up a table and serve parents", move: "Waiter relay race", express: "Parent showcase \u2014 kids run the restaurant", friday: true },
+      { day: "MON", date: "Apr 28", make: "No-bake energy balls — oats, honey, chocolate chips", move: "Kitchen relay: sort ingredients by colour", express: "Name your energy ball flavour + rate it" },
+      { day: "TUE", date: "Apr 29", make: "Fruit art platter — arrange fruit into scenes", move: "Fruit freeze tag", express: "Describe your fruit scene" },
+      { day: "WED", date: "Apr 30", make: "Fresh lemonade stand — squeeze, mix, taste-test", move: "Lemonade run: carry cups without spilling", express: "Design a menu + price for your lemonade" },
+      { day: "THU", date: "May 1", make: "Decorate a chef hat + write a recipe booklet", move: "MasterChef obstacle course", express: "Pitch your signature dish to the group" },
+      { day: "FRI", date: "May 2", make: "Mini restaurant: set up a table and serve parents", move: "Waiter relay race", express: "Parent showcase — kids run the restaurant", friday: true },
     ],
-    takeHome: "Energy balls \u00b7 Lemonade kit \u00b7 Chef hat \u00b7 Recipe booklet \u00b7 Fruit art creation",
+    takeHome: "Energy balls · Lemonade kit · Chef hat · Recipe booklet · Fruit art creation",
   },
   {
-    num: 4, theme: "Storytellers & Puppeteers", emoji: "\uD83C\uDFAD", dates: "May 5\u20139", color: "#9B6DB5",
+    num: 4, theme: "Storytellers & Puppeteers", emoji: "\uD83C\uDFAD", dates: "May 5–9", color: "#9B6DB5",
     days: [
-      { day: "MON", date: "May 5", make: "Sock puppet character \u2014 fabric scraps & googly eyes", move: "Mirror game: copy puppet movements", express: "Introduce your puppet \u2014 name, age, superpower" },
+      { day: "MON", date: "May 5", make: "Sock puppet character — fabric scraps & googly eyes", move: "Mirror game: copy puppet movements", express: "Introduce your puppet — name, age, superpower" },
       { day: "TUE", date: "May 6", make: "Build a cardboard puppet theatre", move: "Emotion charades: act out feelings", express: "Improvise a 1-minute scene with a partner" },
       { day: "WED", date: "May 7", make: "Storyboard a 3-scene story", move: "Freeze-frame theatre", express: "Tell your 3-scene story to the group" },
-      { day: "THU", date: "May 8", make: "Rehearse puppet show \u2014 write dialogue, practise lines", move: "Tongue twisters + voice projection games", express: "Dress rehearsal: full run-through" },
-      { day: "FRI", date: "May 9", make: "Final set + costume touches", move: "Opening ceremony: parade of characters", express: "Parent showcase \u2014 live puppet show", friday: true },
+      { day: "THU", date: "May 8", make: "Rehearse puppet show — write dialogue, practise lines", move: "Tongue twisters + voice projection games", express: "Dress rehearsal: full run-through" },
+      { day: "FRI", date: "May 9", make: "Final set + costume touches", move: "Opening ceremony: parade of characters", express: "Parent showcase — live puppet show", friday: true },
     ],
-    takeHome: "Sock puppet \u00b7 Puppet theatre \u00b7 Storyboard \u00b7 Script booklet \u00b7 Show recording",
+    takeHome: "Sock puppet · Puppet theatre · Storyboard · Script booklet · Show recording",
   },
   {
-    num: 5, theme: "Robot Friends", emoji: "\uD83E\uDD16", dates: "May 12\u201316", color: "#4AAD8C",
+    num: 5, theme: "Robot Friends", emoji: "\uD83E\uDD16", dates: "May 12–16", color: "#4AAD8C",
     days: [
-      { day: "MON", date: "May 12", make: "Design your robot on paper \u2014 powers, name, purpose", move: "\u201CProgram your friend\u201D \u2014 movement instructions", express: "Present your robot blueprint" },
+      { day: "MON", date: "May 12", make: "Design your robot on paper — powers, name, purpose", move: "Program your friend — movement instructions", express: "Present your robot blueprint" },
       { day: "TUE", date: "May 13", make: "Build robot body from cardboard, foil & tubes", move: "Robot walk relay: slow-motion robot style", express: "Introduce your half-built robot" },
-      { day: "WED", date: "May 14", make: "Coding card set \u2014 sequence cards to complete tasks", move: "Human computer: follow code cards exactly", express: "Explain what went wrong when the code had a bug" },
+      { day: "WED", date: "May 14", make: "Coding card set — sequence cards to complete tasks", move: "Human computer: follow code cards exactly", express: "Explain what went wrong when the code had a bug" },
       { day: "THU", date: "May 15", make: "Finish robot + add LED sticker eyes", move: "Robot Olympics: logic puzzle obstacle course", express: "Teach your robot a skill (mime it)" },
-      { day: "FRI", date: "May 16", make: "Robot ID card + instruction manual", move: "Robot parade", express: "Parent showcase \u2014 Robot Friends demo day", friday: true },
+      { day: "FRI", date: "May 16", make: "Robot ID card + instruction manual", move: "Robot parade", express: "Parent showcase — Robot Friends demo day", friday: true },
     ],
-    takeHome: "Robot blueprint \u00b7 Cardboard robot \u00b7 Coding card set \u00b7 Logic puzzle \u00b7 Robot ID card",
+    takeHome: "Robot blueprint · Cardboard robot · Coding card set · Logic puzzle · Robot ID card",
   },
   {
-    num: 6, theme: "Market Day", emoji: "\uD83D\uDCB0", dates: "May 19\u201323", color: "#D4655A",
+    num: 6, theme: "Market Day", emoji: "\uD83D\uDCB0", dates: "May 19–23", color: "#D4655A",
     days: [
-      { day: "MON", date: "May 19", make: "Choose your product: painted pots, bookmarks, or bags", move: "Market walk \u2014 simulate buying & selling", express: "Pitch: \u201CI\u2019m selling\u2026 and it\u2019s special because\u2026\u201D" },
-      { day: "TUE", date: "May 20", make: "Production day \u2014 make 3\u20135 units", move: "Delivery relay: transport products carefully", express: "Design your business name + logo" },
-      { day: "WED", date: "May 21", make: "Set up stall \u2014 signage, pricing tags, display", move: "Mock market: visit each other\u2019s stalls", express: "Practice your sales pitch in 30 seconds" },
+      { day: "MON", date: "May 19", make: "Choose your product: painted pots, bookmarks, or bags", move: "Market walk — simulate buying & selling", express: "Pitch: I'm selling… and it's special because…" },
+      { day: "TUE", date: "May 20", make: "Production day — make 3–5 units", move: "Delivery relay: transport products carefully", express: "Design your business name + logo" },
+      { day: "WED", date: "May 21", make: "Set up stall — signage, pricing tags, display", move: "Mock market: visit each other's stalls", express: "Practice your sales pitch in 30 seconds" },
       { day: "THU", date: "May 22", make: "Final production + wrap/package products", move: "Shopkeeper games: give change, count play money", express: "Full dress rehearsal of market day" },
-      { day: "FRI", date: "May 23", make: "Open for business \u2014 real parent market", move: "Market setup sprint", express: "Parent showcase \u2014 kids sell to real customers", friday: true },
+      { day: "FRI", date: "May 23", make: "Open for business — real parent market", move: "Market setup sprint", express: "Parent showcase — kids sell to real customers", friday: true },
     ],
-    takeHome: "Products made \u00b7 Play money earned \u00b7 Business card \u00b7 Stall signage \u00b7 Profit envelope",
+    takeHome: "Products made · Play money earned · Business card · Stall signage · Profit envelope",
   },
   {
-    num: 7, theme: "Grand Finale", emoji: "\u2B50", dates: "May 26\u201330", color: "#3A7CBD",
+    num: 7, theme: "Grand Finale", emoji: "\u2B50", dates: "May 26–30", color: "#3A7CBD",
     days: [
-      { day: "MON", date: "May 26", make: "Start memory scrapbook \u2014 one page per week", move: "Best-of relay: favourite activities from each week", express: "\u201CMy favourite day at Tinkerhood was\u2026\u201D" },
-      { day: "TUE", date: "May 27", make: "Collaborative camp mural", move: "Camp Olympics: multi-sport mini tournament", express: "Write a message on a friend\u2019s scrapbook" },
+      { day: "MON", date: "May 26", make: "Start memory scrapbook — one page per week", move: "Best-of relay: favourite activities from each week", express: "My favourite day at Tinkerhood was…" },
+      { day: "TUE", date: "May 27", make: "Collaborative camp mural", move: "Camp Olympics: multi-sport mini tournament", express: "Write a message on a friend's scrapbook" },
       { day: "WED", date: "May 28", make: "Decorate camp t-shirt with fabric markers", move: "T-shirt parade + group photo shoot", express: "Talent showcase rehearsal" },
-      { day: "THU", date: "May 29", make: "Finish scrapbook + assemble yearbook pages", move: "Final Camp Olympics \u2014 medals ceremony", express: "Full talent showcase run-through" },
-      { day: "FRI", date: "May 30", make: "Certificate personalisation", move: "Graduation parade around the campus", express: "Closing ceremony \u2014 certificates, yearbook, talent show", friday: true },
+      { day: "THU", date: "May 29", make: "Finish scrapbook + assemble yearbook pages", move: "Final Camp Olympics — medals ceremony", express: "Full talent showcase run-through" },
+      { day: "FRI", date: "May 30", make: "Certificate personalisation", move: "Graduation parade around the campus", express: "Closing ceremony — certificates, yearbook, talent show", friday: true },
     ],
-    takeHome: "Memory scrapbook \u00b7 Camp t-shirt \u00b7 Certificate \u00b7 Yearbook \u00b7 Camp Olympics medal",
+    takeHome: "Memory scrapbook · Camp t-shirt · Certificate · Yearbook · Camp Olympics medal",
   },
 ];
 
@@ -100,14 +100,14 @@ export default function SchedulePage() {
     <div className="min-h-screen bg-cream">
       <header className="bg-navy px-6 py-5 flex items-center justify-between">
         <Link href="/" className="font-display text-[1.35rem] text-cream">Tinkerhood</Link>
-        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Programme &middot; April\u2013May 2026</span>
+        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Programme &middot; April–May 2026</span>
       </header>
 
       <div className="max-w-[900px] mx-auto px-6 py-12 pb-20">
         {/* Daily Schedule Timeline */}
         <div className="mb-6">
           <h2 className="font-display text-[1.7rem] text-navy leading-[1.15]">A morning at Tinkerhood</h2>
-          <p className="mt-1.5 text-muted text-[0.88rem]">Mon\u2013Fri &middot; 9:00 AM \u2013 12:30 PM &middot; Every day follows this rhythm, with content changing by week theme.</p>
+          <p className="mt-1.5 text-muted text-[0.88rem]">Mon–Fri &middot; 9:00 AM – 12:30 PM &middot; Every day follows this rhythm, with content changing by week theme.</p>
         </div>
 
         <div className="flex flex-col">
