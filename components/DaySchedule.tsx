@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer, sectionFade } from "@/lib/animations";
-import { ColorfulDivider, DoodleSun, DoodleStar } from "./Doodles";
+import { ColorfulDivider, DoodleSun, DoodleStar, DoodlePaintBlob, DoodleHeart } from "./Doodles";
 
 const schedule = [
   { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F0C75E" },
@@ -17,8 +17,11 @@ export default function DaySchedule() {
   return (
     <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
       <div className="pointer-events-none">
-        <DoodleSun className="absolute top-12 right-10 w-14 opacity-35 hidden md:block" />
-        <DoodleStar className="absolute bottom-20 left-8 w-8 opacity-25 hidden md:block" color="#E05A3A" />
+        <DoodleSun className="absolute top-12 right-10 w-28 opacity-50 hidden md:block" />
+        <DoodleStar className="absolute bottom-20 left-8 w-16 opacity-40 hidden md:block" color="#E05A3A" />
+        <DoodleStar className="absolute top-8 left-6 w-14 opacity-40 hidden md:block" color="#F0C75E" />
+        <DoodlePaintBlob className="absolute bottom-12 right-12 w-20 opacity-20 hidden lg:block" color="#9BB8D7" />
+        <DoodleHeart className="absolute top-[45%] right-4 w-10 opacity-35 hidden md:block" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />

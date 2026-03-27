@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
-import { ColorfulDivider, DoodleArrow } from "./Doodles";
+import { ColorfulDivider, DoodleArrow, DoodleStar, DoodleSun, DoodleSpiral, DoodlePaintBlob } from "./Doodles";
 
 const steps = [
   { number: "01", title: "Pick your weeks", description: "Enrol for 1 week, 4 weeks, or the full 7-week season. Start any Monday.", color: "#E05A3A", bg: "#FDEEEA" },
@@ -12,7 +12,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#EFF3F8]">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 bg-[#CDDAEA]">
+      <div className="pointer-events-none">
+        <DoodleSun className="absolute top-12 right-10 w-20 opacity-35 hidden md:block" color="#F0C75E" />
+        <DoodleStar className="absolute bottom-16 left-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />
+        <DoodleSpiral className="absolute top-20 left-6 w-12 opacity-30 hidden lg:block" color="#3A8C6E" />
+        <DoodlePaintBlob className="absolute bottom-12 right-12 w-20 opacity-20 hidden md:block" color="#9BB8D7" />
+      </div>
       <div className="mx-auto max-w-[1400px]">
         <ColorfulDivider className="mb-10" />
 

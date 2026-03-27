@@ -27,7 +27,7 @@ export default function Nav() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? "bg-cream/92 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]" : "bg-transparent"
+      scrolled ? "bg-white/92 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]" : "bg-transparent"
     }`}>
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <a href="#" className="font-display text-[22px] text-navy">The Summer Club</a>

@@ -1,11 +1,15 @@
-import { ColorfulDivider, DoodleStar, DoodleHeart } from "./Doodles";
+import { ColorfulDivider, DoodleStar, DoodleHeart, DoodleCrayon, DoodleBrush, DoodlePaintBlob } from "./Doodles";
 
 export default function Footer() {
   return (
-    <footer className="relative px-6 py-14 lg:px-12 lg:py-16 bg-navy">
+    <footer className="relative px-6 py-14 lg:px-12 lg:py-16 bg-navy overflow-hidden">
       <div className="pointer-events-none">
-        <DoodleStar className="absolute top-8 right-12 w-8 opacity-15" color="#F0C75E" />
-        <DoodleHeart className="absolute bottom-12 left-10 w-6 opacity-10" color="#E05A3A" />
+        <DoodleStar className="absolute top-8 right-12 w-14 opacity-20" color="#F0C75E" />
+        <DoodleHeart className="absolute bottom-12 left-10 w-10 opacity-15" color="#E05A3A" />
+        <DoodleCrayon className="absolute top-[40%] left-4 w-10 opacity-15 hidden md:block" color="#F7F9FC" />
+        <DoodleBrush className="absolute bottom-8 right-[25%] w-12 opacity-12 hidden md:block" color="#F7F9FC" />
+        <DoodleStar className="absolute bottom-6 right-8 w-6 opacity-12 hidden md:block" color="#F7F9FC" />
+        <DoodlePaintBlob className="absolute top-6 left-[40%] w-14 opacity-10 hidden lg:block" color="#F7F9FC" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="grid gap-10 md:grid-cols-[1.5fr_auto_auto] md:gap-16">

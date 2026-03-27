@@ -2,22 +2,34 @@
 
 import { motion } from "framer-motion";
 import { sectionFade } from "@/lib/animations";
-import { DoodleStar, DoodleSun, DoodleHeart, DoodleCircle, DoodleSpiral, DoodlePaintBlob, DoodleZigzag, ColorfulDivider } from "./Doodles";
+import { DoodleStar, DoodleSun, DoodleHeart, DoodleCircle, DoodleSpiral, DoodlePaintBlob, DoodleZigzag, DoodleBrush, DoodleCrayon, ColorfulDivider, DoodleScribbleCircle, DoodleConfettiDots } from "./Doodles";
 
 export default function FinalCTA() {
   return (
     <section className="relative px-6 py-[100px] md:py-[160px] lg:px-12 overflow-hidden">
-      {/* Heavy doodle decorations */}
+      {/* HEAVY doodle decorations — most decorated section */}
       <div className="pointer-events-none">
-        <DoodleSun className="absolute top-8 right-[8%] w-20 md:w-28 opacity-60" />
-        <DoodleStar className="absolute top-[15%] right-[25%] w-10 opacity-50" color="#E05A3A" />
-        <DoodleStar className="absolute top-[60%] right-[5%] w-8 opacity-40" color="#3A8C6E" />
-        <DoodleHeart className="absolute bottom-[20%] right-[15%] w-12 opacity-45" />
-        <DoodleCircle className="absolute top-[40%] right-[10%] w-14 opacity-30 hidden md:block" color="#F0C75E" />
-        <DoodlePaintBlob className="absolute bottom-[10%] right-[30%] w-20 opacity-20 hidden lg:block" color="#9BB8D7" />
-        <DoodleSpiral className="absolute bottom-[30%] left-[3%] w-12 opacity-25 hidden md:block" />
-        <DoodleZigzag className="absolute top-[70%] left-[8%] w-16 opacity-25 hidden lg:block" color="#F0C75E" />
-        <DoodleStar className="absolute bottom-[15%] left-[12%] w-6 opacity-35 hidden md:block" color="#9BB8D7" />
+        {/* Large background element */}
+        <DoodleScribbleCircle className="absolute top-[10%] right-[5%] w-48 md:w-72 opacity-10 hidden md:block" color="#9BB8D7" />
+        {/* Right side cluster */}
+        <DoodleSun className="absolute top-8 right-[8%] w-32 md:w-44 opacity-75" />
+        <DoodleStar className="absolute top-[15%] right-[25%] w-16 opacity-65" color="#E05A3A" />
+        <DoodleStar className="absolute top-[60%] right-[5%] w-14 opacity-55" color="#3A8C6E" />
+        <DoodleHeart className="absolute bottom-[20%] right-[15%] w-20 opacity-60" />
+        <DoodleCircle className="absolute top-[40%] right-[10%] w-24 opacity-40 hidden md:block" color="#F0C75E" />
+        <DoodlePaintBlob className="absolute bottom-[10%] right-[30%] w-32 opacity-30 hidden lg:block" color="#9BB8D7" />
+        {/* Left side cluster */}
+        <DoodleSpiral className="absolute bottom-[30%] left-[3%] w-20 opacity-40 hidden md:block" />
+        <DoodleZigzag className="absolute top-[70%] left-[8%] w-28 opacity-35 hidden lg:block" color="#F0C75E" />
+        <DoodleStar className="absolute bottom-[15%] left-[12%] w-12 opacity-50 hidden md:block" color="#9BB8D7" />
+        <DoodleBrush className="absolute bottom-[5%] right-[40%] w-18 opacity-45 hidden md:block" color="#E05A3A" />
+        <DoodleCrayon className="absolute top-[5%] left-[15%] w-10 opacity-40 hidden lg:block" color="#F0C75E" />
+        {/* Confetti dots scattered */}
+        <DoodleConfettiDots className="absolute top-[20%] left-[5%] w-40 opacity-25 hidden md:block" color="#E05A3A" />
+        <DoodleConfettiDots className="absolute bottom-[15%] right-[5%] w-36 opacity-20 hidden lg:block" color="#F0C75E" />
+        {/* Additional stars */}
+        <DoodleStar className="absolute top-[30%] left-[2%] w-8 opacity-45 hidden md:block" color="#F0C75E" />
+        <DoodleStar className="absolute bottom-[40%] right-[2%] w-6 opacity-50" color="#E05A3A" />
       </div>
 
       <motion.div variants={sectionFade} initial="hidden" whileInView="visible"

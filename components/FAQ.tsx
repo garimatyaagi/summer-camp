@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
-import { SquigglyLine } from "./Doodles";
+import { SquigglyLine, DoodleCircle, DoodleStar, DoodleSpiral, DoodlePaintBlob } from "./Doodles";
 
 const faqs = [
   { q: "What ages is this for?", a: "5 to 8 years old. We run two cohorts \u2014 Juniors (5\u20137) and Seniors (8\u201310) \u2014 so activities are age-appropriate. From Week 3, we may add a 9\u201312 track if there\u2019s demand." },
@@ -33,8 +33,14 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="px-6 py-[80px] md:py-[140px] lg:px-12">
-      <div className="mx-auto max-w-[1400px]">
+    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
+      <div className="pointer-events-none">
+        <DoodleCircle className="absolute top-12 right-10 w-20 opacity-15 hidden md:block" color="#9BB8D7" />
+        <DoodleStar className="absolute bottom-16 left-8 w-10 opacity-30 hidden md:block" color="#F0C75E" />
+        <DoodleSpiral className="absolute top-20 left-6 w-12 opacity-20 hidden lg:block" color="#E05A3A" />
+        <DoodlePaintBlob className="absolute bottom-[40%] right-6 w-16 opacity-15 hidden md:block" color="#3A8C6E" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-[1400px]">
         <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
 
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">

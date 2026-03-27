@@ -133,3 +133,101 @@ export function ColorfulDivider({ className = "" }: { className?: string }) {
     </div>
   );
 }
+
+/* ─── New large-format doodles for visual density ─── */
+
+export function DoodleSplatter({ className = "", color = "#9BB8D7" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 120 100" fill="none" className={className}>
+      <path d="M60 15 C35 8, 12 25, 18 50 S30 82, 55 85 C72 87, 95 75, 100 55 S105 20, 75 12 C68 10, 63 13, 60 15Z" fill={color} fillOpacity={0.18} stroke={color} strokeWidth={1.5} />
+      <circle cx="20" cy="20" r="4" fill={color} fillOpacity={0.25} />
+      <circle cx="100" cy="30" r="3" fill={color} fillOpacity={0.2} />
+      <circle cx="90" cy="85" r="5" fill={color} fillOpacity={0.15} />
+      <circle cx="15" cy="70" r="3.5" fill={color} fillOpacity={0.22} />
+      <circle cx="50" cy="10" r="2.5" fill={color} fillOpacity={0.3} />
+      <circle cx="108" cy="60" r="2" fill={color} fillOpacity={0.2} />
+    </svg>
+  );
+}
+
+export function DoodleConfettiDots({ className = "", color = "#E05A3A" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 200 80" fill="none" className={className}>
+      <circle cx="15" cy="25" r="4" fill={color} fillOpacity={0.5} />
+      <circle cx="42" cy="12" r="2.5" fill={color} fillOpacity={0.3} />
+      <circle cx="70" cy="40" r="5.5" fill={color} fillOpacity={0.4} />
+      <circle cx="95" cy="18" r="3" fill={color} fillOpacity={0.25} />
+      <circle cx="120" cy="55" r="6" fill={color} fillOpacity={0.35} />
+      <circle cx="145" cy="22" r="2" fill={color} fillOpacity={0.45} />
+      <circle cx="30" cy="60" r="3.5" fill={color} fillOpacity={0.2} />
+      <circle cx="165" cy="45" r="4.5" fill={color} fillOpacity={0.3} />
+      <circle cx="55" cy="68" r="2" fill={color} fillOpacity={0.55} />
+      <circle cx="185" cy="30" r="3" fill={color} fillOpacity={0.4} />
+      <circle cx="110" cy="70" r="2.5" fill={color} fillOpacity={0.25} />
+      <circle cx="175" cy="65" r="5" fill={color} fillOpacity={0.2} />
+      <circle cx="80" cy="8" r="3.5" fill={color} fillOpacity={0.35} />
+      <circle cx="155" cy="10" r="2" fill={color} fillOpacity={0.5} />
+    </svg>
+  );
+}
+
+export function DoodleCrayonScribble({ className = "", color = "#F0C75E" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 300 60" fill="none" className={className}>
+      <path d="M5 30 C15 10, 35 50, 50 25 S70 5, 85 35 C95 55, 110 15, 130 30 S155 50, 170 20 C185 5, 200 45, 220 28 S245 10, 260 38 C270 50, 285 20, 295 30"
+        stroke={color} strokeWidth={2.5} strokeLinecap="round" fill="none" />
+    </svg>
+  );
+}
+
+export function DoodleWavyDivider({ className = "", color = "#E05A3A" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 1200 40" fill="none" className={className} preserveAspectRatio="none">
+      <path d="M0 20 C50 8, 100 32, 150 20 S250 8, 300 20 S400 32, 450 20 S550 8, 600 20 S700 32, 750 20 S850 8, 900 20 S1000 32, 1050 20 S1150 8, 1200 20"
+        stroke={color} strokeWidth={2.5} strokeLinecap="round" fill="none" />
+    </svg>
+  );
+}
+
+export function DoodlePaintStroke({ className = "", color = "#2B5797" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 180 30" fill="none" className={className}>
+      <path d="M5 18 C20 8, 40 5, 60 10 S100 18, 120 12 S150 5, 170 15 C175 18, 178 16, 175 14"
+        fill={color} fillOpacity={0.15} stroke={color} strokeWidth={1.5} strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function DoodleScribbleCircle({ className = "", color = "#9BB8D7" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 150 150" fill="none" className={className}>
+      <path d="M75 15 C110 10, 140 40, 138 75 S115 140, 75 138 C40 136, 10 110, 12 75 S35 18, 75 15"
+        stroke={color} strokeWidth={2} strokeOpacity={0.5} fill="none" />
+      <path d="M78 18 C115 15, 142 45, 135 78 S110 135, 72 135 C38 133, 8 105, 15 72 S40 22, 78 18"
+        stroke={color} strokeWidth={2} strokeOpacity={0.35} fill="none" />
+      <path d="M72 12 C108 8, 145 38, 140 72 S118 142, 78 140 C42 138, 5 108, 10 70 S32 15, 72 12"
+        stroke={color} strokeWidth={2} strokeOpacity={0.2} fill="none" />
+    </svg>
+  );
+}
+
+export function DoodlePencilLine({ className = "", color = "#7A8B9C" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 200 15" fill="none" className={className}>
+      <path d="M5 8 C20 6, 40 10, 60 7 S100 5, 120 8 S160 10, 180 7"
+        stroke={color} strokeWidth={2} strokeLinecap="round" fill="none" />
+      <polygon points="180,7 195,4 195,10" fill={color} fillOpacity={0.6} />
+    </svg>
+  );
+}
+
+export function DoodleCrossHatch({ className = "", color = "#9BB8D7" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 60 60" fill="none" className={className}>
+      <path d="M5 5 L55 55 M15 2 L58 45 M2 15 L45 58 M25 2 L58 35 M2 25 L35 58"
+        stroke={color} strokeWidth={1.5} strokeLinecap="round" strokeOpacity={0.25} />
+      <path d="M55 5 L5 55 M45 2 L2 45 M58 15 L15 58 M35 2 L2 35 M58 25 L25 58"
+        stroke={color} strokeWidth={1.5} strokeLinecap="round" strokeOpacity={0.2} />
+    </svg>
+  );
+}

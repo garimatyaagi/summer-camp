@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  /* The Summer Club palette */
-  --color-cream: #F7F9FC;
+  /* The Summer Club palette — Sky White base */
+  --color-cream: #DCE6F0;
+  --color-section-alt: #CDDAEA;
+  --color-card: #FFFFFF;
   --color-navy: #2B5797;
   --color-coral: #E05A3A;
   --color-coral-dark: #C94B2E;
@@ -45,7 +47,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.018'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.045'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: -1;
 }
@@ -57,7 +59,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
   pointer-events: none;
   border-radius: inherit;
   z-index: 1;
@@ -79,7 +81,7 @@ body::before {
   font-family: var(--font-body);
   font-size: 0.92rem;
   color: #1E2D3D;
-  background: var(--color-cream);
+  background: #FFFFFF;
   transition: border-color 0.18s, box-shadow 0.18s;
   outline: none;
   appearance: none;
@@ -106,7 +108,7 @@ body::before {
   padding: 10px 14px;
   border-radius: 10px;
   border: 1.5px solid #D4DCE6;
-  background: var(--color-cream);
+  background: #FFFFFF;
   transition: border-color 0.15s, background 0.15s;
   font-size: 0.88rem;
   color: #1E2D3D;
@@ -176,3 +178,12 @@ body::before {
 }
 .faq-answer.open { grid-template-rows: 1fr; }
 .faq-answer > div { overflow: hidden; }
+
+/* Doodle layer utility */
+.doodle-layer {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}

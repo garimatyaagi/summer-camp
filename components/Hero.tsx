@@ -7,58 +7,66 @@ import { DoodleStar, DoodleSun, DoodleHeart, DoodleCircle, DoodleSpiral, DoodleZ
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden px-6 pb-16 pt-28 lg:px-12 lg:pb-20 lg:pt-36">
-      {/* Dense doodle background */}
+      {/* Dense doodle background — SCALED UP 50%+ */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        {/* Top right cluster */}
-        <motion.div initial={{ opacity: 0, scale: 0.3, rotate: -30 }} animate={{ opacity: 0.8, scale: 1, rotate: 0 }}
-          transition={{ delay: 0.8, duration: 0.7 }} className="absolute top-[8%] right-[6%]">
-          <DoodleSun className="w-20 md:w-28" />
+        {/* Top right cluster — BIG */}
+        <motion.div initial={{ opacity: 0, scale: 0.3, rotate: -30 }} animate={{ opacity: 0.9, scale: 1, rotate: 0 }}
+          transition={{ delay: 0.8, duration: 0.7 }} className="absolute top-[6%] right-[4%]">
+          <DoodleSun className="w-28 md:w-44" />
         </motion.div>
-        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.7, scale: 1 }}
-          transition={{ delay: 1, duration: 0.5 }} className="absolute top-[22%] right-[3%] md:right-[12%]">
-          <DoodleStar className="w-10 md:w-14" color="#E05A3A" />
+        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.8, scale: 1 }}
+          transition={{ delay: 1, duration: 0.5 }} className="absolute top-[20%] right-[2%] md:right-[10%]">
+          <DoodleStar className="w-16 md:w-22" color="#E05A3A" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.7 }}
+          transition={{ delay: 1.1, duration: 0.5 }} className="absolute top-[4%] right-[20%] hidden md:block">
+          <DoodleStar className="w-12" color="#3A8C6E" />
+        </motion.div>
+
+        {/* Right side — bigger, bolder */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 0.7, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.6 }} className="absolute top-[40%] right-[3%] md:right-[6%]">
+          <DoodleCrayon className="w-8 md:w-12" color="#E05A3A" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.65, scale: 1 }}
+          transition={{ delay: 1.3, duration: 0.5 }} className="absolute top-[53%] right-[1%] md:right-[13%]">
+          <DoodleHeart className="w-14 md:w-20" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, rotate: 20 }} animate={{ opacity: 0.5, rotate: 0 }}
+          transition={{ delay: 1.5, duration: 0.6 }} className="absolute bottom-[20%] right-[4%] hidden md:block">
+          <DoodlePaintBlob className="w-28 md:w-40" color="#9BB8D7" />
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.6 }}
-          transition={{ delay: 1.1, duration: 0.5 }} className="absolute top-[6%] right-[22%] hidden md:block">
-          <DoodleStar className="w-7" color="#3A8C6E" />
+          transition={{ delay: 1.6, duration: 0.5 }} className="absolute bottom-[33%] right-[18%] hidden lg:block">
+          <DoodleCircle className="w-20" color="#F0C75E" />
         </motion.div>
 
-        {/* Right side */}
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 0.55, y: 0 }}
-          transition={{ delay: 1.2, duration: 0.6 }} className="absolute top-[42%] right-[4%] md:right-[8%]">
-          <DoodleCrayon className="w-6 md:w-8" color="#E05A3A" />
-        </motion.div>
-        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.5, scale: 1 }}
-          transition={{ delay: 1.3, duration: 0.5 }} className="absolute top-[55%] right-[2%] md:right-[15%]">
-          <DoodleHeart className="w-10 md:w-14" />
-        </motion.div>
-        <motion.div initial={{ opacity: 0, rotate: 20 }} animate={{ opacity: 0.4, rotate: 0 }}
-          transition={{ delay: 1.5, duration: 0.6 }} className="absolute bottom-[22%] right-[6%] hidden md:block">
-          <DoodlePaintBlob className="w-16 md:w-24" color="#9BB8D7" />
-        </motion.div>
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }}
-          transition={{ delay: 1.6, duration: 0.5 }} className="absolute bottom-[35%] right-[20%] hidden lg:block">
-          <DoodleCircle className="w-12" color="#F0C75E" />
-        </motion.div>
-
-        {/* Left side (fewer, subtle) */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.3 }}
-          transition={{ delay: 1.4, duration: 0.6 }} className="absolute bottom-[25%] left-[3%] hidden md:block">
-          <DoodleSpiral className="w-12" color="#3A8C6E" />
-        </motion.div>
-        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.4, scale: 1 }}
-          transition={{ delay: 1.7, duration: 0.5 }} className="absolute top-[70%] left-[8%] hidden lg:block">
-          <DoodleStar className="w-6" color="#F0C75E" />
-        </motion.div>
-
-        {/* Bottom scattered */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.35 }}
-          transition={{ delay: 1.8, duration: 0.5 }} className="absolute bottom-[8%] right-[35%] hidden md:block">
-          <DoodleBrush className="w-10" color="#F0C75E" />
-        </motion.div>
+        {/* Left side — more prominent now */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.45 }}
-          transition={{ delay: 1.9, duration: 0.5 }} className="absolute bottom-[12%] left-[15%] hidden lg:block">
-          <DoodleZigzag className="w-16" color="#E05A3A" />
+          transition={{ delay: 1.4, duration: 0.6 }} className="absolute bottom-[22%] left-[2%] hidden md:block">
+          <DoodleSpiral className="w-20" color="#3A8C6E" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 0.55, scale: 1 }}
+          transition={{ delay: 1.7, duration: 0.5 }} className="absolute top-[68%] left-[6%] hidden lg:block">
+          <DoodleStar className="w-12" color="#F0C75E" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.35 }}
+          transition={{ delay: 1.0, duration: 0.6 }} className="absolute top-[15%] left-[4%] hidden md:block">
+          <DoodleStar className="w-10" color="#9BB8D7" />
+        </motion.div>
+
+        {/* Bottom scattered — bigger */}
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }}
+          transition={{ delay: 1.8, duration: 0.5 }} className="absolute bottom-[6%] right-[32%] hidden md:block">
+          <DoodleBrush className="w-16" color="#F0C75E" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.55 }}
+          transition={{ delay: 1.9, duration: 0.5 }} className="absolute bottom-[10%] left-[12%] hidden lg:block">
+          <DoodleZigzag className="w-28" color="#E05A3A" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.3 }}
+          transition={{ delay: 1.2, duration: 0.8 }} className="absolute bottom-[15%] left-[30%] hidden lg:block">
+          <DoodleCircle className="w-16" color="#E05A3A" />
         </motion.div>
       </div>
 

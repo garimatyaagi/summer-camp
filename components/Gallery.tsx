@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, sectionFade } from "@/lib/animations";
-import { SquigglyLine, DoodleHeart } from "./Doodles";
+import { SquigglyLine, DoodleHeart, DoodleStar, DoodleSun, DoodlePaintBlob } from "./Doodles";
 
 const images = [
   { src: "https://images.unsplash.com/photo-1560421683-6856ea585c78?w=600", alt: "Colorful craft materials", tall: true },
@@ -16,9 +16,12 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
-      <div className="pointer-events-none absolute bottom-32 right-10 opacity-20 hidden md:block">
-        <DoodleHeart className="w-10" />
+    <section className="relative px-6 py-[80px] md:py-[140px] lg:px-12 bg-[#CDDAEA]">
+      <div className="pointer-events-none">
+        <DoodleHeart className="absolute bottom-32 right-10 w-20 opacity-45 hidden md:block" />
+        <DoodleStar className="absolute top-12 right-8 w-14 opacity-45 hidden md:block" color="#E05A3A" />
+        <DoodleSun className="absolute bottom-16 left-6 w-16 opacity-30 hidden md:block" color="#F0C75E" />
+        <DoodlePaintBlob className="absolute top-20 left-10 w-20 opacity-20 hidden lg:block" color="#3A8C6E" />
       </div>
       <div className="mx-auto max-w-[1400px]">
         <SquigglyLine className="w-24 h-2 mb-12" color="#D4DCE6" />
