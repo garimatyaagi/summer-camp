@@ -3,15 +3,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 
-const weekOptions = [
-  { value: "week1", label: "Week 1", dates: "Apr 14–18", theme: "The Art Studio" },
-  { value: "week2", label: "Week 2", dates: "Apr 21–25", theme: "The Science Lab" },
-  { value: "week3", label: "Week 3", dates: "Apr 28–May 2", theme: "The Kitchen Studio" },
-  { value: "week4", label: "Week 4", dates: "May 5–9", theme: "The Nature Atelier" },
-  { value: "week5", label: "Week 5", dates: "May 12–16", theme: "The Tinker Workshop" },
-  { value: "week6", label: "Week 6", dates: "May 19–23", theme: "The Entrepreneur's Market" },
-  { value: "week7", label: "Week 7", dates: "May 26–30", theme: "The Exhibition" },
-];
+// Full programme — no week selection needed
 
 export default function RegisterPage() {
   const [submitting, setSubmitting] = useState(false);
@@ -22,7 +14,7 @@ export default function RegisterPage() {
 
   const [form, setForm] = useState({
     child_name: "", child_dob: "", blood_group: "", gender: "", medical: "",
-    plan: "", weeks: [] as string[], extended_play: "no", sibling: "no",
+    plan: "full_programme", weeks: ["week1","week2","week3","week4","week5","week6","week7"], extended_play: "no", sibling: "no",
     parent_name: "", parent_phone: "", parent_email: "", emergency_contact: "",
     referral: "", notes: "",
     photo_consent: false, activity_consent: false, tnc_consent: false,
@@ -33,26 +25,18 @@ export default function RegisterPage() {
     setError("");
   }
 
-  function toggleWeek(week: string) {
-    setForm((prev) => ({
-      ...prev,
-      weeks: prev.weeks.includes(week) ? prev.weeks.filter((w) => w !== week) : [...prev.weeks, week],
-    }));
-  }
-
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
 
     // Validation
-    const required: (keyof typeof form)[] = ["child_name", "child_dob", "gender", "medical", "plan", "parent_name", "parent_phone", "parent_email", "emergency_contact", "referral"];
+    const required: (keyof typeof form)[] = ["child_name", "child_dob", "gender", "medical", "parent_name", "parent_phone", "parent_email", "emergency_contact", "referral"];
     for (const field of required) {
       if (!form[field] || (typeof form[field] === "string" && !(form[field] as string).trim())) {
         setError(`Please fill in all required fields.`);
         return;
       }
     }
-    if (form.weeks.length === 0) { setError("Please select at least one week."); return; }
     if (!form.photo_consent || !form.activity_consent || !form.tnc_consent) { setError("Please accept all consent checkboxes."); return; }
 
     setSubmitting(true);
@@ -176,44 +160,16 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          {/* Section 2: Plan */}
-          <SectionHeader num={2} title="Choose your plan" />
+          {/* Section 2: Programme options */}
+          <SectionHeader num={2} title="Programme options" />
           <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
-            <Field label="Which plan works best for you?" required>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-2">
-                {[
-                  { v: "weekly", name: "Weekly", price: "\u20B94,500", sub: "\u20B93,800 early bird", subColor: "#E05A3A", save: "" },
-                  { v: "4week", name: "4-Week Bundle", price: "\u20B915,000", sub: "", subColor: "", save: "Save \u20B93,000", badge: "Popular" },
-                  { v: "season", name: "Full Season", price: "\u20B924,500", sub: "", subColor: "", save: "Save \u20B97,000" },
-                ].map((plan) => (
-                  <label key={plan.v} className={`plan-opt ${form.plan === plan.v ? "selected" : ""}`}>
-                    <input type="radio" name="plan" value={plan.v} checked={form.plan === plan.v}
-                      onChange={() => update("plan", plan.v)} className="hidden" />
-                    {plan.badge && <span className="plan-badge">{plan.badge}</span>}
-                    <span className="text-[0.82rem] font-semibold text-[#1E2D3D]">{plan.name}</span>
-                    <span className="font-display text-[1.4rem] text-navy leading-none">{plan.price}</span>
-                    {plan.sub && <span className="text-[0.72rem] font-semibold" style={{ color: plan.subColor }}>{plan.sub}</span>}
-                    {plan.save && <span className="text-[0.72rem] font-semibold text-[#3DAA6B]">{plan.save}</span>}
-                  </label>
-                ))}
-              </div>
-            </Field>
+            <div className="bg-[#F0F4F9] rounded-xl p-4 mb-5">
+              <p className="text-[0.9rem] font-bold text-[#2B5797]">Full Programme &middot; 7 weeks &middot; April 14 – May 30</p>
+              <p className="text-[0.8rem] text-[#3A4D62] mt-1">&#8377;21,000 (early bird) &middot; Mon–Fri, 9 AM – 12:30 PM</p>
+            </div>
 
-            <Field label="Which weeks would you like to enrol for?" required hint="Select all that apply" className="mt-5">
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mt-2">
-                {weekOptions.map((w) => (
-                  <label key={w.value} className={`week-opt ${form.weeks.includes(w.value) ? "selected" : ""}`}>
-                    <input type="checkbox" checked={form.weeks.includes(w.value)} onChange={() => toggleWeek(w.value)} className="hidden" />
-                    <span className="text-[0.82rem] font-semibold text-navy">{w.label}</span>
-                    <span className="text-[0.75rem] text-[#7a7a96]">{w.dates}</span>
-                    <span className="text-[0.75rem] font-medium text-coral">{w.theme}</span>
-                  </label>
-                ))}
-              </div>
-            </Field>
-
-            <Field label="Would you like Extended Play?" hint="(optional)" className="mt-5">
-              <p className="text-[0.8rem] text-[#7a7a96] mb-2">12:30–2:30 PM &middot; &#8377;1,500/week &middot; Lunch included</p>
+            <Field label="Would you like Extended Play?" hint="(optional)">
+              <p className="text-[0.8rem] text-[#7a7a96] mb-2">12:30–2:30 PM &middot; &#8377;8,000 for the full programme &middot; Lunch included</p>
               <div className="flex flex-wrap gap-2">
                 {[{ v: "yes", l: "Yes, sign me up" }, { v: "maybe", l: "Maybe — tell me more" }, { v: "no", l: "No, thanks" }].map((opt) => (
                   <label key={opt.v} className={`radio-opt ${form.extended_play === opt.v ? "selected" : ""}`}>

@@ -6,15 +6,13 @@ import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 const faqs = [
   { q: "What ages is this for?", a: "5 to 8 years old. We run two groups \u2014 Explorers (5\u20136) and Makers (7\u20138) \u2014 so activities match their level. Both groups follow the same weekly theme but with different complexity." },
-  { q: "Where exactly is the camp?", a: "HSR Layout, Bangalore. It\u2019s a gated campus with AC indoor space and an outdoor play area. We\u2019ll share the exact address and Google Maps link once you register." },
-  { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide snacks, all materials, and a whole lot of fun." },
-  { q: "Is food included?", a: "A mid-morning snack (fruit + juice) is included. If you add Extended Play (12:30\u20132:30 PM), lunch is included too." },
-  { q: "What if my child misses a day?", a: "Life happens. Missed days can\u2019t be refunded or transferred, but we\u2019ll send home the take-home kit so they don\u2019t miss out on the making." },
+  { q: "Is it the full 7 weeks or can we join partway?", a: "It\u2019s a complete 7-week programme. Each week builds on the last, and Week 7 is the exhibition where they present everything. The full journey is what makes it work." },
+  { q: "Where is it?", a: "HSR Layout, Bangalore. Gated campus with AC indoor space and an outdoor play area. We\u2019ll share the exact address once you register." },
+  { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide everything else \u2014 snacks, materials, all of it." },
+  { q: "What if my child misses a day?", a: "Life happens. Missed days can\u2019t be refunded, but we\u2019ll send home the take-home so they don\u2019t miss the making." },
+  { q: "What about safety?", a: "First-aid trained staff at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. You\u2019ll have both founders\u2019 phone numbers." },
+  { q: "What happens at the Exhibition?", a: "Week 7 ends with a proper gallery opening. Fairy lights, printed labels, a catalog. Every child presents their best work to a room full of parents. It\u2019s the moment they feel genuinely proud \u2014 and the photo you\u2019ll share." },
   { q: "Is there a sibling discount?", a: "Yes \u2014 15% off for the second child onwards." },
-  { q: "What about safety?", a: "First-aid trained staff on-site at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. Allergy management. You\u2019ll have both founders\u2019 phone numbers." },
-  { q: "Can I visit during the camp?", a: "Absolutely. We host a Friday Showcase every week where parents come see what the kids made and hear them present. It\u2019s our favourite part of the week." },
-  { q: "What\u2019s the portfolio?", a: "Every week, your child creates real work \u2014 paintings, experiment journals, robots, recipe booklets. Each piece is documented and collected into a portfolio binder. By Week 7, they have a body of work that shows real growth across seven different skills." },
-  { q: "What happens at the Exhibition?", a: "Week 7 ends with a proper gallery opening for parents. Fairy lights, printed labels, a catalog of each child\u2019s work. Every child presents their portfolio and their \u201Cbest of\u201D piece. It\u2019s the moment parents photograph and share \u2014 and the moment kids feel genuinely proud." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {

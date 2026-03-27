@@ -14,16 +14,16 @@ export default function Pricing() {
         <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:gap-16">
           <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
             <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
-              Simple{" "}
+              One programme.{" "}
               <span className="relative inline-block">
-                pricing
+                One price
                 <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
                   <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
                 </svg>
               </span>.
             </h2>
             <p className="mt-5 max-w-[360px] text-[16px] leading-[1.85] text-white">
-              No hidden fees. No confusing tiers. One price that includes everything.
+              Everything included. No add-ons, no tiers, no surprises.
             </p>
           </motion.div>
 
@@ -35,36 +35,22 @@ export default function Pricing() {
                 <span className="text-[12px] font-bold tracking-[0.04em] uppercase text-cream">Early bird &mdash; first 25 families</span>
               </div>
               <div className="flex items-baseline gap-3">
-                <p className="font-display text-[44px] leading-none text-[#2B5797] md:text-[52px]">&#8377;3,800</p>
-                <p className="text-[16px] text-[#6B7D8F] line-through">&#8377;4,500</p>
+                <p className="font-display text-[44px] leading-none text-[#2B5797] md:text-[52px]">&#8377;21,000</p>
+                <p className="text-[16px] text-[#6B7D8F] line-through">&#8377;31,500</p>
               </div>
-              <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">per week &middot; early bird price</p>
+              <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">full programme &middot; 7 weeks</p>
               <p className="mt-5 text-[15px] leading-[1.8] text-[#3A4D62]">
-                5 days &times; 3.5 hours. All materials, snacks, take-homes, and Friday Showcase for parents &mdash; included.
+                That&apos;s &#8377;3,000/week. For 3.5 hours every morning, Mon&ndash;Fri, across 7 weeks.
               </p>
               <div className="my-6 h-px bg-[#E8EDF3]" />
-              <div className="space-y-4">
-                <div className="flex items-baseline justify-between">
-                  <div>
-                    <span className="text-[15px] font-medium text-[#2B5797] block">4-week bundle</span>
-                    <span className="text-[12px] text-[#6B7D8F]">Most popular</span>
-                  </div>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-[17px] font-bold text-[#2B5797]">&#8377;13,000</span>
-                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;2,200</span>
-                  </div>
-                </div>
-                <div className="flex items-baseline justify-between">
-                  <div>
-                    <span className="text-[15px] font-medium text-[#2B5797] block">Full season (7 weeks)</span>
-                    <span className="text-[12px] text-[#6B7D8F]">Best value</span>
-                  </div>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-[17px] font-bold text-[#2B5797]">&#8377;21,000</span>
-                    <span className="rounded-full bg-sage/10 px-2 py-0.5 text-[11px] font-bold text-sage">SAVE &#8377;5,600</span>
-                  </div>
-                </div>
-              </div>
+              <p className="text-[13px] font-bold tracking-[0.04em] uppercase text-[#6B7D8F] mb-3">What&apos;s included</p>
+              <ul className="space-y-2.5 text-[14px] text-[#3A4D62]">
+                <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> All 7 weeks of the programme</li>
+                <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Every material, snack, and take-home</li>
+                <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Friday Showcase entry for parents every week</li>
+                <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> The Week 7 Exhibition &mdash; gallery, catalog, framed artwork</li>
+                <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Certificate of completion</li>
+              </ul>
               <div className="my-6 h-px bg-[#E8EDF3]" />
               <p className="text-[14px] text-[#3A4D62]">Sibling discount: 15% off child #2+</p>
               <a href="/register"
@@ -73,8 +59,7 @@ export default function Pricing() {
               </a>
             </div>
             <p className="mt-4 text-center text-[13px] text-white/90">
-              Extended Play (12:30&ndash;2:30 PM): &#8377;1,500/week.
-              Full season includes the Week 7 Exhibition &mdash; printed catalog, framed artwork, gallery opening.
+              Extended Play add-on (12:30&ndash;2:30 PM): &#8377;8,000 for the full programme. Lunch included.
             </p>
           </motion.div>
         </div>

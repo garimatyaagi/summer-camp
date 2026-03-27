@@ -115,9 +115,9 @@ export default function Activities() {
           viewport={{ once: true, amount: 0.3 }}
           className="mb-14 grid md:grid-cols-[1fr_1fr] gap-6 md:gap-16">
           <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
-            Seven studios.{" "}
+            The{" "}
             <span className="relative inline-block">
-              Seven skills
+              journey
               <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
                 <path d="M2 9 C20 4, 40 11, 60 7 S100 4, 118 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               </svg>
@@ -125,7 +125,7 @@ export default function Activities() {
           </h2>
           <div className="flex items-end">
             <p className="max-w-[440px] text-[17px] leading-[1.85] text-white">
-              Every Friday, they present what they made to you. Every week, they bring home something real.
+              Week by week, skill by skill. Each one builds on the last. By Week 7, they&apos;re ready to exhibit.
             </p>
           </div>
         </motion.div>

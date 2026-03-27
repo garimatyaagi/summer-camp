@@ -49,9 +49,9 @@ export default function Hero() {
 
         <motion.h1 variants={heroHeading} initial="hidden" animate="visible"
           className="font-display text-[44px] leading-[1.05] tracking-[-0.025em] text-white sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[112px] max-w-[1000px]">
-          A summer camp where kids make{" "}
+          7 weeks. 7 skills. They walk out{" "}
           <span className="relative inline-block">
-            amazing things
+            different
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3 md:h-5" preserveAspectRatio="none">
               <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
@@ -61,16 +61,16 @@ export default function Hero() {
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
           className="mt-8 max-w-[520px] text-[18px] leading-[1.75] text-white md:text-[20px] md:mt-10">
-          Paintings. Volcanoes. Robots. A restaurant they run themselves.
-          Seven weeks of building, creating, and coming home proud.
+          They paint. They build robots. They run a business. They cook.
+          And in Week 7, they exhibit it all to you. One complete programme. One summer that actually matters.
         </motion.p>
 
         {/* Early bird banner */}
         <motion.div variants={heroCta} initial="hidden" animate="visible"
           className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-white/15 border border-white/20 px-5 py-2.5 max-w-fit">
           <span className="text-[15px]" role="img" aria-label="bird">&#x1F426;</span>
-          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;3,800/week</span>
-          <span className="text-[12px] text-white/90">for the first 25 families</span>
+          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;21,000 for the full programme</span>
+          <span className="text-[12px] text-white/90">first 25 families</span>
         </motion.div>
 
         <motion.div variants={heroCta} initial="hidden" animate="visible"
@@ -89,8 +89,8 @@ export default function Hero() {
           className="mt-14 flex flex-wrap items-center gap-x-6 gap-y-2 md:mt-20">
           {[
             { label: "Ages 5\u20138", color: "#E05A3A" },
-            { label: "Mon\u2013Fri, 9\u201312:30", color: "#9BB8D7" },
-            { label: "From \u20B93,800/week", color: "#3A8C6E" },
+            { label: "Mon\u2013Fri, 9 AM\u201312:30 PM", color: "#9BB8D7" },
+            { label: "7 weeks \u00b7 \u20B924,500", color: "#3A8C6E" },
             { label: "April 14 \u2013 May 30, 2026", color: "#F0C75E" },
           ].map((item) => (
             <span key={item.label} className="flex items-center gap-2 bg-white/15 text-white border border-white/25 rounded-full px-3 py-1 text-[13px] font-medium">
