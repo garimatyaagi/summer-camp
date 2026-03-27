@@ -49,21 +49,20 @@ export default function Hero() {
 
         <motion.h1 variants={heroHeading} initial="hidden" animate="visible"
           className="font-display text-[44px] leading-[1.05] tracking-[-0.025em] text-white sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[112px] max-w-[1000px]">
-          Seven weeks. Seven skills. One{" "}
+          A summer camp where kids make{" "}
           <span className="relative inline-block">
-            portfolio
+            amazing things
             <svg viewBox="0 0 120 14" fill="none" className="absolute -bottom-1 left-0 w-full h-3 md:h-5" preserveAspectRatio="none">
               <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="3.5" strokeLinecap="round" fill="none" />
               <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
             </svg>
-          </span>{" "}
-          they&apos;ll never forget.
+          </span>.
         </motion.h1>
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
-          className="mt-8 max-w-[560px] text-[17px] leading-[1.8] text-white/80 md:text-[19px] md:mt-10">
-          Every week, your child learns a new skill and makes something real.
-          Week 7, they exhibit it all. HSR Layout, Bangalore.
+          className="mt-8 max-w-[520px] text-[18px] leading-[1.75] text-white md:text-[20px] md:mt-10">
+          Paintings. Volcanoes. Robots. A restaurant they run themselves.
+          Seven weeks of building, creating, and coming home proud.
         </motion.p>
 
         {/* Early bird banner */}

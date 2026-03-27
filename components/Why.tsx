@@ -22,9 +22,9 @@ export default function Why() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px] max-w-[700px]">
-          They won&apos;t just have fun.{" "}
+          Not just fun.{" "}
           <span className="relative inline-block">
-            They&apos;ll have something to show for it
+            Real skills they keep
             <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
               <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3" strokeLinecap="round" fill="none" />
             </svg>
@@ -34,7 +34,7 @@ export default function Why() {
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.7 }}
           className="mt-6 text-[17px] leading-[1.8] text-white max-w-[520px]">
-          Most camps fill the day. Ours fills a portfolio.
+          Each week, they learn one skill properly and bring home something they made.
         </motion.p>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"

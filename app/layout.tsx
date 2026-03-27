@@ -16,13 +16,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "The Summer Club — Seven Skills, One Portfolio | Bangalore Summer Camp",
+  title: "The Summer Club — Summer Camp for Kids | Bangalore",
   description:
-    "A maker studio for kids aged 5–8. Seven weeks, seven skills, one portfolio they'll exhibit. HSR Layout, Bangalore. April–May 2026.",
+    "A summer camp where kids make amazing things. Paintings, volcanoes, robots, and a real exhibition. Ages 5–8, HSR Layout, Bangalore. April–May 2026.",
   openGraph: {
-    title: "The Summer Club — Seven Skills, One Portfolio",
+    title: "The Summer Club — A summer camp where kids make amazing things",
     description:
-      "Art, science, cooking, nature, engineering, entrepreneurship — and a real exhibition. Summer camp in HSR Layout, Bangalore.",
+      "Seven weeks of art, science, cooking, nature, robots, and entrepreneurship. Ages 5–8, HSR Layout, Bangalore.",
     images: ["/og-image.jpg"],
   },
 };
