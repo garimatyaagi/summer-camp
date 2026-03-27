@@ -125,7 +125,7 @@ export default function Activities() {
           </h2>
           <div className="flex items-end">
             <p className="max-w-[440px] text-[17px] leading-[1.85] text-white">
-              Each week is a focused studio. Click any week to see the day-by-day plan and skills.
+              Each week is one skill, taught properly. They don&apos;t just dabble &mdash; they go deep and present it every Friday.
             </p>
           </div>
         </motion.div>

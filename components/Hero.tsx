@@ -62,9 +62,8 @@ export default function Hero() {
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
           className="mt-8 max-w-[560px] text-[17px] leading-[1.8] text-white/80 md:text-[19px] md:mt-10">
-          A maker studio for kids aged 5&ndash;8 in HSR Layout, Bangalore.
-          Every week they learn a real skill, build something with their hands,
-          and add it to their portfolio. Week 7, they exhibit it all.
+          Every week, your child learns a new skill and makes something real.
+          Week 7, they exhibit it all. HSR Layout, Bangalore.
         </motion.p>
 
         {/* Early bird banner */}

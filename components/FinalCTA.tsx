@@ -25,8 +25,7 @@ export default function FinalCTA() {
               <path d="M3 9 C15 4, 30 12, 50 7 S85 3, 117 8" stroke="#E05A3A" strokeWidth="4" strokeLinecap="round" fill="none" />
               <path d="M5 11 C20 6, 40 13, 60 8 S95 5, 115 10" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.5" />
             </svg>
-          </span>{" "}
-          something.
+          </span>.
         </h2>
 
         <p className="mt-7 text-[16px] leading-[1.85] text-white md:text-[18px] max-w-[500px]">

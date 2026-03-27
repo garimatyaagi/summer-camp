@@ -5,9 +5,9 @@ import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 import { DoodleStar } from "./Doodles";
 
 const pillars = [
-  { emoji: "\uD83C\uDFAF", title: "One real skill every week", desc: "Not a random activity buffet. Each week goes deep into one discipline \u2014 art, science, cooking, nature, engineering, business." },
-  { emoji: "\uD83D\uDCC1", title: "A portfolio they build", desc: "Every week adds a real piece of work. By Week 7 they have paintings, journals, robots, recipes \u2014 all documented." },
-  { emoji: "\uD83C\uDFA8", title: "A proper exhibition", desc: "Week 7 ends with a gallery opening. Fairy lights, printed labels, a catalog. They present their work to parents." },
+  { emoji: "\uD83C\uDFAF", title: "One skill per week, learned properly", desc: "Art. Science. Cooking. Nature. Engineering. Business. Each week goes deep \u2014 not a different activity every hour." },
+  { emoji: "\uD83C\uDF92", title: "They bring home real work", desc: "A framed painting. An experiment journal. A robot they built. Every week, something they\u2019re proud of \u2014 not a random craft." },
+  { emoji: "\u2728", title: "Week 7: they exhibit it all", desc: "A proper gallery opening for parents. Printed labels, a catalog, fairy lights. They stand up and present their work." },
 ];
 
 export default function Why() {
@@ -22,9 +22,9 @@ export default function Why() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px] max-w-[700px]">
-          Not just a summer camp.{" "}
+          They won&apos;t just have fun.{" "}
           <span className="relative inline-block">
-            A maker studio
+            They&apos;ll have something to show for it
             <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
               <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="rgba(255,255,255,0.5)" strokeWidth="3" strokeLinecap="round" fill="none" />
             </svg>
@@ -34,7 +34,7 @@ export default function Why() {
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.7 }}
           className="mt-6 text-[17px] leading-[1.8] text-white max-w-[520px]">
-          Most camps keep kids busy. We teach them something they can point to and say: I made that.
+          Most camps fill the day. Ours fills a portfolio.
         </motion.p>
 
         <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"

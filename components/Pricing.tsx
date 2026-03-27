@@ -40,7 +40,7 @@ export default function Pricing() {
               </div>
               <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">per week &middot; early bird price</p>
               <p className="mt-5 text-[15px] leading-[1.8] text-[#3A4D62]">
-                5 days &times; 3.5 hours of focused studio time. All materials, snacks, portfolio supplies, and Friday Showcase entry for parents included.
+                5 days &times; 3.5 hours. All materials, snacks, take-homes, and Friday Showcase for parents &mdash; included.
               </p>
               <div className="my-6 h-px bg-[#E8EDF3]" />
               <div className="space-y-4">

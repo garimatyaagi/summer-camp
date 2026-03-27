@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 const faqs = [
-  { q: "What ages is this for?", a: "5 to 8 years old. We run two cohorts \u2014 Juniors (5\u20137) and Seniors (8\u201310) \u2014 so activities are age-appropriate. From Week 3, we may add a 9\u201312 track if there\u2019s demand." },
+  { q: "What ages is this for?", a: "5 to 8 years old. We run two groups \u2014 Explorers (5\u20136) and Makers (7\u20138) \u2014 so activities match their level. Both groups follow the same weekly theme but with different complexity." },
   { q: "Where exactly is the camp?", a: "HSR Layout, Bangalore. It\u2019s a gated campus with AC indoor space and an outdoor play area. We\u2019ll share the exact address and Google Maps link once you register." },
   { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide snacks, all materials, and a whole lot of fun." },
   { q: "Is food included?", a: "A mid-morning snack (fruit + juice) is included. If you add Extended Play (12:30\u20132:30 PM), lunch is included too." },

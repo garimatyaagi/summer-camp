@@ -6,7 +6,7 @@ const trustPoints = [
   { icon: "\uD83D\uDEE1\uFE0F", text: "1:8 adult-to-child ratio" },
   { icon: "\uD83C\uDFE0", text: "Gated campus, HSR Layout" },
   { icon: "\u2695\uFE0F", text: "First-aid trained staff" },
-  { icon: "\uD83C\uDFA8", text: "Daily take-home projects" },
+  { icon: "\uD83C\uDFA8", text: "Real work they bring home" },
   { icon: "\uD83D\uDCF5", text: "Zero screens, all day" },
   { icon: "\uD83C\uDF4E", text: "Snacks included" },
 ];

@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2.5">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Instagram</a>
               <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream/60 hover:text-cream transition-colors">WhatsApp</a>
-              <a href="mailto:hello@tinkerhood.in" className="text-[14px] text-cream/60 hover:text-cream transition-colors">hello@tinkerhood.in</a>
+              <a href="mailto:hello@thesummerclub.in" className="text-[14px] text-cream/60 hover:text-cream transition-colors">hello@thesummerclub.in</a>
             </div>
           </div>
           <div>
