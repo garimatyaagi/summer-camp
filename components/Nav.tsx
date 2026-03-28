@@ -30,7 +30,16 @@ export default function Nav() {
       scrolled ? "bg-white/95 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]" : "bg-transparent"
     }`}>
       <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 lg:px-12">
-        <a href="#" className={`font-display text-[22px] transition-colors duration-300 ${scrolled ? "text-navy" : "text-white"}`}>The Summer Club</a>
+        <a href="#" className={`font-display text-[22px] transition-colors duration-300 flex items-center gap-2 ${scrolled ? "text-navy" : "text-white"}`}>
+          <svg viewBox="0 0 28 28" fill="none" className="w-6 h-6">
+            <circle cx="14" cy="14" r="6" fill="#F0C75E"/>
+            {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
+              <line key={angle} x1="14" y1="3" x2="14" y2="6.5" stroke="#F0C75E" strokeWidth="2" strokeLinecap="round"
+                transform={`rotate(${angle} 14 14)`}/>
+            ))}
+          </svg>
+          The Summer Club
+        </a>
 
         <div className="hidden items-center gap-9 md:flex">
           {navLinks.map((link) => (
