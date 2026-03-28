@@ -32,7 +32,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
+    <section id="faq" className="relative px-6 py-[48px] md:py-[72px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[720px]">
         <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

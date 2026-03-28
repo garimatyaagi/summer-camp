@@ -7,7 +7,7 @@ import { PaintPalette, RobotFriend, TrophyCup, LeafBranch } from "./Illustration
 
 export default function FinalCTA() {
   return (
-    <section className="relative px-6 py-[60px] md:py-[100px] lg:px-12 overflow-hidden">
+    <section className="relative px-6 py-[48px] md:py-[72px] lg:px-12 overflow-hidden">
       {/* Thematic illustrations */}
       <div className="pointer-events-none">
         <PaintPalette className="absolute top-[10%] right-[5%] w-24 md:w-32 opacity-15 hidden md:block" />

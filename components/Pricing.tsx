@@ -5,7 +5,7 @@ import { sectionFade } from "@/lib/animations";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
+    <section id="pricing" className="relative px-6 py-[48px] md:py-[72px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[640px]">
         <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
           <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px] text-center">

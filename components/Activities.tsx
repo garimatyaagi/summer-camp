@@ -13,11 +13,11 @@ const weeks = [
     takeHome: "Framed painting + art portfolio",
     longTermSkills: ["Creative confidence", "Decision-making", "Self-expression", "Learning from mistakes"],
     days: [
-      { day: "Mon", activity: "Goal: sculpt a clay creature that can stand on its own. Name it. Give it a story." },
-      { day: "Tue", activity: "Goal: create a full collage using pressed leaves, seeds, fabric, and paper. Mount it." },
-      { day: "Wed", activity: "Goal: paint a canvas. Mix your own colours. Frame it by end of day." },
-      { day: "Thu", activity: "Goal: design and create a tie-dye piece. Predict the pattern. Compare to result." },
-      { day: "Fri", activity: "Goal: assemble your 4-piece portfolio. Present each piece at the Parent Gallery Walk." },
+      { day: "Mon", activity: "Sculpt a clay creature that can stand on its own. Name it and give it a backstory." },
+      { day: "Tue", activity: "Create a full collage using pressed leaves, seeds, fabric, and paper. Mount and frame it." },
+      { day: "Wed", activity: "Paint a canvas. Learn to mix your own colours from scratch. Frame it by end of day." },
+      { day: "Thu", activity: "Design a tie-dye piece. Experiment with folding techniques to control the pattern." },
+      { day: "Fri", activity: "Assemble your 4-piece art portfolio. Decorate the cover. Write a line about each piece." },
     ]},
   { week: 2, theme: "Science", emoji: "🧪", color: "#2B5797",
     question: "How would you figure out why this happens?",
@@ -26,11 +26,11 @@ const weeks = [
     takeHome: "Experiment journal + seed kit",
     longTermSkills: ["Asking good questions", "Testing ideas", "Recording observations", "Cause & effect thinking"],
     days: [
-      { day: "Mon", activity: "Goal: build a volcano and make it erupt. Then make it erupt higher. Record what changed." },
-      { day: "Tue", activity: "Goal: predict which 10 objects are magnetic. Test all 10. Score your predictions." },
-      { day: "Wed", activity: "Goal: make slime. Prove whether it\u2019s a liquid or solid. Design 3 tests." },
-      { day: "Thu", activity: "Goal: build a seed germination kit. Write a hypothesis: what will sprout first and why?" },
-      { day: "Fri", activity: "Goal: present your best experiment to parents. Explain the science behind it." },
+      { day: "Mon", activity: "Build a volcano and make it erupt. Then figure out how to make it erupt higher. Record what you changed." },
+      { day: "Tue", activity: "Predict which 10 objects in the room are magnetic. Test all 10. Score your predictions." },
+      { day: "Wed", activity: "Make slime. Then figure out: is it a liquid or a solid? Design 3 tests to prove your answer." },
+      { day: "Thu", activity: "Build a seed germination kit. Write a hypothesis: what will sprout first and why?" },
+      { day: "Fri", activity: "Pick your best experiment from the week. Write up how it works and demo it to the group." },
     ]},
   { week: 3, theme: "Cooking", emoji: "🍳", color: "#F0C75E",
     question: "Can you design a dish, test it, and serve it to a real customer?",
@@ -39,11 +39,11 @@ const weeks = [
     takeHome: "Recipe booklet + chef hat",
     longTermSkills: ["Measurement & ratios", "Iterating on feedback", "Presentation skills", "Serving others"],
     days: [
-      { day: "Mon", activity: "Goal: create energy balls using 5 ingredients. No recipe. Taste-test 3 versions. Pick the best." },
-      { day: "Tue", activity: "Goal: design a fruit art platter that looks like a scene. Make people want to eat it." },
-      { day: "Wed", activity: "Goal: make lemonade. Adjust sweetness and sourness until 3 people rate it 5/5." },
-      { day: "Thu", activity: "Goal: design a full restaurant menu. Name your restaurant. Price every item. Make a chef hat." },
-      { day: "Fri", activity: "Goal: run a Pop-up Restaurant. Cook, plate, serve, and take orders from parents." },
+      { day: "Mon", activity: "Create energy balls using only 5 ingredients. No recipe. Make 3 versions, taste-test, pick the best." },
+      { day: "Tue", activity: "Design a fruit art platter that looks like a scene. Make it so good people don\u2019t want to eat it." },
+      { day: "Wed", activity: "Make lemonade from scratch. Adjust sweetness and sourness until 3 people rate it 5 out of 5." },
+      { day: "Thu", activity: "Design a full restaurant menu. Name your restaurant. Price every item. Make your chef hat." },
+      { day: "Fri", activity: "Run a Pop-up Restaurant. Cook, plate, serve, and take real orders from the group." },
     ]},
   { week: 4, theme: "Nature & Design", emoji: "🌿", color: "#3A8C6E",
     question: "What can you discover if you really look?",
@@ -52,11 +52,11 @@ const weeks = [
     takeHome: "Nature journal + terrarium",
     longTermSkills: ["Patience & deep focus", "Scientific illustration", "Environmental awareness", "Independent discovery"],
     days: [
-      { day: "Mon", activity: "Goal: build a mini terrarium. Choose the right soil, plants, and stones. Predict what will grow." },
-      { day: "Tue", activity: "Goal: collect and press 10 different leaves. Identify patterns. Create botanical prints." },
-      { day: "Wed", activity: "Goal: draw 5 detailed nature sketches. Label every part. Fill a full journal page." },
-      { day: "Thu", activity: "Goal: design and build a bird feeder from recycled materials. Test if it balances." },
-      { day: "Fri", activity: "Goal: present your nature journal and terrarium to parents. Teach them one thing you discovered." },
+      { day: "Mon", activity: "Build a mini terrarium. Choose the right soil, plants, and stones. Predict what will grow first." },
+      { day: "Tue", activity: "Collect and press 10 different leaves. Why are they different shapes? Create botanical prints." },
+      { day: "Wed", activity: "Draw 5 detailed nature sketches from real specimens. Label every part. Fill a full journal page." },
+      { day: "Thu", activity: "Design and build a bird feeder from recycled materials. Test if it balances and holds weight." },
+      { day: "Fri", activity: "Complete your nature journal. Present your terrarium and teach the group one thing you discovered." },
     ]},
   { week: 5, theme: "Robots", emoji: "🤖", color: "#9BB8D7",
     question: "Can you build something that actually works?",
@@ -65,11 +65,11 @@ const weeks = [
     takeHome: "Working robot + blueprint + instruction manual",
     longTermSkills: ["Planning before building", "Problem decomposition", "Learning from failure", "Explaining how things work"],
     days: [
-      { day: "Mon", activity: "Goal: design your robot on paper. Draw 3 views. List every material you need." },
-      { day: "Tue", activity: "Goal: build the robot body. Follow your blueprint. Note where you deviate and why." },
-      { day: "Wed", activity: "Goal: create a coding card sequence that makes your friend walk a specific path. Debug errors." },
-      { day: "Thu", activity: "Goal: your robot must carry a ball across the table. Modify until it works. Write an instruction manual." },
-      { day: "Fri", activity: "Goal: Robot Demo Day. Present your robot, show what broke, explain how you fixed it." },
+      { day: "Mon", activity: "Design your robot on paper first. Draw 3 views. List every material you\u2019ll need before touching anything." },
+      { day: "Tue", activity: "Build the robot body from your blueprint. Note where reality differs from your plan and why." },
+      { day: "Wed", activity: "Create a coding card sequence that makes your friend walk a specific path. Find and fix the bugs." },
+      { day: "Thu", activity: "Your robot must carry a ball across the table. Modify and test until it works. Write an instruction manual." },
+      { day: "Fri", activity: "Robot Demo Day. Present your robot to the group. Show what broke and explain how you fixed it." },
     ]},
   { week: 6, theme: "Business", emoji: "💰", color: "#E05A3A",
     question: "Can you make something people actually want to buy?",
@@ -78,11 +78,11 @@ const weeks = [
     takeHome: "Products + business card + real earnings",
     longTermSkills: ["Communication & persuasion", "Understanding value", "Product thinking", "Confidence with adults"],
     days: [
-      { day: "Mon", activity: "Goal: research what people buy. Pick your product. Make your first prototype." },
-      { day: "Tue", activity: "Goal: produce 5 units. Quality-check each one. Only sellable items make the cut." },
-      { day: "Wed", activity: "Goal: name your business. Design a logo, signage, and a business card from scratch." },
-      { day: "Thu", activity: "Goal: set prices for every product. Rehearse your 30-second sales pitch until it\u2019s convincing." },
-      { day: "Fri", activity: "Goal: Market Day. Set up your stall. Parents are real customers with real money." },
+      { day: "Mon", activity: "Figure out what people would actually pay for. Pick your product. Make your first prototype." },
+      { day: "Tue", activity: "Produce 5 units. Quality-check each one. Only items good enough to sell make the cut." },
+      { day: "Wed", activity: "Name your business. Design a logo, signage, and a business card from scratch." },
+      { day: "Thu", activity: "Set prices for every product. Rehearse your 30-second sales pitch until it\u2019s convincing." },
+      { day: "Fri", activity: "Market Day. Set up your stall. The group are real customers with real money." },
     ]},
   { week: 7, theme: "The Exhibition", emoji: "🏆", color: "#2B5797",
     question: "What are you most proud of, and can you tell us why?",
@@ -91,11 +91,11 @@ const weeks = [
     takeHome: "Scrapbook + certificate + framed artwork",
     longTermSkills: ["Self-reflection", "Public speaking", "Pride in their work", "Celebrating growth"],
     days: [
-      { day: "Mon", activity: "Goal: complete your scrapbook \u2014 one illustrated page per week. Write what you learned." },
-      { day: "Tue", activity: "Goal: collaborate on the camp mural. Each child adds one piece that represents their journey." },
-      { day: "Wed", activity: "Goal: pick your best piece from 7 weeks. Write an artist statement. Rehearse your presentation." },
-      { day: "Thu", activity: "Goal: full dress rehearsal. Present to the group. Give and receive feedback." },
-      { day: "Fri", activity: "Goal: THE EXHIBITION \u2014 gallery opening, printed labels, certificates, a room full of proud parents." },
+      { day: "Mon", activity: "Complete your scrapbook \u2014 one illustrated page per week. Write what you learned each week." },
+      { day: "Tue", activity: "Collaborate on the camp mural. Each child adds one piece that represents their journey." },
+      { day: "Wed", activity: "Pick your best piece from 7 weeks. Write why you chose it. Rehearse your presentation." },
+      { day: "Thu", activity: "Full dress rehearsal. Present to the group. Give and receive feedback. Refine." },
+      { day: "Fri", activity: "THE EXHIBITION \u2014 gallery opening, printed labels, certificates, a room full of proud parents." },
     ]},
 ];
 
@@ -104,7 +104,7 @@ export default function Activities() {
   const selectedWeek = weeks.find((w) => w.week === openWeek);
 
   return (
-    <section id="activities" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
+    <section id="activities" className="relative px-6 py-[48px] md:py-[72px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[1200px]">
         <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

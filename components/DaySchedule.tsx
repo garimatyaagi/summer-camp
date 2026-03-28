@@ -14,7 +14,7 @@ const schedule = [
 
 export default function DaySchedule() {
   return (
-    <section id="schedule" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
+    <section id="schedule" className="relative px-6 py-[48px] md:py-[72px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[720px]">
         <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }} className="text-center mb-10">

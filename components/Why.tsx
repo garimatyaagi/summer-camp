@@ -5,7 +5,7 @@ import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[60px] md:py-[100px] lg:px-12 overflow-hidden">
+    <section className="relative px-6 py-[48px] md:py-[72px] lg:px-12 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1200px]">
 
         {/* THE BIG IDEA */}
