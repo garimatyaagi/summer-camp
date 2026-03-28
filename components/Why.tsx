@@ -3,101 +3,107 @@
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 
+const outcomes = [
+  { emoji: "\uD83C\uDFA8", title: "A painting they framed", sub: "Not a follow-along. Their vision, their canvas." },
+  { emoji: "\uD83E\uDDEA", title: "A science journal they wrote", sub: "Hypothesise, test, record. Real scientific method." },
+  { emoji: "\uD83C\uDF73", title: "A restaurant they ran", sub: "Menu, pricing, service. Parents are the customers." },
+  { emoji: "\uD83C\uDF3F", title: "A nature journal they drew", sub: "Observe, sketch, document. Like a real naturalist." },
+  { emoji: "\uD83E\uDD16", title: "A robot they built from scratch", sub: "Blueprint first, then build, test, and fix." },
+  { emoji: "\uD83D\uDCB0", title: "A business they ran", sub: "Make products, price them, sell to parents. Real money." },
+  { emoji: "\uD83C\uDFC6", title: "An exhibition they presented", sub: "Gallery lights, printed labels, a room full of parents." },
+];
+
 export default function Why() {
   return (
     <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1200px]">
-        {/* The hook */}
+
+        {/* BLOCK 1: What they walk out with — THE HERO OF THIS SECTION */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
-          className="max-w-[720px]"
         >
-          <h2 className="font-display text-[30px] leading-[1.15] tracking-[-0.02em] text-[#2B5797] md:text-[44px] lg:text-[52px]">
-            We don&apos;t give kids instructions.{" "}
+          <h2 className="font-display text-[30px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[44px] lg:text-[56px] max-w-[700px]">
+            After 7 weeks, they walk out{" "}
             <span className="relative inline-block">
-              We give them problems to solve
-              <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
+              with all of this
+              <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3 md:h-4" preserveAspectRatio="none">
                 <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="#E05A3A" strokeWidth="3" strokeLinecap="round" fill="none" />
               </svg>
             </span>.
           </h2>
         </motion.div>
 
-        {/* Two columns */}
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
-          className="mt-14 grid md:grid-cols-2 gap-8 md:gap-12"
+          viewport={{ once: true, amount: 0.1 }}
+          className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5"
         >
-          {/* Left: the philosophy */}
-          <motion.div variants={fadeUpStagger} custom={0}>
-            <p className="text-[17px] md:text-[19px] leading-[1.75] text-[#1E2D3D]">
-              Most camps tell kids what to do. Follow step 1, step 2, step 3. Here&apos;s your finished craft. Go home.
-            </p>
-            <p className="mt-5 text-[17px] md:text-[19px] leading-[1.75] text-[#1E2D3D]">
-              We do it differently. The instructor doesn&apos;t say &ldquo;do this.&rdquo; They say &ldquo;how would you do this?&rdquo;
-            </p>
-            <p className="mt-5 text-[17px] md:text-[19px] leading-[1.75] text-[#1E2D3D]">
-              Your child fails, tries again, and figures it out themselves. That&apos;s not something they forget after summer.
-            </p>
-          </motion.div>
+          {outcomes.map((item, i) => (
+            <motion.div key={i} variants={fadeUpStagger} custom={i}
+              className="bg-white rounded-2xl p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300">
+              <span className="text-[28px] block mb-3">{item.emoji}</span>
+              <h3 className="text-[17px] md:text-[18px] font-bold text-[#2B5797] leading-[1.3]">{item.title}</h3>
+              <p className="mt-1.5 text-[14px] md:text-[15px] text-[#3A4D62] leading-[1.6]">{item.sub}</p>
+            </motion.div>
+          ))}
 
-          {/* Right: concrete examples */}
-          <motion.div variants={fadeUpStagger} custom={1}
-            className="bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-7">
-            <p className="text-[12px] font-bold tracking-[0.08em] uppercase text-[#E05A3A] mb-5">
-              What this looks like in practice
-            </p>
-            <div className="space-y-4">
-              {[
-                { week: "Art", normal: "\"Paint this landscape\"", ours: "\"Here's a canvas and 6 colours. Make something that makes you feel proud.\"" },
-                { week: "Science", normal: "\"Follow these steps\"", ours: "\"How would you make this erupt higher? Try 3 things.\"" },
-                { week: "Cooking", normal: "\"Here's a recipe\"", ours: "\"Here are 10 ingredients. Design a dish. Test it. Improve it.\"" },
-                { week: "Robots", normal: "\"Build this from a kit\"", ours: "\"Your robot needs to carry a ball across the table. Figure out how.\"" },
-              ].map((item) => (
-                <div key={item.week} className="pb-4 border-b border-[#E8EDF3] last:border-0 last:pb-0">
-                  <span className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#6B7D8F]">{item.week} week</span>
-                  <p className="mt-1 text-[14px] text-[#6B7D8F] line-through">{item.normal}</p>
-                  <p className="mt-0.5 text-[15px] font-medium text-[#2B5797]">{item.ours}</p>
-                </div>
-              ))}
-            </div>
+          {/* The confidence card — spans full width on mobile, fits grid on desktop */}
+          <motion.div variants={fadeUpStagger} custom={7}
+            className="bg-[#2B5797] rounded-2xl p-5 md:p-6 shadow-[0_2px_16px_rgba(43,87,151,0.2)] sm:col-span-2 lg:col-span-1">
+            <span className="text-[28px] block mb-3">💪</span>
+            <h3 className="text-[17px] md:text-[18px] font-bold text-white leading-[1.3]">The confidence to figure things out</h3>
+            <p className="mt-1.5 text-[14px] md:text-[15px] text-white/80 leading-[1.6]">Not just crafts. The ability to face a problem, try, fail, and try again.</p>
           </motion.div>
         </motion.div>
 
-        {/* The outcome — what they walk out with */}
+        {/* BLOCK 2: HOW — the method, explained simply */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-16 bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-8"
+          transition={{ duration: 0.8 }}
+          className="mt-20 md:mt-28"
         >
-          <p className="text-[12px] font-bold tracking-[0.08em] uppercase text-[#E05A3A] mb-5">
-            After 7 weeks, they walk out with
+          <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[40px] lg:text-[48px] max-w-[650px]">
+            How? We don&apos;t give instructions.{" "}
+            <span className="relative inline-block">
+              We give them problems
+              <svg viewBox="0 0 200 12" fill="none" className="absolute -bottom-1 left-0 w-full h-3" preserveAspectRatio="none">
+                <path d="M3 8 C30 3, 60 11, 100 6 S160 3, 197 8" stroke="#F0C75E" strokeWidth="3" strokeLinecap="round" fill="none" />
+              </svg>
+            </span>.
+          </h2>
+          <p className="mt-5 text-[17px] md:text-[19px] leading-[1.75] text-[#1E2D3D] max-w-[560px]">
+            The instructor doesn&apos;t say &ldquo;do this.&rdquo; They say &ldquo;how would you do this?&rdquo; Your child figures it out — and that&apos;s what they remember.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {[
-              { emoji: "\uD83C\uDFA8", text: "A painting they framed" },
-              { emoji: "\uD83E\uDDEA", text: "A science journal" },
-              { emoji: "\uD83C\uDF73", text: "A recipe book" },
-              { emoji: "\uD83E\uDD16", text: "A robot they built" },
-              { emoji: "\uD83C\uDF3F", text: "A nature journal" },
-              { emoji: "\uD83D\uDCB0", text: "Earnings from their business" },
-              { emoji: "\uD83C\uDFC6", text: "An exhibition they presented" },
-              { emoji: "\uD83D\uDCAA", text: "The confidence to figure things out" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-start gap-2.5">
-                <span className="text-[20px] flex-shrink-0 mt-0.5">{item.emoji}</span>
-                <span className="text-[15px] md:text-[16px] text-[#2B5797] font-medium leading-[1.4]">{item.text}</span>
-              </div>
-            ))}
-          </div>
+        </motion.div>
+
+        {/* Comparison — now compact, horizontal on desktop */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+        >
+          {[
+            { week: "Art", old: "\"Paint this landscape\"", ours: "\"Make something that makes you feel proud.\"", color: "#E05A3A" },
+            { week: "Science", old: "\"Follow these steps\"", ours: "\"How would you make this erupt higher?\"", color: "#2B5797" },
+            { week: "Cooking", old: "\"Here's a recipe\"", ours: "\"10 ingredients. Design a dish. Test it.\"", color: "#F0C75E" },
+            { week: "Robots", old: "\"Build this from a kit\"", ours: "\"Your robot needs to carry a ball. Figure out how.\"", color: "#3A8C6E" },
+          ].map((item, i) => (
+            <motion.div key={item.week} variants={fadeUpStagger} custom={i}
+              className="bg-white rounded-2xl p-5 shadow-[0_2px_12px_rgba(0,0,0,0.05)]">
+              <span className="text-[11px] font-bold tracking-[0.1em] uppercase" style={{ color: item.color }}>{item.week}</span>
+              <p className="mt-2 text-[13px] text-[#8A95A5] line-through leading-[1.5]">{item.old}</p>
+              <p className="mt-1 text-[15px] font-semibold text-[#2B5797] leading-[1.45]">{item.ours}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
