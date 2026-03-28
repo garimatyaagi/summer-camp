@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Summer Club — A summer camp where kids make amazing things",
     description:
-      "Seven weeks of art, science, cooking, nature, robots, and entrepreneurship. Ages 5–8, Bangalore.",
+      "Seven weeks of art, science, cooking, storytelling, robots, and entrepreneurship. Ages 5–8, Bangalore.",
     images: ["/og-image.jpg"],
   },
 };
