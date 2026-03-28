@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer, sectionFade } from "@/lib/animations";
 
 const schedule = [
-  { time: "9:00", title: "Welcome Circle", desc: "A name game, a question, or a short song. Everyone gets seen before the day begins. Instructor-led warm-up to bring the group together.", dur: "15 min", color: "#F0C75E" },
-  { time: "9:15", title: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking, puppets \u2014 whatever the week\u2019s theme calls for. This is the heart of the day. Kids work at their own pace with instructor support.", dur: "60 min", color: "#E05A3A" },
-  { time: "10:15", title: "Snack Break", desc: "Fruit and juice. Ten minutes to breathe, chat, and just be a kid. No structured activity \u2014 free time to refuel.", dur: "15 min", color: "#3A8C6E" },
-  { time: "10:30", title: "Move", desc: "Obstacle courses, relay races, yoga, freeze dance. Bodies need to move before brains can focus again. Adapted to the week\u2019s theme.", dur: "60 min", color: "#9BB8D7" },
-  { time: "11:30", title: "Express", desc: "Show-and-tell, storytelling, improv games, mini-presentations, puppet shows. Kids share what they made or invented. The quietest child often surprises everyone here.", dur: "40 min", color: "#F0C75E" },
-  { time: "12:15", title: "Wind-down & Pick-up", desc: "Reflection circle \u2014 one word about the day. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about what they made.", dur: "15 min", color: "#E05A3A" },
+  { time: "9:00", title: "Welcome", desc: "A name game, a question, or a short song. Everyone gets seen before the day begins.", dur: "15 min", color: "#F0C75E" },
+  { time: "9:15", title: "Make", desc: "The big hands-on session. Clay, paint, circuits, cooking, puppets \u2014 whatever the week\u2019s theme calls for. Kids work at their own pace with instructor support.", dur: "75 min", color: "#E05A3A" },
+  { time: "10:30", title: "Snack Break", desc: "Fruit and juice. Fifteen minutes to breathe, chat, and just be a kid.", dur: "15 min", color: "#3A8C6E" },
+  { time: "10:45", title: "Move", desc: "Obstacle courses, relay races, yoga, freeze dance. Bodies need to move before brains can focus again.", dur: "15 min", color: "#9BB8D7" },
+  { time: "11:00", title: "Express", desc: "Show-and-tell, storytelling, improv games, mini-presentations. Kids share what they made or invented.", dur: "75 min", color: "#F0C75E" },
+  { time: "12:15", title: "Wind-down & Pick-up", desc: "Reflection circle \u2014 one word about the day. Pack the take-home. Parents arrive to a buzzing child.", dur: "15 min", color: "#E05A3A" },
 ];
 
 export default function DaySchedule() {
