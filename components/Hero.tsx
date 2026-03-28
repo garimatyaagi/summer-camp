@@ -82,44 +82,42 @@ export default function Hero() {
           We teach kids to think from first principles &mdash; not by following instructions, but by figuring it out themselves.
         </motion.p>
 
-        <motion.p variants={heroCta} initial="hidden" animate="visible"
-          className="mt-4 max-w-[460px] text-[15px] leading-[1.7] text-white/75">
-          Art. Science. Cooking. Nature. Robots. Business. 7 weeks. And in the final week, they exhibit it all to you.
-        </motion.p>
-
-        {/* Early bird banner */}
+        {/* Key details — prominent, right after subtitle */}
         <motion.div variants={heroCta} initial="hidden" animate="visible"
-          className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-white/15 border border-white/20 px-5 py-2.5 max-w-fit">
-          <span className="text-[15px]" role="img" aria-label="bird">&#x1F426;</span>
-          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;21,000 for the full programme</span>
-          <span className="text-[12px] text-white/90">first 25 families</span>
+          className="mt-8 flex flex-wrap gap-3 md:mt-10">
+          {[
+            { label: "Ages 5\u20138", icon: "👧" },
+            { label: "Mon\u2013Fri, 9\u201312:30 PM", icon: "🕘" },
+            { label: "7 weeks", icon: "📅" },
+            { label: "Bangalore", icon: "📍" },
+            { label: "April\u2013May 2026", icon: "☀️" },
+          ].map((item) => (
+            <span key={item.label} className="flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-4 py-2 text-[14px] md:text-[15px] font-semibold">
+              <span className="text-[16px]">{item.icon}</span>
+              {item.label}
+            </span>
+          ))}
         </motion.div>
 
+        {/* CTAs */}
         <motion.div variants={heroCta} initial="hidden" animate="visible"
-          className="mt-10 flex flex-wrap items-center gap-4 md:mt-12">
+          className="mt-10 flex flex-wrap items-center gap-4">
           <a href="/register"
-            className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-semibold tracking-[0.02em] text-white shadow-[0_4px_20px_rgba(224,90,58,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03] hover:shadow-[0_6px_25px_rgba(224,90,58,0.35)]">
+            className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[15px] font-semibold tracking-[0.02em] text-white shadow-[0_4px_20px_rgba(224,90,58,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03] hover:shadow-[0_6px_25px_rgba(224,90,58,0.35)]">
             Register interest <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
           <a href="#activities"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-white/25 px-7 py-3.5 text-[14px] font-medium text-white/80 transition-all duration-300 hover:border-white/40 hover:text-white">
+            className="inline-flex items-center gap-2 rounded-full border-2 border-white/30 px-7 py-3.5 text-[15px] font-medium text-white transition-all duration-300 hover:border-white/50 hover:bg-white/10">
             See the programme
           </a>
         </motion.div>
 
+        {/* Early bird */}
         <motion.div variants={heroMeta} initial="hidden" animate="visible"
-          className="mt-14 flex flex-wrap items-center gap-x-6 gap-y-2 md:mt-20">
-          {[
-            { label: "Ages 5\u20138", color: "#E05A3A" },
-            { label: "Mon\u2013Fri, 9\u201312:30", color: "#9BB8D7" },
-            { label: "7 weeks \u00b7 Bangalore", color: "#3A8C6E" },
-            { label: "April\u2013May 2026", color: "#F0C75E" },
-          ].map((item) => (
-            <span key={item.label} className="flex items-center gap-2 bg-white/15 text-white border border-white/25 rounded-full px-3 py-1 text-[13px] font-medium">
-              <span className="h-2 w-2 rounded-full" style={{ backgroundColor: item.color }} />
-              {item.label}
-            </span>
-          ))}
+          className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-white/15 border border-white/20 px-5 py-2.5">
+          <span className="text-[15px]">🐦</span>
+          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;21,000 for the full programme</span>
+          <span className="text-[12px] text-white/80">&middot; first 25 families</span>
         </motion.div>
       </div>
     </section>

@@ -71,29 +71,28 @@ export default function Why() {
           ))}
         </motion.div>
 
-        {/* Comparison — compact 2x2 */}
+        {/* What this looks like — reframed as OUR approach, not a comparison */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8 }}
-          className="mt-12 bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] overflow-hidden"
+          className="mt-10 bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] overflow-hidden"
         >
           <div className="p-6 pb-0">
-            <h3 className="text-[20px] md:text-[24px] font-bold text-[#2B5797]">Same activities. Completely different approach.</h3>
+            <h3 className="text-[20px] md:text-[24px] font-bold text-[#2B5797]">What we actually say to kids.</h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {[
-              { week: "Art", icon: "\uD83C\uDFA8", old: "\"Paint this landscape step by step\"", ours: "\"Here\u2019s a canvas and 6 colours. Make something that makes you feel proud.\"" },
-              { week: "Science", icon: "\uD83E\uDDEA", old: "\"Follow these instructions to make a volcano\"", ours: "\"How would you make this erupt higher? Try 3 different things.\"" },
-              { week: "Cooking", icon: "\uD83C\uDF73", old: "\"Follow this recipe exactly\"", ours: "\"Here are 10 ingredients. Design a dish. Test it. Serve it.\"" },
-              { week: "Robots", icon: "\uD83E\uDD16", old: "\"Assemble this kit\"", ours: "\"Your robot needs to carry a ball across the table. Figure out how.\"" },
+              { week: "Art week", icon: "🎨", prompt: "Here\u2019s a canvas and 6 colours. Make something that makes you feel proud." },
+              { week: "Science week", icon: "🧪", prompt: "How would you make this baking soda erupt higher? You have 3 attempts." },
+              { week: "Cooking week", icon: "🍳", prompt: "Here are 10 ingredients. Design a dish. Test it. Serve it to us." },
+              { week: "Robot week", icon: "🤖", prompt: "Your robot needs to carry a ball across the table. Figure out how." },
             ].map((item) => (
               <div key={item.week} className="p-5 md:p-6 border-t border-[#E8EDF3] sm:odd:border-r">
                 <span className="text-[18px]">{item.icon}</span>
                 <span className="text-[11px] font-bold tracking-[0.08em] uppercase text-[#6B7D8F] ml-2">{item.week}</span>
-                <p className="mt-2 text-[13px] text-[#8A95A5] line-through leading-[1.5]">{item.old}</p>
-                <p className="mt-1 text-[15px] md:text-[16px] font-semibold text-[#2B5797] leading-[1.45]">{item.ours}</p>
+                <p className="mt-2 text-[16px] md:text-[17px] font-semibold text-[#2B5797] leading-[1.45] italic">&ldquo;{item.prompt}&rdquo;</p>
               </div>
             ))}
           </div>
