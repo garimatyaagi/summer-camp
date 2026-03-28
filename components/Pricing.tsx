@@ -22,8 +22,8 @@ export default function Pricing() {
                 </svg>
               </span>.
             </h2>
-            <p className="mt-5 max-w-[360px] text-[16px] leading-[1.85] text-white">
-              Everything included. No add-ons, no tiers, no surprises.
+            <p className="mt-5 max-w-[400px] text-[17px] md:text-[18px] leading-[1.85] text-white">
+              Everything included. Materials, snacks, take-homes, the exhibition. No add-ons, no surprises.
             </p>
           </motion.div>
 

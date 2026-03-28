@@ -6,9 +6,9 @@ import { DoodleCircle } from "./Doodles";
 import { HandsUp, ClockIcon, TrophyCup } from "./Illustrations";
 
 const steps = [
-  { number: "01", title: "Enrol for the full programme", description: "7 weeks. April 14 \u2013 May 30. One fee, everything included. That\u2019s it.", color: "#E05A3A" },
-  { number: "02", title: "Drop off at 9, pick up at 12:30", description: "Bangalore. Gated campus. We handle everything in between. You get your morning back.", color: "#9BB8D7" },
-  { number: "03", title: "Week 7: the exhibition", description: "They present everything they\u2019ve made across 7 weeks to a room full of parents. Gallery lights, printed labels, real pride.", color: "#3A8C6E" },
+  { number: "01", title: "They show up every morning", description: "Mon\u2013Fri, 9 AM \u2013 12:30 PM. Gated campus in Bangalore. Each week is a new challenge \u2014 art, science, cooking, nature, robots, business.", color: "#E05A3A" },
+  { number: "02", title: "They figure things out", description: "No step-by-step instructions. Instructors guide with questions, not answers. Your child learns to think, try, fail, and try again.", color: "#9BB8D7" },
+  { number: "03", title: "They show you what they made", description: "Every Friday is a showcase. And Week 7 is the real exhibition \u2014 gallery lights, printed labels, and your child presenting their work to a room full of parents.", color: "#3A8C6E" },
 ];
 
 export default function HowItWorks() {

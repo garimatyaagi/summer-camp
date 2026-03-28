@@ -6,7 +6,6 @@ import Activities from "@/components/Activities";
 import HowItWorks from "@/components/HowItWorks";
 import Pricing from "@/components/Pricing";
 import DaySchedule from "@/components/DaySchedule";
-
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";

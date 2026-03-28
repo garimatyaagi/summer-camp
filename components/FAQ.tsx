@@ -6,6 +6,7 @@ import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 const faqs = [
   { q: "What ages is this for?", a: "5 to 8 years old. One group, one programme. Activities are designed so younger and older kids can both participate and be challenged." },
+  { q: "What do you mean by \u2018figuring it out themselves\u2019?", a: "Instead of step-by-step instructions, we give kids a challenge. \u2018Make this volcano erupt higher.\u2019 \u2018Build a robot that can carry a ball.\u2019 The instructor asks questions, not gives answers. Kids try, fail, and try again \u2014 that\u2019s when real learning happens." },
   { q: "Is it the full 7 weeks or can we join partway?", a: "It\u2019s a complete 7-week programme. Each week builds on the last, and Week 7 is the exhibition where they present everything. The full journey is what makes it work." },
   { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue and directions when we confirm your spot over WhatsApp." },
   { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide everything else \u2014 snacks, materials, all of it." },

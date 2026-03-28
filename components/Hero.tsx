@@ -80,6 +80,7 @@ export default function Hero() {
         <motion.p variants={heroSub} initial="hidden" animate="visible"
           className="mt-8 max-w-[520px] text-[18px] leading-[1.75] text-white md:text-[20px] md:mt-10">
           They paint. They build robots. They run a business. They cook.
+          Not by following instructions &mdash; by figuring it out themselves.
           And in Week 7, they exhibit it all to you.
         </motion.p>
 

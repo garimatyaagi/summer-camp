@@ -7,10 +7,10 @@ import { ClockIcon, PaintPalette, HandsUp } from "./Illustrations";
 
 const schedule = [
   { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F0C75E" },
-  { time: "9:15", title: "Studio time", description: "The deep-focus session. This week\u2019s skill in action \u2014 building, creating, experimenting. Every piece goes into their portfolio.", color: "#E05A3A" },
+  { time: "9:15", title: "Make", description: "The deep-focus session. This week\u2019s challenge in action. No step-by-step instructions \u2014 kids figure it out with guidance, not answers.", color: "#E05A3A" },
   { time: "10:15", title: "Snack break", description: "Fruit, juice, and ten minutes to just be a kid.", color: "#3A8C6E" },
   { time: "10:30", title: "Move", description: "Obstacle courses, yoga, relay races, dance. Bodies need to move before brains can focus.", color: "#9BB8D7" },
-  { time: "11:30", title: "Present", description: "Show-and-tell, storytelling, presenting their work. Practice for the Friday Showcase. The quietest kid often surprises everyone.", color: "#F0C75E" },
+  { time: "11:30", title: "Present", description: "Show-and-tell, storytelling, presenting their work. Practice for the Friday Showcase. The quietest kid often surprises everyone here.", color: "#F0C75E" },
   { time: "12:15", title: "Wind-down + pick-up", description: "Reflection circle. Pack the take-home. Parents arrive to a child who can\u2019t stop talking about their day.", color: "#E05A3A" },
 ];
 
