@@ -104,7 +104,7 @@ export default function Activities() {
   const selectedWeek = weeks.find((w) => w.week === openWeek);
 
   return (
-    <section id="activities" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+    <section id="activities" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
       <div className="relative z-10 mx-auto max-w-[1200px]">
         <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

@@ -79,7 +79,12 @@ export default function Hero() {
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
           className="mt-8 max-w-[520px] text-[18px] leading-[1.75] text-white md:text-[20px] md:mt-10">
-          We teach kids to think from first principles. They paint, build robots, run a business, and cook &mdash; not by following instructions, but by figuring it out themselves. And in Week 7, they present it all at a real exhibition.
+          We teach kids to think from first principles &mdash; not by following instructions, but by figuring it out themselves.
+        </motion.p>
+
+        <motion.p variants={heroCta} initial="hidden" animate="visible"
+          className="mt-4 max-w-[460px] text-[15px] leading-[1.7] text-white/75">
+          Art. Science. Cooking. Nature. Robots. Business. 7 weeks. And in the final week, they exhibit it all to you.
         </motion.p>
 
         {/* Early bird banner */}

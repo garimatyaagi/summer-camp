@@ -33,20 +33,18 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="relative px-6 py-[80px] md:py-[140px] lg:px-12">
-      <div className="relative z-10 mx-auto max-w-[1400px]">
-        <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
-          <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
-            Questions parents ask.
-          </motion.h2>
-          <div className="bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-8">
-            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
-              viewport={{ once: true, amount: 0.05 }}>
-              {faqs.map((faq, i) => <FAQItem key={i} q={faq.q} a={faq.a} index={i} />)}
-            </motion.div>
-          </div>
+    <section id="faq" className="relative px-6 py-[60px] md:py-[100px] lg:px-12">
+      <div className="relative z-10 mx-auto max-w-[720px]">
+        <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px] mb-8 text-center">
+          Questions parents ask.
+        </motion.h2>
+        <div className="bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-8">
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}>
+            {faqs.map((faq, i) => <FAQItem key={i} q={faq.q} a={faq.a} index={i} />)}
+          </motion.div>
         </div>
       </div>
     </section>

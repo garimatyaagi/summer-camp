@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="relative px-6 py-14 lg:px-12 lg:py-16 bg-navy overflow-hidden">
       <div className="pointer-events-none">
         <DoodleStar className="absolute top-8 right-12 w-14 opacity-20" color="#F0C75E" />
-        <DoodleHeart className="absolute bottom-12 left-10 w-10 opacity-15" color="#E05A3A" />
+        <DoodleHeart className="absolute bottom-28 left-10 w-10 opacity-10 hidden md:block" color="#E05A3A" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="grid gap-10 md:grid-cols-[1.5fr_auto_auto] md:gap-16">
