@@ -37,7 +37,7 @@ export default function FAQ() {
         <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
           <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
+            className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
             Questions parents ask.
           </motion.h2>
           <div className="bg-white rounded-2xl shadow-[0_2px_20px_rgba(0,0,0,0.06)] p-6 md:p-8">

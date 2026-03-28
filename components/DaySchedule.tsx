@@ -22,7 +22,7 @@ export default function DaySchedule() {
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <motion.h2 variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="mb-12 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
+          className="mb-12 font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
           What a morning{" "}
           <span className="relative inline-block">
             looks like

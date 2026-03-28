@@ -20,7 +20,7 @@ export default function HowItWorks() {
         <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
-          className="mb-12 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
+          className="mb-12 font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
           Three steps. That&rsquo;s it.
         </motion.h2>
 

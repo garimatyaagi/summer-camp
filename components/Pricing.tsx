@@ -13,7 +13,7 @@ export default function Pricing() {
       <div className="relative z-10 mx-auto max-w-[1400px]">
         <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:gap-16">
           <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
-            <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-white md:text-[48px] lg:text-[56px]">
+            <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
               One programme.{" "}
               <span className="relative inline-block">
                 One price
