@@ -84,10 +84,10 @@ export default function Why() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {[
-              { week: "Stop-Motion Film", icon: "\uD83C\uDFAC", prompt: "Build a character from clay. Make a world in a shoebox. Now make it move." },
-              { week: "Science Lab", icon: "\uD83E\uDD4D", prompt: "This plane flies 2 metres. Change one thing. Can you make it fly 5?" },
-              { week: "Build, Break, Fix", icon: "\uD83E\uDD16", prompt: "Give your blindfolded partner instructions. If you\u2019re unclear, they walk into a chair." },
-              { week: "Launch Pad", icon: "\uD83D\uDE80", prompt: "Interview 5 people. What do they need? Now make it and sell it to them." },
+              { week: "Lights, Camera, Clay!", icon: "\uD83C\uDFAC", prompt: "Build a character from clay. Make a world in a shoebox. Now make it move." },
+              { week: "The Science of Flight", icon: "\uD83E\uDD4D", prompt: "This plane flies 2 metres. Change one thing. Can you make it fly 5?" },
+              { week: "Robot Builders", icon: "\uD83E\uDD16", prompt: "Give your blindfolded partner instructions. If you\u2019re unclear, they walk into a chair." },
+              { week: "The Mini Market", icon: "\uD83D\uDCB0", prompt: "Interview 5 people. What do they need? Now make it and sell it to them." },
             ].map((item) => (
               <div key={item.week} className="p-5 md:p-6 border-t border-[#E8EDF3] sm:odd:border-r">
                 <span className="text-[18px]">{item.icon}</span>
