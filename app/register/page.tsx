@@ -7,7 +7,7 @@ export default function RegisterPage() {
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
-  const [form, setForm] = useState({ parent_name: "", parent_phone: "", area: "" });
+  const [form, setForm] = useState({ parent_name: "", parent_phone: "", child_age: "", area: "" });
 
   function update(field: string, value: string) {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -16,7 +16,7 @@ export default function RegisterPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!form.parent_name.trim() || !form.parent_phone.trim() || !form.area.trim()) {
+    if (!form.parent_name.trim() || !form.parent_phone.trim() || !form.child_age.trim() || !form.area.trim()) {
       setError("Please fill in all fields.");
       return;
     }
@@ -26,16 +26,7 @@ export default function RegisterPage() {
       const res = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          parent_name: form.parent_name,
-          parent_phone: form.parent_phone,
-          area: form.area,
-          // Minimal form — everything else discussed on call
-          child_name: "", child_dob: "", blood_group: "", gender: "", medical: "",
-          plan: "interest", weeks: [], extended_play: "no", sibling: "no",
-          parent_email: "", emergency_contact: "", referral: "", notes: "",
-          photo_consent: false, activity_consent: false, tnc_consent: false,
-        }),
+        body: JSON.stringify(form),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong");
@@ -96,6 +87,20 @@ export default function RegisterPage() {
               <label className="text-[0.84rem] font-semibold text-[#2B5797] block mb-1.5">WhatsApp number</label>
               <input type="tel" value={form.parent_phone} onChange={(e) => update("parent_phone", e.target.value)}
                 placeholder="+91 98765 43210" className="form-input" />
+            </div>
+            <div>
+              <label className="text-[0.84rem] font-semibold text-[#2B5797] block mb-1.5">Child&apos;s age</label>
+              <select value={form.child_age} onChange={(e) => update("child_age", e.target.value)}
+                className="form-input form-select">
+                <option value="">Select age</option>
+                <option value="4">4 years</option>
+                <option value="5">5 years</option>
+                <option value="6">6 years</option>
+                <option value="7">7 years</option>
+                <option value="8">8 years</option>
+                <option value="9">9 years</option>
+                <option value="10">10 years</option>
+              </select>
             </div>
             <div>
               <label className="text-[0.84rem] font-semibold text-[#2B5797] block mb-1.5">Which area are you in?</label>

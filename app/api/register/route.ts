@@ -5,68 +5,58 @@ import * as path from "path";
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_FILE = path.join(DATA_DIR, "registrations.json");
 
-function ensureDataDir() {
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-  if (!fs.existsSync(DATA_FILE)) fs.writeFileSync(DATA_FILE, "[]", "utf-8");
-}
+// Google Sheets Apps Script URL — set in Vercel env vars
+const GOOGLE_SHEET_URL = process.env.GOOGLE_SHEET_URL || "";
 
-function readRegistrations() {
-  ensureDataDir();
+function saveToFile(data: Record<string, string>) {
   try {
-    return JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
+    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+    if (!fs.existsSync(DATA_FILE)) fs.writeFileSync(DATA_FILE, "[]", "utf-8");
+    const existing = JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
+    existing.push(data);
+    fs.writeFileSync(DATA_FILE, JSON.stringify(existing, null, 2), "utf-8");
   } catch {
-    return [];
+    // Filesystem may be read-only on Vercel — Google Sheets is primary
   }
 }
 
-function saveRegistrations(data: unknown[]) {
-  ensureDataDir();
-  fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+async function saveToGoogleSheets(data: Record<string, string>) {
+  if (!GOOGLE_SHEET_URL) return;
+  try {
+    await fetch(GOOGLE_SHEET_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+  } catch (err) {
+    console.error("Google Sheets error:", err);
+  }
 }
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    const required = ["child_name", "child_dob", "gender", "medical", "plan", "weeks", "parent_name", "parent_phone", "parent_email", "emergency_contact", "referral"];
+    const required = ["parent_name", "parent_phone", "child_age", "area"];
     for (const field of required) {
       if (!body[field] || (typeof body[field] === "string" && !body[field].trim())) {
-        return NextResponse.json({ error: `Missing required field: ${field}` }, { status: 400 });
+        return NextResponse.json({ error: "Please fill in all fields." }, { status: 400 });
       }
     }
 
-    if (Array.isArray(body.weeks) && body.weeks.length === 0) {
-      return NextResponse.json({ error: "Please select at least one week" }, { status: 400 });
-    }
-
-    const registration = {
+    const lead = {
       id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
       submitted_at: new Date().toISOString(),
-      child_name: body.child_name,
-      child_dob: body.child_dob,
-      blood_group: body.blood_group || "",
-      gender: body.gender,
-      medical: body.medical,
-      plan: body.plan,
-      weeks: Array.isArray(body.weeks) ? body.weeks.join(", ") : body.weeks,
-      extended_play: body.extended_play || "no",
-      sibling: body.sibling || "no",
-      parent_name: body.parent_name,
-      parent_phone: body.parent_phone,
-      parent_email: body.parent_email,
-      emergency_contact: body.emergency_contact,
-      referral: body.referral,
-      notes: body.notes || "",
-      photo_consent: body.photo_consent ? "Yes" : "No",
-      activity_consent: body.activity_consent ? "Yes" : "No",
-      tnc_consent: body.tnc_consent ? "Yes" : "No",
+      parent_name: body.parent_name.trim(),
+      parent_phone: body.parent_phone.trim(),
+      child_age: body.child_age,
+      area: body.area.trim(),
     };
 
-    const registrations = readRegistrations();
-    registrations.push(registration);
-    saveRegistrations(registrations);
+    saveToFile(lead);
+    await saveToGoogleSheets(lead);
 
-    return NextResponse.json({ success: true, id: registration.id, child_name: registration.child_name });
+    return NextResponse.json({ success: true, id: lead.id });
   } catch (err) {
     console.error("Registration error:", err);
     return NextResponse.json({ error: "Something went wrong. Please try again." }, { status: 500 });
