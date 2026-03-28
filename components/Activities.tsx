@@ -6,89 +6,96 @@ import { fadeUp, sectionFade } from "@/lib/animations";
 import { PaintPalette, ScienceBeaker, ChefHat, LeafBranch, RobotFriend, ShopSign, TrophyCup } from "./Illustrations";
 
 const weeks = [
-  { week: 1, theme: "The Art Studio", emoji: "\uD83C\uDFA8", color: "#E05A3A",
-    skill: "Visual art fundamentals",
-    oneLiner: "They build a 5-piece art collection from scratch.",
+  { week: 1, theme: "Art", emoji: "🎨", color: "#E05A3A",
+    question: "Can you create something that makes you feel proud?",
+    principle: "Self-expression through experimentation",
+    oneLiner: "No instructions. Just a canvas, materials, and one question: what do YOU want to make?",
     takeHome: "Framed painting + art portfolio",
-    longTermSkills: ["Creative confidence", "Observation & detail", "Self-expression", "Fine motor skills"],
+    longTermSkills: ["Creative confidence", "Decision-making", "Self-expression", "Learning from mistakes"],
     days: [
-      { day: "Mon", activity: "Clay sculpture \u2014 sculpt a creature, learn form & texture" },
-      { day: "Tue", activity: "Nature collage \u2014 collect materials outdoors, learn composition" },
-      { day: "Wed", activity: "Canvas painting \u2014 color theory, mixing, free expression" },
-      { day: "Thu", activity: "Tie-dye textile \u2014 pattern design, chemistry of dyes" },
-      { day: "Fri", activity: "Portfolio assembly + Gallery Walk for parents" },
+      { day: "Mon", activity: "Challenge: sculpt a creature that stands on its own. Material: clay." },
+      { day: "Tue", activity: "Challenge: make art using only things you find outdoors." },
+      { day: "Wed", activity: "Challenge: mix 3 colours to create a colour nobody else has. Paint with it." },
+      { day: "Thu", activity: "Challenge: design a pattern. Predict what tie-dye will do. Were you right?" },
+      { day: "Fri", activity: "Gallery Walk — present your 4 pieces. Parents are the audience." },
     ]},
-  { week: 2, theme: "The Science Lab", emoji: "\uD83E\uDDEA", color: "#2B5797",
-    skill: "The scientific method",
-    oneLiner: "They learn to hypothesise, test, and record.",
+  { week: 2, theme: "Science", emoji: "🧪", color: "#2B5797",
+    question: "How would you figure out why this happens?",
+    principle: "Hypothesise → test → observe → explain",
+    oneLiner: "Real scientific method. They don't follow experiments — they design them.",
     takeHome: "Experiment journal + seed kit",
-    longTermSkills: ["Critical thinking", "Asking good questions", "Recording observations", "Cause & effect"],
+    longTermSkills: ["Asking good questions", "Testing ideas", "Recording what you observe", "Cause & effect thinking"],
     days: [
-      { day: "Mon", activity: "Volcano build \u2014 chemical reactions, predict & test" },
-      { day: "Tue", activity: "Magnet experiments \u2014 forces, attract/repel, build a toy" },
-      { day: "Wed", activity: "Slime lab \u2014 states of matter, liquid vs solid" },
-      { day: "Thu", activity: "Seed germination kit \u2014 biology, plant life cycles" },
-      { day: "Fri", activity: "Experiment journal + Live Demo for parents" },
+      { day: "Mon", activity: "Challenge: make this volcano erupt higher. You have 3 attempts." },
+      { day: "Tue", activity: "Challenge: which objects in this room are magnetic? Predict first, then test." },
+      { day: "Wed", activity: "Challenge: is slime a liquid or a solid? Design a test to prove it." },
+      { day: "Thu", activity: "Challenge: get this seed to sprout in 3 days. What does it need?" },
+      { day: "Fri", activity: "Live Demo — present your best experiment to parents. Explain why it works." },
     ]},
-  { week: 3, theme: "The Kitchen Studio", emoji: "\uD83C\uDF73", color: "#F0C75E",
-    skill: "Measurement + food presentation",
-    oneLiner: "They design a menu and run a pop-up restaurant.",
+  { week: 3, theme: "Cooking", emoji: "🍳", color: "#F0C75E",
+    question: "Can you design a dish, test it, and serve it to a real customer?",
+    principle: "Measurement, iteration, and presentation",
+    oneLiner: "No recipe cards. They design their own dishes, test them, and run a restaurant on Friday.",
     takeHome: "Recipe booklet + chef hat",
-    longTermSkills: ["Following instructions", "Measurement & math", "Presentation", "Teamwork"],
+    longTermSkills: ["Measurement & ratios", "Tasting and improving", "Presentation skills", "Serving others"],
     days: [
-      { day: "Mon", activity: "Energy balls \u2014 measuring, mixing, following a recipe" },
-      { day: "Tue", activity: "Fruit art platter \u2014 design, color, presentation" },
-      { day: "Wed", activity: "Lemonade stand \u2014 ratios, taste-testing, pricing" },
-      { day: "Thu", activity: "Menu design + chef identity \u2014 branding their restaurant" },
-      { day: "Fri", activity: "Pop-up Restaurant \u2014 kids serve parents their creation" },
+      { day: "Mon", activity: "Challenge: make something delicious using only 5 ingredients. No recipe." },
+      { day: "Tue", activity: "Challenge: arrange fruit so it looks like art. Make people want to eat it." },
+      { day: "Wed", activity: "Challenge: make lemonade. Now make it better. What did you change?" },
+      { day: "Thu", activity: "Challenge: design a restaurant menu. Name your restaurant. Price your dishes." },
+      { day: "Fri", activity: "Pop-up Restaurant — parents are customers. Kids cook, serve, and run it." },
     ]},
-  { week: 4, theme: "The Nature Atelier", emoji: "\uD83C\uDF3F", color: "#3A8C6E",
-    skill: "Observation + documentation",
-    oneLiner: "They study nature like real naturalists.",
+  { week: 4, theme: "Nature", emoji: "🌿", color: "#3A8C6E",
+    question: "What can you discover if you really look?",
+    principle: "Observation, patience, and documentation",
+    oneLiner: "They study nature like real naturalists — observe, sketch, document, build.",
     takeHome: "Nature journal + bug hotel",
-    longTermSkills: ["Patience & focus", "Scientific illustration", "Environmental awareness", "Independent discovery"],
+    longTermSkills: ["Patience & deep focus", "Scientific drawing", "Environmental awareness", "Independent discovery"],
     days: [
-      { day: "Mon", activity: "Bug hotel build \u2014 insect habitats, natural materials" },
-      { day: "Tue", activity: "Leaf printing + pressed flowers \u2014 botanical art" },
-      { day: "Wed", activity: "Nature journal sketching \u2014 observational drawing outdoors" },
-      { day: "Thu", activity: "Outdoor shelter build \u2014 engineering with nature" },
-      { day: "Fri", activity: "Guided Nature Walk \u2014 kids teach parents their discoveries" },
+      { day: "Mon", activity: "Challenge: build a home for insects using only natural materials." },
+      { day: "Tue", activity: "Challenge: find 5 different leaf shapes. Print them. Why are they different?" },
+      { day: "Wed", activity: "Challenge: sit still for 10 minutes and draw exactly what you see." },
+      { day: "Thu", activity: "Challenge: build a shelter that can survive wind. Test it." },
+      { day: "Fri", activity: "Nature Walk — kids guide parents through their discoveries." },
     ]},
-  { week: 5, theme: "The Tinker Workshop", emoji: "\uD83E\uDD16", color: "#9BB8D7",
-    skill: "Design thinking",
-    oneLiner: "Blueprint \u2192 prototype \u2192 test \u2192 iterate.",
+  { week: 5, theme: "Robots", emoji: "🤖", color: "#9BB8D7",
+    question: "Can you build something that actually works?",
+    principle: "Design thinking: plan → build → test → improve",
+    oneLiner: "Blueprint first. Then build. Then test. Then fix what broke. Real engineering.",
     takeHome: "Working robot + blueprint",
-    longTermSkills: ["Problem-solving", "Planning before building", "Learning from failure", "Technical communication"],
+    longTermSkills: ["Planning before building", "Problem decomposition", "Learning from failure", "Explaining how things work"],
     days: [
-      { day: "Mon", activity: "Robot blueprint \u2014 design on paper first, plan the build" },
-      { day: "Tue", activity: "Robot body build \u2014 cardboard, foil, tubes, construction" },
-      { day: "Wed", activity: "Coding cards \u2014 sequencing, logic, debugging (no screens)" },
-      { day: "Thu", activity: "Finish + test + write instruction manual" },
-      { day: "Fri", activity: "Robot Demo Day \u2014 each child presents their robot" },
+      { day: "Mon", activity: "Challenge: design a robot on paper before touching any materials." },
+      { day: "Tue", activity: "Challenge: build it. Does it look like your blueprint? What's different?" },
+      { day: "Wed", activity: "Challenge: program your friend using only instruction cards. Debug the errors." },
+      { day: "Thu", activity: "Challenge: your robot needs to carry a ball across the table. Make it work." },
+      { day: "Fri", activity: "Robot Demo — present your robot. Explain what broke and how you fixed it." },
     ]},
-  { week: 6, theme: "The Market", emoji: "\uD83D\uDCB0", color: "#E05A3A",
-    skill: "Entrepreneurship",
-    oneLiner: "They make products, price them, and sell to parents.",
-    takeHome: "Products + business card + earnings",
-    longTermSkills: ["Communication & persuasion", "Basic money math", "Product thinking", "Confidence with adults"],
+  { week: 6, theme: "Business", emoji: "💰", color: "#E05A3A",
+    question: "Can you make something people actually want to buy?",
+    principle: "Create value, communicate value, exchange value",
+    oneLiner: "They make products, set prices, design a brand, and sell to real customers (you).",
+    takeHome: "Products + business card + real earnings",
+    longTermSkills: ["Communication & persuasion", "Understanding value", "Product thinking", "Confidence with adults"],
     days: [
-      { day: "Mon", activity: "Choose product + make first units (pots, bags, bookmarks)" },
-      { day: "Tue", activity: "Production day \u2014 make 3-5 units, quality control" },
-      { day: "Wed", activity: "Brand identity \u2014 business name, logo, business card" },
-      { day: "Thu", activity: "Set up stall \u2014 pricing, signage, practice sales pitch" },
-      { day: "Fri", activity: "Market Day \u2014 parents are customers, kids handle sales" },
+      { day: "Mon", activity: "Challenge: what would people actually pay for? Choose your product." },
+      { day: "Tue", activity: "Challenge: make 5 units. Each one should be good enough to sell." },
+      { day: "Wed", activity: "Challenge: name your business. Design a logo. Make a business card." },
+      { day: "Thu", activity: "Challenge: set your prices. Practice your sales pitch in 30 seconds." },
+      { day: "Fri", activity: "Market Day — parents are real customers with real money." },
     ]},
-  { week: 7, theme: "The Exhibition", emoji: "\uD83C\uDFC6", color: "#2B5797",
-    skill: "Curation + public speaking",
-    oneLiner: "They curate 7 weeks of work into a real gallery show.",
+  { week: 7, theme: "The Exhibition", emoji: "🏆", color: "#2B5797",
+    question: "What are you most proud of, and can you tell us why?",
+    principle: "Reflection, curation, and public speaking",
+    oneLiner: "They pick their best work from 7 weeks and present it at a real gallery show.",
     takeHome: "Scrapbook + certificate + framed artwork",
     longTermSkills: ["Self-reflection", "Public speaking", "Pride in their work", "Celebrating growth"],
     days: [
-      { day: "Mon", activity: "Scrapbook \u2014 one page per week, reflect on favourites" },
-      { day: "Tue", activity: "Camp mural (collaborative) + friend messages" },
-      { day: "Wed", activity: "Select best-of piece, write artist statement, rehearse" },
-      { day: "Thu", activity: "Camp Olympics + talent showcase rehearsal" },
-      { day: "Fri", activity: "THE EXHIBITION \u2014 gallery opening, certificates, celebration" },
+      { day: "Mon", activity: "Reflect: one page per week in your scrapbook. What did you learn?" },
+      { day: "Tue", activity: "Challenge: contribute to the camp mural. One piece that represents you." },
+      { day: "Wed", activity: "Curate: pick your best piece. Write why you chose it. Rehearse." },
+      { day: "Thu", activity: "Dress rehearsal: present to the group. Give each other feedback." },
+      { day: "Fri", activity: "THE EXHIBITION — gallery opening, certificates, a room full of proud parents." },
     ]},
 ];
 
@@ -103,11 +110,11 @@ export default function Activities() {
           viewport={{ once: true, amount: 0.3 }}
           className="mb-12 max-w-[600px]">
           <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
-            The programme.
+            7 weeks. 7 challenges.
           </h2>
           <p className="mt-4 text-[17px] md:text-[18px] leading-[1.75] text-[#1E2D3D]">
-            Each week is a studio. Each studio teaches one real skill.
-            Click any week to see the day-by-day plan.
+            Each week starts with a question. By Friday, they&apos;ve answered it — their way.
+            Click any week to see the daily challenges.
           </p>
         </motion.div>
 
@@ -121,24 +128,16 @@ export default function Activities() {
               {/* Colored top bar */}
               <div className="h-2 w-full" style={{ backgroundColor: week.color }} />
               <div className="p-5 pt-4">
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-2">
                   <span className="text-[11px] font-bold tracking-[0.1em] uppercase" style={{ color: week.color }}>
-                    Week {week.week}
+                    Week {week.week} · {week.theme}
                   </span>
-                  <span className="w-10 h-10 flex-shrink-0">
-                    {week.week === 1 && <PaintPalette className="w-10 h-10" />}
-                    {week.week === 2 && <ScienceBeaker className="w-10 h-10" />}
-                    {week.week === 3 && <ChefHat className="w-10 h-10" />}
-                    {week.week === 4 && <LeafBranch className="w-10 h-10" />}
-                    {week.week === 5 && <RobotFriend className="w-10 h-10" />}
-                    {week.week === 6 && <ShopSign className="w-10 h-10" />}
-                    {week.week === 7 && <TrophyCup className="w-10 h-10" />}
-                  </span>
+                  <span className="text-[22px]">{week.emoji}</span>
                 </div>
-                <h3 className="text-[17px] font-bold text-[#2B5797] leading-[1.2]">
-                  {week.theme}
+                <h3 className="text-[15px] md:text-[16px] font-semibold text-[#2B5797] leading-[1.35] italic">
+                  &ldquo;{week.question}&rdquo;
                 </h3>
-                <p className="mt-1.5 text-[14px] md:text-[15px] leading-[1.6] text-[#1E2D3D]">
+                <p className="mt-2 text-[13px] md:text-[14px] leading-[1.6] text-[#3A4D62]">
                   {week.oneLiner}
                 </p>
                 <div className="mt-3 pt-3 border-t border-[#E8EDF3]">
@@ -173,13 +172,13 @@ export default function Activities() {
               <div className="p-6 pb-4 border-b border-[#E8EDF3] flex items-start justify-between">
                 <div>
                   <span className="text-[11px] font-bold tracking-[0.1em] uppercase" style={{ color: selectedWeek.color }}>
-                    Week {selectedWeek.week}
+                    Week {selectedWeek.week} · {selectedWeek.theme}
                   </span>
-                  <h3 className="text-[22px] font-bold text-[#2B5797] mt-1">
-                    {selectedWeek.theme} {selectedWeek.emoji}
+                  <h3 className="text-[20px] md:text-[22px] font-bold text-[#2B5797] mt-1 italic">
+                    &ldquo;{selectedWeek.question}&rdquo;
                   </h3>
-                  <p className="text-[13px] font-semibold mt-1" style={{ color: selectedWeek.color }}>
-                    Skill: {selectedWeek.skill}
+                  <p className="text-[13px] font-medium mt-2 text-[#3A4D62]">
+                    First principle: {selectedWeek.principle}
                   </p>
                 </div>
                 <button onClick={() => setOpenWeek(null)}
@@ -188,7 +187,7 @@ export default function Activities() {
                 </button>
               </div>
               <div className="p-6 pt-4">
-                <h4 className="text-[12px] font-bold tracking-[0.08em] uppercase text-[#6B7D8F] mb-3">Day-by-day plan</h4>
+                <h4 className="text-[12px] font-bold tracking-[0.08em] uppercase text-[#6B7D8F] mb-3">Daily challenges</h4>
                 <div className="space-y-2.5">
                   {selectedWeek.days.map((d) => (
                     <div key={d.day} className="flex gap-3 items-start">
