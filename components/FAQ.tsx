@@ -5,15 +5,14 @@ import { motion } from "framer-motion";
 import { sectionFade, fadeUpStagger, staggerContainer } from "@/lib/animations";
 
 const faqs = [
-  { q: "What ages is this for?", a: "5 to 8 years old. One group, one programme. Activities are designed so younger and older kids can both participate and be challenged." },
-  { q: "What do you mean by \u2018figuring it out themselves\u2019?", a: "Instead of step-by-step instructions, we give kids a challenge. \u2018Make this volcano erupt higher.\u2019 \u2018Build a robot that can carry a ball.\u2019 The instructor asks questions, not gives answers. Kids try, fail, and try again \u2014 that\u2019s when real learning happens." },
-  { q: "Is it the full 7 weeks or can we join partway?", a: "It\u2019s a complete 7-week programme. Each week builds on the last, and Week 7 is the exhibition where they present everything. The full journey is what makes it work." },
-  { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue and directions when we confirm your spot over WhatsApp." },
-  { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide everything else \u2014 snacks, materials, all of it." },
-  { q: "What if my child misses a day?", a: "Life happens. We\u2019ll send home the take-home so they don\u2019t miss the making." },
-  { q: "What about safety?", a: "First-aid trained staff at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. You\u2019ll have both founders\u2019 phone numbers." },
-  { q: "What happens at the Exhibition?", a: "Week 7 ends with a proper gallery opening. Fairy lights, printed labels, a catalog. Every child presents their best work to a room full of parents. It\u2019s the moment they feel genuinely proud \u2014 and the photo you\u2019ll share." },
-  { q: "How do I register?", a: "Fill in the interest form and we\u2019ll reach out over WhatsApp within 24 hours. We\u2019ll tell you everything \u2014 venue, pricing, what to expect \u2014 and answer any questions." },
+  { q: "What ages is this for?", a: "5 to 8 years old." },
+  { q: "Is it the full 7 weeks?", a: "Yes. Each week builds on the last, and Week 7 is the exhibition. That\u2019s what makes it work." },
+  { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue once we confirm your spot." },
+  { q: "What does my child need to bring?", a: "Water bottle and comfortable clothes they can get messy in. We provide everything else." },
+  { q: "What if my child misses a day?", a: "We\u2019ll send home the take-home kit so they don\u2019t miss out." },
+  { q: "What about safety?", a: "First-aid trained staff. 1:8 adult-to-child ratio. Gated campus with check-in/check-out." },
+  { q: "What happens at the Exhibition?", a: "Week 7 ends with a real gallery opening. Your child presents their best work from 7 weeks to a room full of parents." },
+  { q: "How do I register?", a: "Fill in the interest form. We\u2019ll WhatsApp you within 24 hours." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
