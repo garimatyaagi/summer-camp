@@ -2,10 +2,17 @@
 
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
+import { PaintPalette, ScienceBeaker, RobotFriend, TrophyCup } from "./Illustrations";
 
 export default function Why() {
   return (
-    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
+    <section className="relative px-6 py-[80px] md:py-[120px] lg:px-12 overflow-hidden">
+      {/* Floating illustrations */}
+      <div className="pointer-events-none">
+        <PaintPalette className="absolute top-16 right-8 w-20 md:w-28 opacity-15 hidden md:block" />
+        <ScienceBeaker className="absolute bottom-32 right-16 w-16 md:w-20 opacity-12 hidden lg:block" />
+        <RobotFriend className="absolute bottom-20 left-6 w-14 md:w-18 opacity-10 hidden md:block" />
+      </div>
       <div className="relative z-10 mx-auto max-w-[1200px]">
         {/* The hook — what parents already know */}
         <motion.div

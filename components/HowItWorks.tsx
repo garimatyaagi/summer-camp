@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer } from "@/lib/animations";
 import { DoodleCircle } from "./Doodles";
+import { HandsUp, ClockIcon, TrophyCup } from "./Illustrations";
 
 const steps = [
   { number: "01", title: "Enrol for the full programme", description: "7 weeks. April 14 \u2013 May 30. One fee, everything included. That\u2019s it.", color: "#E05A3A" },
@@ -30,10 +31,17 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <motion.div key={step.number} variants={fadeUpStagger} custom={i}
               className="relative bg-white rounded-2xl shadow-[0_2px_16px_rgba(0,0,0,0.06)] p-7 md:p-8">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full text-[15px] font-bold text-white"
-                style={{ backgroundColor: step.color }}>
-                {step.number}
-              </span>
+              <div className="flex items-center gap-3">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full text-[15px] font-bold text-white"
+                  style={{ backgroundColor: step.color }}>
+                  {step.number}
+                </span>
+                <span className="w-10 h-10 opacity-40">
+                  {i === 0 && <HandsUp className="w-10 h-10" />}
+                  {i === 1 && <ClockIcon className="w-10 h-10" />}
+                  {i === 2 && <TrophyCup className="w-10 h-10" />}
+                </span>
+              </div>
               <h3 className="mt-4 text-[18px] font-bold leading-[1.35] text-[#2B5797]">{step.title}</h3>
               <p className="mt-3 text-[15px] leading-[1.8] text-[#3A4D62]">{step.description}</p>
             </motion.div>

@@ -48,12 +48,16 @@ export function DoodleArrow({ className = "", color = "#E05A3A" }: { className?:
 }
 
 export function DoodleSun({ className = "", color = "#F0C75E" }: { className?: string; color?: string }) {
+  // Pre-computed ray endpoints to avoid hydration mismatch
+  const rays = [
+    { x2: 52, y2: 30 }, { x2: 45.6, y2: 45.6 }, { x2: 30, y2: 52 }, { x2: 14.4, y2: 45.6 },
+    { x2: 8, y2: 30 }, { x2: 14.4, y2: 14.4 }, { x2: 30, y2: 8 }, { x2: 45.6, y2: 14.4 },
+  ];
   return (
     <svg viewBox="0 0 60 60" fill="none" className={`doodle-spin-slow ${className}`}>
       <circle cx="30" cy="30" r="10" stroke={color} strokeWidth="3" fill={color} fillOpacity="0.4" />
-      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
-        <line key={angle} x1="30" y1="30" x2={30 + 22 * Math.cos((angle * Math.PI) / 180)} y2={30 + 22 * Math.sin((angle * Math.PI) / 180)}
-          stroke={color} strokeWidth="3" strokeLinecap="round" />
+      {rays.map((r, i) => (
+        <line key={i} x1="30" y1="30" x2={r.x2} y2={r.y2} stroke={color} strokeWidth="3" strokeLinecap="round" />
       ))}
     </svg>
   );

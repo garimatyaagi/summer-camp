@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { heroHeading, heroSub, heroCta, heroMeta } from "@/lib/animations";
 import { DoodleStar, DoodleSun, DoodleHeart, DoodleCrayon, ColorfulDivider } from "./Doodles";
+import { PaintPalette, ScienceBeaker, ChefHat, RobotFriend } from "./Illustrations";
 
 export default function Hero() {
   return (
@@ -38,6 +39,23 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.35 }}
           transition={{ delay: 1.0, duration: 0.6 }} className="absolute top-[15%] left-[4%] hidden md:block">
           <DoodleStar className="w-10" color="rgba(255,255,255,0.5)" />
+        </motion.div>
+        {/* Thematic illustrations — bottom area */}
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 0.12, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.8 }} className="absolute bottom-[8%] left-[5%] hidden lg:block">
+          <PaintPalette className="w-28" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 0.1, y: 0 }}
+          transition={{ delay: 1.7, duration: 0.8 }} className="absolute bottom-[12%] left-[20%] hidden lg:block">
+          <ScienceBeaker className="w-20" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 0.1, y: 0 }}
+          transition={{ delay: 1.9, duration: 0.8 }} className="absolute bottom-[6%] right-[25%] hidden lg:block">
+          <ChefHat className="w-20" />
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 0.12, y: 0 }}
+          transition={{ delay: 2.1, duration: 0.8 }} className="absolute bottom-[10%] right-[8%] hidden lg:block">
+          <RobotFriend className="w-24" />
         </motion.div>
       </div>
 

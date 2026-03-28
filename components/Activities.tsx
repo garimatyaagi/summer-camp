@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeUp, sectionFade } from "@/lib/animations";
+import { PaintPalette, ScienceBeaker, ChefHat, LeafBranch, RobotFriend, ShopSign, TrophyCup } from "./Illustrations";
 
 const weeks = [
   { week: 1, theme: "The Art Studio", emoji: "\uD83C\uDFA8", color: "#E05A3A",
@@ -124,7 +125,15 @@ export default function Activities() {
                   <span className="text-[11px] font-bold tracking-[0.1em] uppercase" style={{ color: week.color }}>
                     Week {week.week}
                   </span>
-                  <span className="text-[22px]">{week.emoji}</span>
+                  <span className="w-10 h-10 flex-shrink-0">
+                    {week.week === 1 && <PaintPalette className="w-10 h-10" />}
+                    {week.week === 2 && <ScienceBeaker className="w-10 h-10" />}
+                    {week.week === 3 && <ChefHat className="w-10 h-10" />}
+                    {week.week === 4 && <LeafBranch className="w-10 h-10" />}
+                    {week.week === 5 && <RobotFriend className="w-10 h-10" />}
+                    {week.week === 6 && <ShopSign className="w-10 h-10" />}
+                    {week.week === 7 && <TrophyCup className="w-10 h-10" />}
+                  </span>
                 </div>
                 <h3 className="text-[17px] font-bold text-[#2B5797] leading-[1.2]">
                   {week.theme}

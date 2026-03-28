@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeUpStagger, staggerContainer, sectionFade } from "@/lib/animations";
 import { DoodleStar } from "./Doodles";
+import { ClockIcon, PaintPalette, HandsUp } from "./Illustrations";
 
 const schedule = [
   { time: "9:00", title: "Welcome circle", description: "A game, a song, or a question to start the day. Everyone\u2019s name matters.", color: "#F0C75E" },
@@ -17,6 +18,8 @@ export default function DaySchedule() {
   return (
     <section id="schedule" className="relative px-6 py-[80px] md:py-[120px] lg:px-12">
       <div className="pointer-events-none">
+        <ClockIcon className="absolute top-16 right-8 w-20 md:w-28 opacity-12 hidden md:block" />
+        <PaintPalette className="absolute bottom-20 left-6 w-16 opacity-10 hidden lg:block" />
         <DoodleStar className="absolute top-8 left-6 w-16 opacity-15 hidden md:block" color="#FFFFFF" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1400px]">

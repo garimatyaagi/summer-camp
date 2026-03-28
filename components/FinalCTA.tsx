@@ -2,15 +2,19 @@
 
 import { motion } from "framer-motion";
 import { sectionFade } from "@/lib/animations";
-import { DoodleStar, DoodleScribbleCircle } from "./Doodles";
+import { DoodleStar } from "./Doodles";
+import { PaintPalette, RobotFriend, TrophyCup, LeafBranch } from "./Illustrations";
 
 export default function FinalCTA() {
   return (
     <section className="relative px-6 py-[100px] md:py-[160px] lg:px-12 overflow-hidden">
-      {/* Minimal white doodles */}
+      {/* Thematic illustrations */}
       <div className="pointer-events-none">
-        <DoodleScribbleCircle className="absolute top-[10%] right-[5%] w-48 md:w-72 opacity-10 hidden md:block" color="#FFFFFF" />
-        <DoodleStar className="absolute bottom-[20%] left-[8%] w-16 opacity-20 hidden md:block" color="#FFFFFF" />
+        <PaintPalette className="absolute top-[10%] right-[5%] w-24 md:w-32 opacity-15 hidden md:block" />
+        <RobotFriend className="absolute bottom-[15%] right-[10%] w-20 md:w-24 opacity-12 hidden lg:block" />
+        <LeafBranch className="absolute top-[30%] left-[3%] w-20 opacity-10 hidden md:block" />
+        <TrophyCup className="absolute bottom-[25%] left-[8%] w-16 opacity-15 hidden md:block" />
+        <DoodleStar className="absolute top-[60%] right-[20%] w-10 opacity-20 hidden md:block" color="#F0C75E" />
       </div>
 
       <motion.div variants={sectionFade} initial="hidden" whileInView="visible"
