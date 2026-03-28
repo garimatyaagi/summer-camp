@@ -37,7 +37,7 @@ export default function RegisterPage() {
         return;
       }
     }
-    if (!form.photo_consent || !form.activity_consent || !form.tnc_consent) { setError("Please accept all consent checkboxes."); return; }
+    if (!form.activity_consent || !form.tnc_consent) { setError("Please accept all consent checkboxes."); return; }
 
     setSubmitting(true);
     try {
@@ -201,9 +201,6 @@ export default function RegisterPage() {
           <SectionHeader num={4} title="Before you submit" />
           <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
             <div className="flex flex-col gap-3">
-              <ConsentBox checked={form.photo_consent} onChange={(v) => update("photo_consent", v)}
-                title="Photos & videos"
-                text="I'm happy for The Summer Club to photograph and video my child during camp activities, and to use these on Instagram and WhatsApp parent updates." />
               <ConsentBox checked={form.activity_consent} onChange={(v) => update("activity_consent", v)}
                 title="Activity participation"
                 text="I give my child permission to take part in all The Summer Club activities, including outdoor play, cooking, and hands-on making sessions." />
