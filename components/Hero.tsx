@@ -95,7 +95,7 @@ export default function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4 md:mt-12">
           <a href="/register"
             className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-semibold tracking-[0.02em] text-white shadow-[0_4px_20px_rgba(224,90,58,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03] hover:shadow-[0_6px_25px_rgba(224,90,58,0.35)]">
-            Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            Register interest <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
           <a href="#activities"
             className="inline-flex items-center gap-2 rounded-full border-2 border-white/25 px-7 py-3.5 text-[14px] font-medium text-white/80 transition-all duration-300 hover:border-white/40 hover:text-white">

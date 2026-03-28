@@ -52,15 +52,11 @@ export default function Pricing() {
                 <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Certificate of completion</li>
               </ul>
               <div className="my-6 h-px bg-[#E8EDF3]" />
-              <p className="text-[14px] text-[#3A4D62]">Sibling discount: 15% off child #2+</p>
               <a href="/register"
                 className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral py-4 text-[14px] font-bold text-white shadow-[0_4px_16px_rgba(224,90,58,0.25)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.01]">
-                Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                Register interest <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
               </a>
             </div>
-            <p className="mt-4 text-center text-[13px] text-white/90">
-              Extended Play add-on (12:30&ndash;2:30 PM): &#8377;8,000 for the full programme. Lunch included.
-            </p>
           </motion.div>
         </div>
       </div>

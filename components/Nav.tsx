@@ -43,7 +43,7 @@ export default function Nav() {
             href="/register"
             className="group flex items-center gap-2 rounded-full bg-coral px-6 py-2.5 text-[13px] font-semibold text-white transition-all duration-300 hover:bg-coral-dark hover:scale-[1.02]"
           >
-            Reserve a spot
+            Register interest
             <span className="transition-transform duration-300 group-hover:translate-x-0.5">&rarr;</span>
           </a>
         </div>
@@ -83,7 +83,7 @@ export default function Nav() {
               initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.35 }}
               className="mt-8 rounded-full bg-coral px-8 py-3.5 text-[14px] font-semibold text-white">
-              Reserve a spot &rarr;
+              Register interest &rarr;
             </motion.a>
           </motion.div>
         )}

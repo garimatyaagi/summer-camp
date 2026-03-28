@@ -9,10 +9,10 @@ const faqs = [
   { q: "Is it the full 7 weeks or can we join partway?", a: "It\u2019s a complete 7-week programme. Each week builds on the last, and Week 7 is the exhibition where they present everything. The full journey is what makes it work." },
   { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue and directions when we confirm your spot over WhatsApp." },
   { q: "What does my child need to bring?", a: "A water bottle, comfortable clothes they can get messy in, and sunscreen. We provide everything else \u2014 snacks, materials, all of it." },
-  { q: "What if my child misses a day?", a: "Life happens. Missed days can\u2019t be refunded, but we\u2019ll send home the take-home so they don\u2019t miss the making." },
+  { q: "What if my child misses a day?", a: "Life happens. We\u2019ll send home the take-home so they don\u2019t miss the making." },
   { q: "What about safety?", a: "First-aid trained staff at all times. 1:8 adult-to-child ratio. Gated entry with check-in/check-out protocol. You\u2019ll have both founders\u2019 phone numbers." },
   { q: "What happens at the Exhibition?", a: "Week 7 ends with a proper gallery opening. Fairy lights, printed labels, a catalog. Every child presents their best work to a room full of parents. It\u2019s the moment they feel genuinely proud \u2014 and the photo you\u2019ll share." },
-  { q: "Is there a sibling discount?", a: "Yes \u2014 15% off for the second child onwards." },
+  { q: "How do I register?", a: "Fill in the interest form and we\u2019ll reach out over WhatsApp within 24 hours. We\u2019ll tell you everything \u2014 venue, pricing, what to expect \u2014 and answer any questions." },
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {

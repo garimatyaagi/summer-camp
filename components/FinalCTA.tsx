@@ -40,7 +40,7 @@ export default function FinalCTA() {
         <div className="mt-9 flex flex-wrap items-center gap-4">
           <a href="/register"
             className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-bold text-white shadow-[0_4px_20px_rgba(224,90,58,0.3)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03]">
-            Reserve a spot <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            Register interest <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
           <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#2B5797] hover:text-[#E05A3A] transition-colors hover:underline underline-offset-4">

@@ -199,7 +199,7 @@ export default function SchedulePage() {
         <div className="mt-12 text-center">
           <Link href="/register"
             className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-full font-semibold text-[0.95rem] shadow-[0_4px_16px_rgba(224,90,58,0.25)] hover:bg-[#C94B2E] hover:scale-[1.02] transition-all duration-300">
-            Reserve a spot &rarr;
+            Register interest &rarr;
           </Link>
           <p className="mt-3 text-[0.82rem] text-muted">
             <Link href="/" className="text-coral font-medium hover:underline underline-offset-4">&larr; Back to The Summer Club</Link>

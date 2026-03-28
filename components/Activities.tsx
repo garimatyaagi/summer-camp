@@ -217,7 +217,7 @@ export default function Activities() {
                 </div>
                 <a href="/register"
                   className="mt-5 w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#E05A3A] py-3.5 text-[14px] font-bold text-white shadow-[0_4px_16px_rgba(224,90,58,0.2)] transition-all duration-300 hover:bg-[#C94B2E]">
-                  Reserve a spot &rarr;
+                  Register interest &rarr;
                 </a>
               </div>
             </motion.div>

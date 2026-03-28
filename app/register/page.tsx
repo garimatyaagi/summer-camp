@@ -70,9 +70,9 @@ export default function RegisterPage() {
           <div className="w-[72px] h-[72px] bg-[#3DAA6B] rounded-full flex items-center justify-center mx-auto mb-5 text-[2rem]">
             <span role="img" aria-label="celebration">&#x1F389;</span>
           </div>
-          <h2 className="font-display text-[1.8rem] text-navy mb-3">You&apos;re in!</h2>
+          <h2 className="font-display text-[1.8rem] text-navy mb-3">We&apos;ve got it!</h2>
           <p className="text-text-secondary text-[0.95rem] max-w-[340px] mx-auto mb-6 leading-[1.6]">
-            We&apos;ve got your registration. Expect a WhatsApp message from us within 24 hours with your confirmed spot and payment details.
+            Thanks for your interest. We&apos;ll reach out over WhatsApp within 24 hours to tell you more and answer any questions.
           </p>
           <p className="text-[0.85rem] text-text-secondary">
             Can&apos;t wait to see <strong className="text-navy">{childNameDisplay}</strong> on April 14.
@@ -97,11 +97,11 @@ export default function RegisterPage() {
       <div className="bg-coral px-6 py-10 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_20px,rgba(255,255,255,0.04)_20px,rgba(255,255,255,0.04)_40px)]" />
         <div className="relative z-10">
-          <span className="inline-block bg-white/20 text-white text-[0.75rem] font-semibold tracking-[0.1em] uppercase px-4 py-1 rounded-full mb-4">Registration</span>
+          <span className="inline-block bg-white/20 text-white text-[0.75rem] font-semibold tracking-[0.1em] uppercase px-4 py-1 rounded-full mb-4">Register Interest</span>
           <h1 className="font-display text-white text-[clamp(1.8rem,5vw,2.8rem)] leading-[1.15]">
-            Reserve your child&apos;s<br /><em className="text-white/85">spot at camp</em>
+            Interested? Tell us<br /><em className="text-white/85">about your child</em>
           </h1>
-          <p className="mt-3 text-white/85 text-[1rem]">Takes about 3 minutes. We&apos;ll follow up over WhatsApp.</p>
+          <p className="mt-3 text-white/85 text-[1rem]">Takes 2 minutes. We&apos;ll call you to discuss everything.</p>
           <div className="flex flex-wrap justify-center gap-2 mt-5">
             {["Ages 5–8", "Mon–Fri \u00b7 9–12:30", "April 14 – May 30", "Bangalore"].map((t) => (
               <span key={t} className="bg-white/15 text-white text-[0.82rem] font-medium px-3.5 py-1 rounded-full border border-white/25">{t}</span>
@@ -112,15 +112,6 @@ export default function RegisterPage() {
 
       {/* Form */}
       <div className="max-w-[680px] mx-auto px-6 py-10 pb-20">
-        {/* Early bird banner */}
-        <div className="bg-navy text-cream rounded-[14px] p-4 px-5 mb-7 flex items-center gap-3.5">
-          <span className="text-[1.6rem] flex-shrink-0" role="img" aria-label="bird">&#x1F426;</span>
-          <div>
-            <strong className="block text-[0.9rem]">Early bird: &#8377;3,800/week for the first 25 sign-ups</strong>
-            <span className="text-[0.78rem] text-cream/70">Regular price is &#8377;4,500/week. Lock in the lower rate while spots last.</span>
-          </div>
-        </div>
-
         <form ref={formRef} onSubmit={handleSubmit} noValidate>
           {/* Section 1: Child */}
           <SectionHeader num={1} title="About your child" />
@@ -160,43 +151,8 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          {/* Section 2: Programme options */}
-          <SectionHeader num={2} title="Programme options" />
-          <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
-            <div className="bg-[#F0F4F9] rounded-xl p-4 mb-5">
-              <p className="text-[0.9rem] font-bold text-[#2B5797]">Full Programme &middot; 7 weeks &middot; April 14 – May 30</p>
-              <p className="text-[0.8rem] text-[#3A4D62] mt-1">&#8377;21,000 (early bird) &middot; Mon–Fri, 9 AM – 12:30 PM</p>
-            </div>
-
-            <Field label="Would you like Extended Play?" hint="(optional)">
-              <p className="text-[0.8rem] text-[#7a7a96] mb-2">12:30–2:30 PM &middot; &#8377;8,000 for the full programme &middot; Lunch included</p>
-              <div className="flex flex-wrap gap-2">
-                {[{ v: "yes", l: "Yes, sign me up" }, { v: "maybe", l: "Maybe — tell me more" }, { v: "no", l: "No, thanks" }].map((opt) => (
-                  <label key={opt.v} className={`radio-opt ${form.extended_play === opt.v ? "selected" : ""}`}>
-                    <input type="radio" name="extended_play" value={opt.v} checked={form.extended_play === opt.v}
-                      onChange={() => update("extended_play", opt.v)} className="accent-coral w-4 h-4" />
-                    {opt.l}
-                  </label>
-                ))}
-              </div>
-            </Field>
-
-            <Field label="Do you have more than one child joining?" hint="(optional)" className="mt-5">
-              <p className="text-[0.8rem] text-[#7a7a96] mb-2">Sibling discount: 15% off child #2 onwards</p>
-              <div className="flex flex-wrap gap-2">
-                {[{ v: "yes", l: "Yes — applying sibling discount" }, { v: "no", l: "No, just the one" }].map((opt) => (
-                  <label key={opt.v} className={`radio-opt ${form.sibling === opt.v ? "selected" : ""}`}>
-                    <input type="radio" name="sibling" value={opt.v} checked={form.sibling === opt.v}
-                      onChange={() => update("sibling", opt.v)} className="accent-coral w-4 h-4" />
-                    {opt.l}
-                  </label>
-                ))}
-              </div>
-            </Field>
-          </div>
-
-          {/* Section 3: Parent */}
-          <SectionHeader num={3} title="Your details" />
+          {/* Section 2: Parent */}
+          <SectionHeader num={2} title="Your details" />
           <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Field label="Your name" required className="sm:col-span-2">
@@ -219,7 +175,7 @@ export default function RegisterPage() {
           </div>
 
           {/* Section 4: More */}
-          <SectionHeader num={4} title="A little more" />
+          <SectionHeader num={3} title="A little more" />
           <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
             <div className="grid gap-4">
               <Field label="How did you hear about The Summer Club?" required>
@@ -242,7 +198,7 @@ export default function RegisterPage() {
           </div>
 
           {/* Section 5: Consent */}
-          <SectionHeader num={5} title="Before you submit" />
+          <SectionHeader num={4} title="Before you submit" />
           <div className="bg-white border border-[#D4DCE6] rounded-2xl p-6 mb-3 shadow-[0_1px_4px_rgba(43,87,151,0.04)]">
             <div className="flex flex-col gap-3">
               <ConsentBox checked={form.photo_consent} onChange={(v) => update("photo_consent", v)}
@@ -271,9 +227,9 @@ export default function RegisterPage() {
           <div className="mt-8 text-center">
             <button type="submit" disabled={submitting}
               className="bg-navy text-cream border-0 px-12 py-4 rounded-full font-semibold text-[1rem] tracking-[0.01em] cursor-pointer transition-all duration-200 shadow-[0_4px_16px_rgba(43,87,151,0.2)] hover:bg-coral hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(224,90,58,0.3)] active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed">
-              {submitting ? "Submitting..." : "Reserve our spot \u2192"}
+              {submitting ? "Submitting..." : "I\u2019m interested \u2192"}
             </button>
-            <p className="mt-3 text-[0.78rem] text-[#7a7a96]">We&apos;ll confirm over WhatsApp within 24 hours and send payment details.</p>
+            <p className="mt-3 text-[0.78rem] text-[#7a7a96]">We&apos;ll reach out over WhatsApp within 24 hours.</p>
           </div>
         </form>
       </div>
