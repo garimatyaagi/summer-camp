@@ -39,12 +39,12 @@ export default function Pricing() {
                 <p className="text-[16px] text-[#6B7D8F] line-through">&#8377;31,500</p>
               </div>
               <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-coral">full programme &middot; 7 weeks</p>
-              <p className="mt-5 text-[15px] leading-[1.8] text-[#3A4D62]">
+              <p className="mt-5 text-[16px] md:text-[17px] leading-[1.8] text-[#1E2D3D]">
                 That&apos;s &#8377;3,000/week. For 3.5 hours every morning, Mon&ndash;Fri, across 7 weeks.
               </p>
               <div className="my-6 h-px bg-[#E8EDF3]" />
               <p className="text-[13px] font-bold tracking-[0.04em] uppercase text-[#6B7D8F] mb-3">What&apos;s included</p>
-              <ul className="space-y-2.5 text-[14px] text-[#3A4D62]">
+              <ul className="space-y-2.5 text-[15px] md:text-[16px] text-[#1E2D3D]">
                 <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> All 7 weeks of the programme</li>
                 <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Every material, snack, and take-home</li>
                 <li className="flex items-start gap-2"><span className="text-sage mt-0.5">&#10003;</span> Friday Showcase entry for parents every week</li>

@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-cream/30 mb-4">Connect</p>
             <div className="flex flex-col gap-2.5">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream/60 hover:text-cream transition-colors">Instagram</a>
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream/60 hover:text-cream transition-colors">WhatsApp</a>
+              <a href="https://wa.me/917678676150" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream/60 hover:text-cream transition-colors">WhatsApp</a>
               <a href="mailto:hello@summerclub.in" className="text-[14px] text-cream/60 hover:text-cream transition-colors">hello@summerclub.in</a>
             </div>
           </div>

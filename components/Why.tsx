@@ -25,7 +25,7 @@ export default function Why() {
           <h2 className="font-display text-[28px] leading-[1.15] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
             Most summer camps are a collection of random activities.
           </h2>
-          <p className="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-[#3A4D62]">
+          <p className="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-[#1E2D3D]">
             A different craft every day. Nothing connects. Your child comes home
             and can&apos;t really tell you what they learned. By the next Monday,
             they&apos;ve forgotten it all.
@@ -45,13 +45,13 @@ export default function Why() {
             <h3 className="font-display text-[24px] md:text-[30px] leading-[1.15] text-[#2B5797]">
               This camp is one programme.
             </h3>
-            <p className="mt-4 text-[16px] leading-[1.75] text-[#3A4D62]">
+            <p className="mt-4 text-[17px] md:text-[18px] leading-[1.75] text-[#1E2D3D]">
               7 weeks. 7 skills. Each week builds on the last. Art teaches them
               to see. Science teaches them to question. Cooking teaches them to
               measure. Building teaches them to plan. Selling teaches them to
               communicate.
             </p>
-            <p className="mt-4 text-[16px] leading-[1.75] text-[#3A4D62]">
+            <p className="mt-4 text-[17px] md:text-[18px] leading-[1.75] text-[#1E2D3D]">
               By Week 7, they curate their best work and present it at a real
               exhibition — with printed labels, gallery lighting, and a room
               full of parents.
@@ -74,14 +74,14 @@ export default function Why() {
                 { emoji: "\uD83D\uDCB0", text: "Earnings from their business" },
                 { emoji: "\uD83C\uDFC6", text: "An exhibition they presented" },
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 text-[15px] md:text-[16px] text-[#2B5797] font-medium">
+                <div key={i} className="flex items-center gap-3 text-[16px] md:text-[18px] text-[#2B5797] font-medium">
                   <span className="text-[18px] flex-shrink-0">{item.emoji}</span>
                   <span>{item.text}</span>
                 </div>
               ))}
             </div>
             <div className="mt-5 pt-4 border-t border-[#E8EDF3]">
-              <p className="text-[13px] text-[#3A4D62] leading-[1.6]">
+              <p className="text-[15px] text-[#1E2D3D] leading-[1.6]">
                 Not random crafts. Real work they&apos;re proud of.
               </p>
             </div>

@@ -105,7 +105,7 @@ export default function Activities() {
           <h2 className="font-display text-[28px] leading-[1.1] tracking-[-0.02em] text-[#2B5797] md:text-[42px] lg:text-[48px]">
             The programme.
           </h2>
-          <p className="mt-4 text-[16px] md:text-[17px] leading-[1.75] text-[#3A4D62]">
+          <p className="mt-4 text-[17px] md:text-[18px] leading-[1.75] text-[#1E2D3D]">
             Each week is a studio. Each studio teaches one real skill.
             Click any week to see the day-by-day plan.
           </p>
@@ -138,7 +138,7 @@ export default function Activities() {
                 <h3 className="text-[17px] font-bold text-[#2B5797] leading-[1.2]">
                   {week.theme}
                 </h3>
-                <p className="mt-1.5 text-[13px] leading-[1.6] text-[#3A4D62]">
+                <p className="mt-1.5 text-[14px] md:text-[15px] leading-[1.6] text-[#1E2D3D]">
                   {week.oneLiner}
                 </p>
                 <div className="mt-3 pt-3 border-t border-[#E8EDF3]">
@@ -196,7 +196,7 @@ export default function Activities() {
                         style={{ backgroundColor: selectedWeek.color }}>
                         {d.day}
                       </span>
-                      <p className="text-[14px] leading-[1.55] text-[#3A4D62]">{d.activity}</p>
+                      <p className="text-[14px] leading-[1.55] text-[#1E2D3D]">{d.activity}</p>
                     </div>
                   ))}
                 </div>

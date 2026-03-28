@@ -51,7 +51,7 @@ export default function DaySchedule() {
                 </div>
                 <div>
                   <h3 className="text-[17px] font-bold text-[#2B5797] md:text-[18px]">{item.title}</h3>
-                  <p className="mt-1.5 text-[15px] leading-[1.8] text-[#3A4D62] max-w-[460px]">{item.description}</p>
+                  <p className="mt-1.5 text-[16px] md:text-[17px] leading-[1.8] text-[#1E2D3D] max-w-[460px]">{item.description}</p>
                 </div>
               </motion.div>
             ))}

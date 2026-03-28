@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 </span>
               </div>
               <h3 className="mt-4 text-[18px] font-bold leading-[1.35] text-[#2B5797]">{step.title}</h3>
-              <p className="mt-3 text-[15px] leading-[1.8] text-[#3A4D62]">{step.description}</p>
+              <p className="mt-3 text-[16px] md:text-[17px] leading-[1.8] text-[#1E2D3D]">{step.description}</p>
             </motion.div>
           ))}
         </motion.div>

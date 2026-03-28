@@ -32,7 +32,7 @@ export default function FinalCTA() {
           </span>.
         </h2>
 
-        <p className="mt-7 text-[16px] leading-[1.85] text-[#3A4D62] md:text-[18px] max-w-[500px]">
+        <p className="mt-7 text-[16px] leading-[1.85] text-[#1E2D3D] md:text-[18px] max-w-[500px]">
           One programme. Seven weeks. They walk out with a painting, a robot, a recipe book, a business they ran &mdash; and the confidence to present it all.
           Ages 5&ndash;8. Bangalore. April&ndash;May 2026.
         </p>
@@ -42,13 +42,13 @@ export default function FinalCTA() {
             className="group inline-flex items-center gap-2.5 rounded-full bg-coral px-8 py-4 text-[14px] font-bold text-white shadow-[0_4px_20px_rgba(224,90,58,0.3)] transition-all duration-300 hover:bg-coral-dark hover:scale-[1.03]">
             Register interest <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
           </a>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/917678676150" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#2B5797] hover:text-[#E05A3A] transition-colors hover:underline underline-offset-4">
             <span>&#x1F4AC;</span> WhatsApp us
           </a>
         </div>
         <p className="mt-4 text-[13px] text-[#6B7D8F]">
-          Questions? Call or WhatsApp: +91 98765 43210
+          Questions? Call or WhatsApp: +91 76786 76150
         </p>
       </motion.div>
     </section>

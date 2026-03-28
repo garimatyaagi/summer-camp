@@ -24,7 +24,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
         <span className={`flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#E8EDF3] flex items-center justify-center text-[13px] text-[#6B7D8F] transition-all duration-300 ${open ? "rotate-45 border-coral text-coral" : ""}`}>+</span>
       </button>
       <div className={`faq-answer ${open ? "open" : ""}`}>
-        <div><p className="pb-5 text-[15px] leading-[1.85] text-[#3A4D62] max-w-[520px] md:pb-6">{a}</p></div>
+        <div><p className="pb-5 text-[16px] md:text-[17px] leading-[1.85] text-[#1E2D3D] max-w-[520px] md:pb-6">{a}</p></div>
       </div>
     </motion.div>
   );
