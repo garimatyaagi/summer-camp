@@ -21,7 +21,7 @@ export default function Pricing() {
           <div className="rounded-2xl bg-white p-7 md:p-9 shadow-[0_2px_20px_rgba(0,0,0,0.06)]">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#2B5797] px-4 py-1.5">
               <span className="text-[14px]">🐦</span>
-              <span className="text-[12px] font-bold tracking-[0.04em] uppercase text-white">Early bird &mdash; first 25 families</span>
+              <span className="text-[12px] font-bold tracking-[0.04em] uppercase text-white">Early bird · first 25 families</span>
             </div>
             <div className="flex items-baseline gap-3">
               <p className="font-display text-[44px] leading-none text-[#2B5797] md:text-[52px]">&#8377;28,000</p>

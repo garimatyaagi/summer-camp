@@ -79,7 +79,7 @@ export default function Hero() {
 
         <motion.p variants={heroSub} initial="hidden" animate="visible"
           className="mt-8 max-w-[520px] text-[18px] leading-[1.75] text-white md:text-[20px] md:mt-10">
-          We teach kids to think from first principles &mdash; not by following instructions, but by figuring it out themselves.
+          We teach kids to think from first principles. Not by following instructions, but by figuring it out themselves.
         </motion.p>
 
         {/* Key details — prominent, right after subtitle */}

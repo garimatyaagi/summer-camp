@@ -113,7 +113,7 @@ export default function Activities() {
             7 weeks. 7 challenges.
           </h2>
           <p className="mt-4 text-[17px] md:text-[18px] leading-[1.75] text-[#1E2D3D]">
-            Each week starts with a question. By Friday, they&apos;ve answered it — their way.
+            Each week starts with a question. By Friday, they&apos;ve answered it, their way.
             Click any week to see the daily challenges.
           </p>
         </motion.div>

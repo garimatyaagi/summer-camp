@@ -10,7 +10,7 @@ const faqs = [
   { q: "Where is it?", a: "Bangalore. We\u2019ll share the exact venue once we confirm your spot." },
   { q: "What does my child need to bring?", a: "Water bottle and comfortable clothes they can get messy in. We provide everything else." },
   { q: "What if my child misses a day?", a: "We\u2019ll send home the take-home kit so they don\u2019t miss out." },
-  { q: "What about safety?", a: "First-aid trained staff. 1:8 adult-to-child ratio. Gated campus with check-in/check-out." },
+  { q: "What about safety?", a: "First-aid trained staff. 1:8 adult ratio. Gated campus with check-in/check-out." },
   { q: "What happens at the Exhibition?", a: "Week 7 ends with a real gallery opening. Your child presents their best work from 7 weeks to a room full of parents." },
   { q: "How do I register?", a: "Fill in the interest form. We\u2019ll WhatsApp you within 24 hours." },
 ];
