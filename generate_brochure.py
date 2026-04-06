@@ -583,7 +583,7 @@ HTML = """<!DOCTYPE html>
 
     <!-- RIGHT: Pricing -->
     <div class="pricing-col">
-      <div class="early-bird-tag">EARLY BIRD &mdash; First 25 Families</div>
+      <div class="early-bird-tag">EARLY BIRD</div>
       <div class="price-main">Rs.28,000</div>
       <div class="price-strike">Rs.35,000</div>
       <div class="price-label">Full 7-week programme</div>
