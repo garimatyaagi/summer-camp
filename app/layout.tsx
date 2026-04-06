@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://summerclub.in"),
   title: "The Summer Club — Summer Camp for Kids | Bangalore",
   description:
-    "A summer camp where kids make amazing things — not by following instructions, but by figuring it out themselves. Ages 5–8, Bangalore. April–May 2026.",
+    "A summer camp where kids make amazing things — not by following instructions, but by figuring it out themselves. Ages 5–8, Bangalore. 15 Apr – 30 May 2026.",
   openGraph: {
     title: "The Summer Club — A summer camp where kids make amazing things",
     description:

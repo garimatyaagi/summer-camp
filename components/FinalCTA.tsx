@@ -33,7 +33,7 @@ export default function FinalCTA() {
         </h2>
 
         <p className="mt-7 text-[17px] leading-[1.85] text-[#1E2D3D] md:text-[19px] max-w-[520px]">
-          Seven weeks. They paint, build, cook, sell, and present. Not by following instructions, but by figuring it out themselves. Ages 5&ndash;8. Bangalore. April&ndash;May 2026.
+          Seven weeks. They paint, build, cook, sell, and present. Not by following instructions, but by figuring it out themselves. Ages 5&ndash;8. Bangalore. 15 Apr &ndash; 30 May 2026.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center gap-4">

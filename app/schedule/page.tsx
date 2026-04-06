@@ -100,7 +100,7 @@ export default function SchedulePage() {
     <div className="min-h-screen bg-cream">
       <header className="bg-navy px-6 py-5 flex items-center justify-between">
         <Link href="/" className="font-display text-[1.35rem] text-cream">The Summer Club</Link>
-        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Programme &middot; April–May 2026</span>
+        <span className="text-[0.75rem] text-cream/55 tracking-[0.06em] uppercase">Programme &middot; 15 Apr &ndash; 30 May 2026</span>
       </header>
 
       <div className="max-w-[900px] mx-auto px-6 py-12 pb-20">

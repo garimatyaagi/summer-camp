@@ -45,7 +45,7 @@ export default function Gallery() {
         <motion.p variants={sectionFade} initial="hidden" whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           className="mt-10 text-[14px] text-white/90">
-          Camp starts April 14. Follow along on{" "}
+          Camp starts April 15. Follow along on{" "}
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
             className="text-coral font-medium hover:underline underline-offset-4">Instagram</a>
         </motion.p>

@@ -90,7 +90,7 @@ export default function Hero() {
             { label: "Mon\u2013Fri, 9\u201312:30 PM", icon: "🕘" },
             { label: "7 weeks", icon: "📅" },
             { label: "Bangalore", icon: "📍" },
-            { label: "April\u2013May 2026", icon: "☀️" },
+            { label: "15 Apr \u2013 30 May 2026", icon: "☀️" },
           ].map((item) => (
             <span key={item.label} className="flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-4 py-2 text-[14px] md:text-[15px] font-semibold">
               <span className="text-[16px]">{item.icon}</span>
