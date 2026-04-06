@@ -116,7 +116,7 @@ export default function Hero() {
         <motion.div variants={heroMeta} initial="hidden" animate="visible"
           className="mt-6 inline-flex items-center gap-2.5 rounded-xl bg-white/15 border border-white/20 px-5 py-2.5">
           <span className="text-[15px]">🐦</span>
-          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;21,000 for the full programme</span>
+          <span className="text-[13px] font-semibold text-white">Early bird: &#8377;28,000 for the full programme</span>
           <span className="text-[12px] text-white/80">&middot; first 25 families</span>
         </motion.div>
       </div>

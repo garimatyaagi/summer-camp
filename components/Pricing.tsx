@@ -24,12 +24,12 @@ export default function Pricing() {
               <span className="text-[12px] font-bold tracking-[0.04em] uppercase text-white">Early bird &mdash; first 25 families</span>
             </div>
             <div className="flex items-baseline gap-3">
-              <p className="font-display text-[44px] leading-none text-[#2B5797] md:text-[52px]">&#8377;21,000</p>
-              <p className="text-[16px] text-[#6B7D8F] line-through">&#8377;31,500</p>
+              <p className="font-display text-[44px] leading-none text-[#2B5797] md:text-[52px]">&#8377;28,000</p>
+              <p className="text-[16px] text-[#6B7D8F] line-through">&#8377;35,000</p>
             </div>
             <p className="mt-1 text-[13px] font-bold tracking-[0.04em] uppercase text-[#E05A3A]">full programme &middot; 7 weeks</p>
             <p className="mt-5 text-[16px] md:text-[17px] leading-[1.8] text-[#1E2D3D]">
-              That&apos;s &#8377;3,000/week for 3.5 hours every morning, Mon&ndash;Fri, across 7 weeks.
+              That&apos;s &#8377;4,000/week for 3.5 hours every morning, Mon&ndash;Fri, across 7 weeks.
             </p>
             <div className="my-5 h-px bg-[#E8EDF3]" />
             <ul className="space-y-2 text-[15px] md:text-[16px] text-[#1E2D3D]">
